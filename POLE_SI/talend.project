@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_U1jakY_ZEeyUWr5Vyoj4tg" label="POLE_SI" description="Projet Talend POLE_SI" language="java" technicalLabel="POLE_SI" author="_U1jako_ZEeyUWr5Vyoj4tg" productVersion="Talend Cloud API Services Platform-8.0.1.20211109_1610" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/nadegeG/POLE_SI.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" bigData="false">
+    <migrationTask xmi:id="_U2qN0I_ZEeyUWr5Vyoj4tg" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_U1jako_ZEeyUWr5Vyoj4tg" login="remyboyer@univ.evry.fr_projet1" firstName="REMY" lastName="BOYER" type="DQ"/>
+</xmi:XMI>
