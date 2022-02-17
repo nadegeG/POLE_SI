@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="Default" xmi:id="_C0I00BmkEemu-_1PF99Ixw" xmi:version="2.0">
+  <contextParameter comment="" name="bal" prompt="bal?" promptNeeded="false" type="id_String" value="B" xmi:id="_C0I00RmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="compteExiste" prompt="compteExiste?" promptNeeded="false" type="id_String" value="globalMap.get(&quot;compteExiste&quot;)" xmi:id="_C0I00hmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="description" prompt="description?" promptNeeded="false" type="id_String" value="perso" xmi:id="_C0I00xmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="displayname" prompt="displayname?" promptNeeded="false" type="id_String" value="" xmi:id="_C0I01BmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="droitbal" prompt="droitbal?" promptNeeded="false" type="id_String" value="globalMap.get(&quot;droitbal&quot;)" xmi:id="_C0I01RmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="eppn" prompt="eppn?" promptNeeded="false" type="id_String" value="" xmi:id="_C0I01hmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="mailredirection" prompt="mailredirection?" promptNeeded="false" type="id_String" value="" xmi:id="_C0I01xmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="motdepasse" prompt="motdepasse?" promptNeeded="false" type="id_String" value="{SHA}BRrTYVrplBeWa27dy2Noioy259c=" xmi:id="_C0I02BmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="nom" prompt="nom?" promptNeeded="false" type="id_String" value="" xmi:id="_C0I02RmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="prenom" prompt="prenom?" promptNeeded="false" type="id_String" value="" xmi:id="_C0I02hmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="question" prompt="question?" promptNeeded="false" type="id_String" value="" xmi:id="_C0I02xmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="reponse" prompt="reponse?" promptNeeded="false" type="id_String" value="" xmi:id="_C0I03BmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="uid" prompt="uid?" promptNeeded="false" type="id_String" value="" xmi:id="_C0I03RmkEemu-_1PF99Ixw"/>
+  <contextParameter comment="" name="idharpege" prompt="idharpege?" promptNeeded="false" type="id_String" value="0" xmi:id="_C0I03hmkEemu-_1PF99Ixw"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2c110359-b5d2-4503-89da-58ba0cc8e54c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EPOIqrkf7G/wxu7voUjRHSzLM/Nx5P0YpFwg59BBX2WIDrA0T1zzu5DecY9LBtVLdgrGWAPAul+I&#13;
+HJxT/I8YMg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4129811b-99d6-4e56-931e-d919ecad3197"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>71kJpOpyxcjWFI8/fcNKrJwcAKJPpVxY6TUZIIgjrFa5pbxyDFdRb3vSAR8XIiZLuEtKCymWFGdq&#13;
+ahDsku4MJg==</DigestValue></Reference></SignedInfo><SignatureValue>OJdAB/0sXZsjhDbcOkx4PL5lszcEyZd5NK4wnrU6sn0aNHFxSuSmpbhQge4Ct/c/q3Ug4yjBKLbL&#13;
+jN+G9aveAE7I5qFFHQFFyZwnSUkz3laow4k8rnReK6xI0nknoVZVQEdzOKZVpH2Up1bM3q7vLEcg&#13;
+xrYXphS0Gg7omHai+fFY+MwRnp88k2Vo1EdOae1SBDalLh9KDGSi0Loaghop9XaO7PKirG3QQtMK&#13;
+9TfXFTXW0OtKr4RAlO+sRr2+fKWmCeLcT6tQ7HzGSvcDLUr+LCqrdMm80aWU3oi/5r0pMXSZihE1&#13;
+gCB3bzv7U81JFIPz2KrQI8qe5s1+fp9E0HpuBw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4129811b-99d6-4e56-931e-d919ecad3197" Target="#_2c110359-b5d2-4503-89da-58ba0cc8e54c"><Timestamp>2022-02-17 10:14:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>

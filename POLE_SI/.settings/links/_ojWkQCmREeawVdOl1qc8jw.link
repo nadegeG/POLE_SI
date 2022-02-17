@@ -1,0 +1,125 @@
+{
+  "itemId" : "_ojWkQCmREeawVdOl1qc8jw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_HhFmYOxKEeWzZvgyPl52ew",
+    "parameterList" : [ {
+      "id" : "_C0I03hmkEemu-_1PF99Ixw",
+      "name" : "idharpege"
+    }, {
+      "id" : "_C0I00RmkEemu-_1PF99Ixw",
+      "name" : "bal"
+    }, {
+      "id" : "_C0I00hmkEemu-_1PF99Ixw",
+      "name" : "compteExiste"
+    }, {
+      "id" : "_C0I00xmkEemu-_1PF99Ixw",
+      "name" : "description"
+    }, {
+      "id" : "_C0I01BmkEemu-_1PF99Ixw",
+      "name" : "displayname"
+    }, {
+      "id" : "_C0I01RmkEemu-_1PF99Ixw",
+      "name" : "droitbal"
+    }, {
+      "id" : "_C0I01hmkEemu-_1PF99Ixw",
+      "name" : "eppn"
+    }, {
+      "id" : "_C0I01xmkEemu-_1PF99Ixw",
+      "name" : "mailredirection"
+    }, {
+      "id" : "_C0I02BmkEemu-_1PF99Ixw",
+      "name" : "motdepasse"
+    }, {
+      "id" : "_C0I02RmkEemu-_1PF99Ixw",
+      "name" : "nom"
+    }, {
+      "id" : "_C0I02hmkEemu-_1PF99Ixw",
+      "name" : "prenom"
+    }, {
+      "id" : "_C0I02xmkEemu-_1PF99Ixw",
+      "name" : "question"
+    }, {
+      "id" : "_C0I03BmkEemu-_1PF99Ixw",
+      "name" : "reponse"
+    }, {
+      "id" : "_C0I03RmkEemu-_1PF99Ixw",
+      "name" : "uid"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_bdYhAOzfEeWIxuGaxCQNUw",
+    "parameterList" : [ {
+      "id" : "_C1e4pBmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Login"
+    }, {
+      "id" : "_C1e4oxmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Password"
+    }, {
+      "id" : "_C1e4pxmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Server"
+    }, {
+      "id" : "_C1e4oRmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Schema"
+    }, {
+      "id" : "_C1e4pRmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_AdditionalParams"
+    }, {
+      "id" : "_C1e4ohmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Sid"
+    }, {
+      "id" : "_C1e4phmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Port"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_n9U-APAVEeWfjIFYxMcxPg",
+    "parameterList" : [ {
+      "id" : "_z2m3oRl5Eemua4MpESTNBA",
+      "name" : "LDAP_INTRANET_ldap1__Host"
+    }, {
+      "id" : "_z2m3oxl5Eemua4MpESTNBA",
+      "name" : "LDAP_INTRANET_ldap1__BindPassword"
+    }, {
+      "id" : "_z2m3pBl5Eemua4MpESTNBA",
+      "name" : "LDAP_INTRANET_ldap1__BindPrincipal"
+    }, {
+      "id" : "_z2m3pRl5Eemua4MpESTNBA",
+      "name" : "LDAP_INTRANET_ldap1__Filter"
+    }, {
+      "id" : "_z2m3pxl5Eemua4MpESTNBA",
+      "name" : "LDAP_INTRANET_ldap1__CountLimit"
+    }, {
+      "id" : "_z2m3phl5Eemua4MpESTNBA",
+      "name" : "LDAP_INTRANET_ldap1__TimeOutLimit"
+    }, {
+      "id" : "_z2m3ohl5Eemua4MpESTNBA",
+      "name" : "LDAP_INTRANET_ldap1__Port"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_R3BuoKF_Eemh3cf7jJnMNA",
+    "parameterList" : [ {
+      "id" : "_R3K4kaF_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Port"
+    }, {
+      "id" : "_R3K4lKF_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Schema"
+    }, {
+      "id" : "_R3K4laF_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Login"
+    }, {
+      "id" : "_R3K4lqF_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Password"
+    }, {
+      "id" : "_R3K4kqF_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Sid"
+    }, {
+      "id" : "_R3K4l6F_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_AdditionalParams"
+    }, {
+      "id" : "_R3K4k6F_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Server"
+    } ]
+  } ]
+}

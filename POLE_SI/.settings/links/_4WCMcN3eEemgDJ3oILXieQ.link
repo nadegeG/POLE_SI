@@ -1,0 +1,51 @@
+{
+  "itemId" : "_4WCMcN3eEemgDJ3oILXieQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_bdYhAOzfEeWIxuGaxCQNUw",
+    "parameterList" : [ {
+      "id" : "_C1e4pBmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Login"
+    }, {
+      "id" : "_C1e4oxmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Password"
+    }, {
+      "id" : "_C1e4pxmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Server"
+    }, {
+      "id" : "_C1e4oRmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Schema"
+    }, {
+      "id" : "_C1e4pRmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_AdditionalParams"
+    }, {
+      "id" : "_C1e4ohmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Sid"
+    }, {
+      "id" : "_C1e4phmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Port"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_m5aqsKF8Eemh3cf7jJnMNA",
+    "parameterList" : [ {
+      "id" : "_s1UfYdQpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_Port"
+    }, {
+      "id" : "_s1UfZ9QpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_AdditionalParams"
+    }, {
+      "id" : "_s1UfYtQpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_Server"
+    }, {
+      "id" : "_s1UfY9QpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_Schema"
+    }, {
+      "id" : "_s1UfZdQpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_Password"
+    }, {
+      "id" : "_s1UfZNQpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_Login"
+    } ]
+  } ]
+}

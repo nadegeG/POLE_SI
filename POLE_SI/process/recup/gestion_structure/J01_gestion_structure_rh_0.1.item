@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Port" prompt="DB_REFETB_REFADMIN_Port?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Sid" prompt="DB_REFETB_REFADMIN_Sid?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="refetb"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Server" prompt="DB_REFETB_REFADMIN_Server?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="192.168.120.102"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Schema" prompt="DB_REFETB_REFADMIN_Schema?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value=""/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Login" prompt="DB_REFETB_REFADMIN_Login?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="refadmin"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Password" prompt="DB_REFETB_REFADMIN_Password?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_Password" value="enc:system.encryption.key.v1:y9Usce1DJWaRmQFoWGlklvWoalERjz9dqprhHMZyy18QFQ=="/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_AdditionalParams" prompt="DB_REFETB_REFADMIN_AdditionalParams?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:VN7MX8pi7+QvESss/7nFWdNw1hlG+DIXMSBxySDZ"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/vivien.crossay/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:P8csFt7SLioZeC4qdtzOCO2YtzO9OYFRT80Oeyxi"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_NJY-cBUuEeeowanb9BA60Q" name="DataOperation"/>
+    <routinesParameter id="_NJsgcBUuEeeowanb9BA60Q" name="Mathematical"/>
+    <routinesParameter id="_NKSWUBUuEeeowanb9BA60Q" name="Numeric"/>
+    <routinesParameter id="_NKSWVBUuEeeowanb9BA60Q" name="Relational"/>
+    <routinesParameter id="_NKcHUBUuEeeowanb9BA60Q" name="StringHandling"/>
+    <routinesParameter id="_NKcHVBUuEeeowanb9BA60Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_NKlRQBUuEeeowanb9BA60Q" name="TalendDate"/>
+    <routinesParameter id="_NKlRRBUuEeeowanb9BA60Q" name="TalendString"/>
+    <routinesParameter id="_OZw6MPfWEeW8qKZNjgDL0A" name="Copy_of_partageRenater"/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_pR7KAIsDEea6I5FOr86KPA" name="Divers"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter id="_PYwWwNryEeWH3qE0lgMPvA" name="partageRenater"/>
+    <routinesParameter id="_uougAHjCEeauQso9LUnuPA" name="partageRenater_SAV_2016_09_12"/>
+    <routinesParameter id="_pErL4NaBEeeDNsTMbu4UKw" name="partageRenater_sav_2017_12_01"/>
+    <routinesParameter id="_t2Y7Ok-SEeiezYcSuSc8KQ" name="SQLike"/>
+    <routinesParameter id="_t2Y7ME-SEeiezYcSuSc8KQ" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4sX8TBrqLaACwNUfLbHU1lxVmSO5jpyd+g/EJ9Th"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select inds.ref_ind_id,  s.c_structure_ref, &#13;&#10;TOT.DATEDEBUTCONTRAT, tot.datefincontrat, inds.temoin_prov, inds.date_fin_prov,inds.date_debut, inds.date_fin, indso.ref_ind_si, inds.c_structure_ref&#13;&#10;from ind_structure inds, structure s, ind_source indso, corresp_structure c, pers_harp_tot@harpege tot&#13;&#10;where inds.ref_ind_id = indso.ref_ind_id&#13;&#10;and inds.c_structure_ref = s.c_structure_ref &#13;&#10;and tot.no_individu = indso.ref_ind_si&#13;&#10;and tot.c_structure = to_char(c.c_structure_rh)&#13;&#10;and c.c_structure_ref = s.c_structure_ref&#13;&#10;and tot.datefincontrat is not null&#13;&#10;and to_char(TOT.DATEDEBUTCONTRAT,'ddmmyyyy') = to_char(inds.date_debut,'ddmmyyyy')&#13;&#10;and (   (    inds.temoin_prov = 'O' and trunc(inds.date_fin_prov) != trunc(tot.datefincontrat))&#13;&#10;     or (inds.temoin_prov = 'N' and NVL(inds.date_fin,to_date('01011900','ddmmyyyy'))  != trunc(nvl(tot.datefincontrat, to_date('01011900','ddmmyyyy')))&#13;&#10;     ))&#13;&#10;AND indso.source_id = 2&#13;&#10;AND s.typ_structure NOT IN ('EF', 'AS')&#13;&#10;AND inds.typ_affectation = 'AFF'&#13;&#10;&quot;&#13;&#10;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEDEBCONTRAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEFINCONTRAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_PROV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEFIN_PROV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_1">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="C_STRUCTURE_REF" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEDEBCONTRAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEFINCONTRAT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TEM_PROV" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATEFIN_PROV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_wCXdMAG3Eeir1oLXFsb4Lw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="MAJ_STR">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="C_STRUCTURE_REF" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DATE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN_PROV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="TYP_AFFECTATION" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="MAJ_STR" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.REF_IND_ID" name="REF_IND_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.C_STRUCTURE_REF" name="C_STRUCTURE_REF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DATEDEBCONTRAT" name="DATE_DEBUT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.DATEFINCONTRAT" name="DATE_FIN" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.TEM_PROV.equals('O')  &amp;&amp; &#13;&#10;row1.DATEFINCONTRAT.before(row1.DATEFIN_PROV) ?&#13;&#10;row1.DATEFINCONTRAT &#13;&#10;: null   &#13;&#10; " name="DATE_FIN_PROV" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="&quot;AFF&quot;" name="TYP_AFFECTATION" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="REF_IND_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="C_STRUCTURE_REF" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATEDEBCONTRAT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DATEFINCONTRAT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="TEM_PROV" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATEFIN_PROV" nullable="true" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_DEBUT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN_PROV"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYP_AFFECTATION"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="C_STRUCTURE_REF" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DATE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN_PROV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="TYP_AFFECTATION" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleOutput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:phAbzdgLkSe+xfx1KNrCr4Z+Q9sHvnwwEJ0HyUpt"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;IND_STRUCTURE&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_DEBUT"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN_PROV"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYP_AFFECTATION"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;IND_STRUCTURE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleOutput_1">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="C_STRUCTURE_REF" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DATE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN_PROV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="TYP_AFFECTATION" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="C_STRUCTURE_REF" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DATE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN_PROV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="TYP_AFFECTATION" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_VJEiAOwpEeWY0ZqGhB774g"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
+    <elementParameter field="FILE" name="TNS_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.DB_REFETB_REFADMIN_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DB_REFETB_REFADMIN_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DB_REFETB_REFADMIN_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DB_REFETB_REFADMIN_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.DB_REFETB_REFADMIN_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:U/WPRamoLdRZ9QULx+Z5mDwatLNT2xslgCo5UXqf88LVRwOewgmPXzfZyxmWtqoL4ProB9E5/8KBh2WHoM6w"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DB_REFETB_REFADMIN_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tOracleCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleCommit_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleCommit_2"/>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3aH0DeTOryTLhiqKxzubcFn0NEkQfvgldrqgR1Gs"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select inds.ref_ind_id,  s.c_structure_ref, inds.date_debut, temoin_prov&#13;&#10;from ind_structure inds, structure s, ind_source indso, corresp_structure c&#13;&#10;where inds.ref_ind_id = indso.ref_ind_id&#13;&#10;and inds.c_structure_ref = s.c_structure_ref &#13;&#10;and c.c_structure_ref = s.c_structure_ref&#13;&#10;and (   (    inds.temoin_prov = 'O' and trunc(nvl(inds.date_fin_prov,sysdate)) &gt;= trunc(sysdate))&#13;&#10;     or (inds.temoin_prov = 'N' and trunc(nvl(inds.date_fin,sysdate))  &gt;= trunc(sysdate))&#13;&#10;     )&#13;&#10;AND indso.source_id = 2&#13;&#10;AND s.typ_structure NOT IN ('EF', 'AS')&#13;&#10;AND inds.typ_affectation = 'AFF'&#13;&#10;and not exists ( select 1&#13;&#10;                 from pers_harp_tot@harpege tot&#13;&#10;                 where tot.no_individu = indso.ref_ind_si&#13;&#10;                 and tot.c_structure = to_char(c.c_structure_rh)&#13;&#10;               )&#13;&#10;and indso.ref_ind_id = 18512&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_DEBUT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEMOIN_PROV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_3">
+      <column comment="" key="false" length="10" name="REF_IND_ID" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="C_STRUCTURE_REF" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_DEBUT" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TEMOIN_PROV" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_wCXdMAG3Eeir1oLXFsb4Lw-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfMAJ_STR">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="C_STRUCTURE_REF" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DATE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN_PROV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="copyOfMAJ_STR" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.REF_IND_ID" name="REF_IND_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.C_STRUCTURE_REF" name="C_STRUCTURE_REF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.DATE_DEBUT" name="DATE_DEBUT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="DATE_FIN" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.TEMOIN_PROV.equals('O') ?&#13;&#10;TalendDate.getCurrentDate()&#10;: null  " name="DATE_FIN_PROV" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="REF_IND_ID" type="id_String"/>
+        <mapperTableEntries name="C_STRUCTURE_REF" type="id_String"/>
+        <mapperTableEntries name="DATE_DEBUT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="TEMOIN_PROV" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleOutput_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:26UBg9qLB19ZiKOjLAdjk60ptbD71IhWqjkpHM1C"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;IND_STRUCTURE&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_DEBUT"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN_PROV"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;IND_STRUCTURE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleOutput_2">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="C_STRUCTURE_REF" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DATE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN_PROV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="C_STRUCTURE_REF" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DATE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN_PROV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:1JEGprvgF3oNLJvdppPs84t/8DAXmJaqnh5+whtn"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select inds.ref_ind_id,  s.c_structure_ref, inds.date_debut, temoin_prov&#13;&#10;from ind_structure inds, structure s, ind_source indso, corresp_structure c&#13;&#10;where inds.ref_ind_id = indso.ref_ind_id&#13;&#10;and inds.c_structure_ref = s.c_structure_ref &#13;&#10;and c.c_structure_ref = s.c_structure_ref&#13;&#10;and (   (    inds.temoin_prov = 'O' and inds.date_fin_prov is null)&#13;&#10;     or (inds.temoin_prov = 'N' and inds.date_fin is null)&#13;&#10;     )&#13;&#10;AND indso.source_id = 2&#13;&#10;AND s.typ_structure NOT IN ('EF', 'AS')&#13;&#10;AND inds.typ_affectation = 'AFF'&#13;&#10;and not exists ( select 1&#13;&#10;                 from pers_harp_tot@harpege tot&#13;&#10;                 where tot.no_individu = indso.ref_ind_si&#13;&#10;                 and tot.c_structure = to_char(c.c_structure_rh)&#13;&#10;               )&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_DEBUT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEMOIN_PROV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_2">
+      <column comment="" key="false" length="10" name="REF_IND_ID" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="C_STRUCTURE_REF" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_DEBUT" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TEMOIN_PROV" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_wCXdMAG3Eeir1oLXFsb4Lw-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfcopyOfMAJ_STR">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="C_STRUCTURE_REF" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DATE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN_PROV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="copyOfcopyOfMAJ_STR" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.REF_IND_ID" name="REF_IND_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.C_STRUCTURE_REF" name="C_STRUCTURE_REF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.DATE_DEBUT" name="DATE_DEBUT" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="DATE_FIN" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.TEMOIN_PROV.equals('O') ?&#13;&#10;TalendDate.getCurrentDate()&#10;: null  " name="DATE_FIN_PROV" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="REF_IND_ID" type="id_String"/>
+        <mapperTableEntries name="C_STRUCTURE_REF" type="id_String"/>
+        <mapperTableEntries name="DATE_DEBUT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="TEMOIN_PROV" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleOutput_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:KnI9O464osK0wp7NFC2/tSqe/odZBiSaTjSCGv0e"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;IND_STRUCTURE&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_DEBUT"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN_PROV"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;IND_STRUCTURE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleOutput_3">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="C_STRUCTURE_REF" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DATE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN_PROV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="C_STRUCTURE_REF" nullable="true" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DATE_DEBUT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN_PROV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:P+Il6g7F6OxJNHufeDKHK7kCYqctVvbV9XDZ78iB"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select distinct inds.ref_ind_id, max(date_fin)&#13;&#10;from ind_structure inds, ind_source iso&#13;&#10;where inds.ref_ind_id = iso.ref_ind_id&#13;&#10;and source_id = 2&#13;&#10;and typ_affectation = 'AFF'&#13;&#10;and not exists (select 1 from ind_structure s2 where s2.ref_ind_id = inds.ref_ind_id and s2.date_fin is null)&#13;&#10;group by inds.ref_ind_id&#13;&#10;UNION&#13;&#10;select distinct inds.ref_ind_id, null&#13;&#10;from ind_structure inds, ind_source iso&#13;&#10;where inds.ref_ind_id = iso.ref_ind_id&#13;&#10;and source_id = 2&#13;&#10;and typ_affectation = 'AFF'&#13;&#10;and exists (select 1 from ind_structure s2 where s2.ref_ind_id = inds.ref_ind_id and s2.date_fin is null)&#13;&#10;group by inds.ref_ind_id&#13;&#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_4">
+      <column comment="" key="false" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_wCXdMAG3Eeir1oLXFsb4Lw-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="sortie_compte" name="sortie_compte">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="sortie_compte" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row5.REF_IND_ID" name="REF_IND_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.FIN" name="DATE_FIN" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="REF_IND_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIN" nullable="true" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleOutput_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:vvY0ae/jL5ml6gn7Q7sbLlKBZS4oehOrFwSsmHLh"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;COMPTE&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="true"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="false"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;COMPTE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="sortie_compte" name="tOracleOutput_4">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="sortie_compte" name="REJECT">
+      <column comment="" key="true" length="-1" name="REF_IND_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_FIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_USUEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_STRUCTURE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYPECONTRAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATEDEBCONTRAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATEFINCONTRAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_PROV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATEFIN_PROV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="MAJ_STR" lineStyle="0" metaname="MAJ_STR" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_DEBUT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN_PROV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYP_AFFECTATION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MAJ_STR"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tOracleOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_DEBUT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN_PROV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYP_AFFECTATION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tOracleConnection_1" offsetLabelX="0" offsetLabelY="0" source="tOracleConnection_1" target="tOracleInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tOracleInput_3" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_3" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfMAJ_STR" lineStyle="0" metaname="copyOfMAJ_STR" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tOracleOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_DEBUT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN_PROV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfMAJ_STR"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tOracleOutput_2" offsetLabelX="0" offsetLabelY="0" source="tOracleOutput_2" target="tOracleCommit_2">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tOracleInput_2" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfcopyOfMAJ_STR" lineStyle="0" metaname="copyOfcopyOfMAJ_STR" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tOracleOutput_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_STRUCTURE_REF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_DEBUT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN_PROV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfcopyOfMAJ_STR"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tOracleInput_4" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_4" target="tMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="sortie_compte" lineStyle="0" metaname="sortie_compte" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tOracleOutput_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="sortie_compte"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tOracleOutput_4" offsetLabelX="0" offsetLabelY="0" source="tOracleOutput_4" target="tOracleCommit_2">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <note opaque="true" posX="256" posY="32" sizeHeight="64" sizeWidth="385" text="ajout date fin ind_structure pas mise en production&#13;&#10;"/>
+  <note opaque="true" posX="832" posY="160" sizeHeight="129" sizeWidth="417" text="si temoi_prov = O et datefin contrat &gt; date fin prov &#13;&#10;alors maj datefin prov"/>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="modif date fin ind_structure AFF (prend en compte les agents non actifs - job prend pas ens_harp)"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleCommit_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_3"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="mise à jour date fin des couples individu structure - AFF - disparus dans Harpege - gere PAS prevac"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="suppression des couples individu structure - AFR "/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_4"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="mise à jour date fin des comptes"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_44b010e4-c068-4adc-a51b-aef4610b618d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xiefkJScOjdzT8+/u+vLTmBp1eWsfGRKjx1g+tAUNDH+QJ5szNwz8TXqa14n/e0Ik9y69iWCh28Z&#13;
+85SeFnQjTw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c6e7d06d-d7c4-48ee-a115-674629604ff6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MD+EZ+9TffgH2udbfomqg05IJr6w9LEIBn2yIyMqX7PUjNEDRuAVzn+2JorSmw9j8ANh66KRFs+8&#13;
+w+xWZ31XGw==</DigestValue></Reference></SignedInfo><SignatureValue>JQrxS34bgf3rln63Dn+yJsMNayMlJdh/iuOHhy9St8fyAeHPuWtzELRMNkyyQ/qHyf7BusQsGxTS&#13;
+NI+P1ubOEBdvV4SwvcDFnTlXHxY36yPL35Sv3iQpnv6VvY7Ow2Rl6s1UrMCTeYZ6/dHXloX/+MHz&#13;
+Ng5T0BhFuECCa2OHEbTOIvdl7W/pRvCR60R/OBTO1SN3UQ9mvokjLoqXvVrrs2iNXYg9Hn2YdRtI&#13;
+1HwCSbFvtp4k9Q4XxnkzIEWGUBrtJ3PQW1FlIpB4sVZzcXvpgylwF9bUsumopo4iwRPadzD8n2Qg&#13;
+BhMK0+0P7KPBFUL1ie0M4NjL92Av94l/v87pmQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c6e7d06d-d7c4-48ee-a115-674629604ff6" Target="#_44b010e4-c068-4adc-a51b-aef4610b618d"><Timestamp>2022-02-17 10:19:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -1,0 +1,45 @@
+{
+  "itemId" : "_8Xh1EK9PEeez_csEbj9l8w",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_bdYhAOzfEeWIxuGaxCQNUw",
+    "parameterList" : [ {
+      "id" : "_C1e4oRmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Schema"
+    }, {
+      "id" : "_C1e4ohmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Sid"
+    }, {
+      "id" : "_C1e4oxmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Password"
+    }, {
+      "id" : "_C1e4pBmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Login"
+    }, {
+      "id" : "_C1e4pRmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_AdditionalParams"
+    }, {
+      "id" : "_C1e4phmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Port"
+    }, {
+      "id" : "_C1e4pxmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_qyEewKkDEeeRL9FNC0Vhsw",
+    "parameterList" : [ {
+      "id" : "_z-V3Uhl5Eemua4MpESTNBA",
+      "name" : "LC_STRUCTURE"
+    }, {
+      "id" : "_z-V3Uxl5Eemua4MpESTNBA",
+      "name" : "GROUPE"
+    }, {
+      "id" : "_z-V3VBl5Eemua4MpESTNBA",
+      "name" : "PROPRIO_VT"
+    }, {
+      "id" : "_z-V3URl5Eemua4MpESTNBA",
+      "name" : "C_STRUCTURE_REF"
+    } ]
+  } ]
+}

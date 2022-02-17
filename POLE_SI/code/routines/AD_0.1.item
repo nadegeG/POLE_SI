@@ -1,0 +1,172 @@
+package routines;
+
+import java.util.Hashtable;
+import javax.naming.*;
+import javax.naming.ldap.*;
+import javax.naming.directory.*;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class AD {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static void AD_ModifierOU_ADTEST(String oldUserName,String newUserName ) 
+    {
+
+    	/**
+    	 * moveuser.java
+    	 * 5 July 2001
+    	 * Sample JNDI application to move an object in the Active Directory.
+    	 * 
+    	 */		
+    	 		int UF_ACCOUNTDISABLE = 0x0002;
+    	 		int UF_PASSWD_NOTREQD = 0x0020;
+    	 		int UF_PASSWD_CANT_CHANGE = 0x0040;
+    	 		int UF_NORMAL_ACCOUNT = 0x0200;
+    	 		int UF_DONT_EXPIRE_PASSWD = 0x10000;
+    	 		int UF_PASSWORD_EXPIRED = 0x800000;
+
+
+    	          Hashtable env = new Hashtable();
+    	          String adminName = "CN=Administrateur,CN=Users,DC=uevetst,DC=local";
+    	          String adminPassword = "europe1008N"; 
+    	          //String oldUserName = "CN=nicolas tijoux,OU=Import,DC=uevetst,DC=local";
+    	          //String newUserName = "CN=nicolas tijoux,OU=EXIT,DC=uevetst,DC=local";
+    	          String ldapURL = "ldap://192.168.120.15:389";
+    	          
+    	          env.put(Context.INITIAL_CONTEXT_FACTORY,"com.sun.jndi.ldap.LdapCtxFactory");
+    	     
+    	          //set security credentials, note using simple cleartext authentication
+    	          env.put(Context.SECURITY_AUTHENTICATION,"simple");
+    	          env.put(Context.SECURITY_PRINCIPAL,adminName);
+    	          env.put(Context.SECURITY_CREDENTIALS,adminPassword);
+    	                    
+    	          //connect to my domain controller
+    	          env.put(Context.PROVIDER_URL,ldapURL);
+    	          
+    	          
+    	          
+    	          try {
+
+    	               // Create the initial directory context
+    	               LdapContext ctx = new InitialLdapContext(env,null);
+
+    	               
+    	               ModificationItem[] mods = new ModificationItem[1];
+  	    	          mods[0] = new ModificationItem(DirContext.REPLACE_ATTRIBUTE, new BasicAttribute("userAccountControl",Integer.toString(UF_ACCOUNTDISABLE+UF_PASSWD_NOTREQD)));      
+    	    	          
+    	    	       // Perform the update
+    	                  ctx.modifyAttributes(oldUserName, mods);
+    	                  System.out.println(" updated userAcountControl");
+    	               
+    	               
+    	               
+    	               // Move the user
+    	               ctx.rename(oldUserName,newUserName);
+
+    	               System.out.println("Moved user");
+    	               
+    	               ctx.close();
+
+    	          } 
+    	          catch (NamingException e) {
+    	               System.err.println("Problem moving object: " + e);
+    	          }
+
+    	    
+    	
+
+    }
+    
+    
+    public static void AD_ModifierOU_ADPROD(String oldUserName,String newUserName ) 
+    {
+
+    	/**
+    	 * moveuser.java
+    	 * 5 July 2001
+    	 * Sample JNDI application to move an object in the Active Directory.
+    	 * 
+    	 */
+    	int UF_ACCOUNTDISABLE = 0x0002;
+ 		int UF_PASSWD_NOTREQD = 0x0020;
+ 		int UF_PASSWD_CANT_CHANGE = 0x0040;
+ 		int UF_NORMAL_ACCOUNT = 0x0200;
+ 		int UF_DONT_EXPIRE_PASSWD = 0x10000;
+ 		int UF_PASSWORD_EXPIRED = 0x800000;
+
+
+    	          Hashtable env = new Hashtable();
+    	          String adminName = "administrateur@ueve";
+    	          String adminPassword = "O&dcO1ter"; 
+    	          //String oldUserName = "CN=nicolas tijoux,OU=Import,DC=uevetst,DC=local";
+    	          //String newUserName = "CN=nicolas tijoux,OU=EXIT,DC=uevetst,DC=local";
+    	          String ldapURL = "ldap://192.168.120.1:389";
+    	          
+    	          env.put(Context.INITIAL_CONTEXT_FACTORY,"com.sun.jndi.ldap.LdapCtxFactory");
+    	     
+    	          //set security credentials, note using simple cleartext authentication
+    	          env.put(Context.SECURITY_AUTHENTICATION,"simple");
+    	          env.put(Context.SECURITY_PRINCIPAL,adminName);
+    	          env.put(Context.SECURITY_CREDENTIALS,adminPassword);
+    	                    
+    	          //connect to my domain controller
+    	          env.put(Context.PROVIDER_URL,ldapURL);
+    	                    
+    	          try {
+
+    	               // Create the initial directory context
+    	               LdapContext ctx = new InitialLdapContext(env,null);
+    	               
+    	              ModificationItem[] mods = new ModificationItem[1];
+ 	    	          mods[0] = new ModificationItem(DirContext.REPLACE_ATTRIBUTE, new BasicAttribute("userAccountControl",Integer.toString(UF_ACCOUNTDISABLE+UF_PASSWD_NOTREQD)));       
+ 	    	          
+ 	    	       // Perform the update
+ 	                  ctx.modifyAttributes(oldUserName, mods);
+ 	                  System.out.println(" updated userAcountControl");
+    	               
+
+    	               // Move the user
+    	               ctx.rename(oldUserName,newUserName);
+
+    	               System.out.println("Moved user");
+    	               
+    	               ctx.close();
+
+    	          } 
+    	          catch (NamingException e) {
+    	               System.err.println("Problem moving object: " + e);
+    	          }
+
+    	    
+    	
+
+    }
+}

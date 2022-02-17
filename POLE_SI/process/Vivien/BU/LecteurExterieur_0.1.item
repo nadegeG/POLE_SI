@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:VgtKmXHdwt8OPA/AhiYbAHUC1jo6kz7mo5oM68iD"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/vivien.crossay/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uKwCCkIj7ktt3bHdJJm1ErJ36iCb3RkK8mGGSszX"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_MXsLgEobEeiPKskVmFzbWQ" name="DataOperation"/>
+    <routinesParameter id="_McTlwEobEeiPKskVmFzbWQ" name="Mathematical"/>
+    <routinesParameter id="_MeFucEobEeiPKskVmFzbWQ" name="Numeric"/>
+    <routinesParameter id="_MfuGIEobEeiPKskVmFzbWQ" name="Relational"/>
+    <routinesParameter id="_Mo86oEobEeiPKskVmFzbWQ" name="SQLike"/>
+    <routinesParameter id="_MhEJ8EobEeiPKskVmFzbWQ" name="StringHandling"/>
+    <routinesParameter id="_MijXsEobEeiPKskVmFzbWQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_MkClcEobEeiPKskVmFzbWQ" name="TalendDate"/>
+    <routinesParameter id="_Mnds4EobEeiPKskVmFzbWQ" name="TalendStringUtil"/>
+    <routinesParameter id="_Ml-fIEobEeiPKskVmFzbWQ" name="TalendString"/>
+    <routinesParameter id="_g3beoCWhEeu05OXUER9WaA" name="HASH"/>
+  </parameters>
+  <node componentName="tFileInputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputXML_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/workspace/import/BU/echantillon.xml&quot;"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="users"/>
+      <elementValue elementRef="QUERY" value="&quot;.&quot;"/>
+      <elementValue elementRef="NODECHECK" value="true"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="CHECK" name="IGNORE_DTD" value="false"/>
+    <elementParameter field="FILE" name="TMP_FILENAME" show="false" value="&quot;C:/Users/vivien.crossay/workspace_svn/temp.xml&quot;"/>
+    <elementParameter field="CHECK" name="USE_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="FIELD_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputXML_1">
+      <column comment="" key="false" length="-1" name="users" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="users" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="document" name="document">
+      <column comment="" key="false" length="10" name="cn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="displayName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="eduPersonAffiliation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="eduPersonPrimaryAffiliation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="eduPersonPrincipalName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="description" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="givenName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="mail" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="roomNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="sn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="29" name="supannAutreMail" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="supannCivilite" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="59" name="supannEntiteAffectation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="59" name="supannEntiteAffectationPrincipale" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="supannEtablissement" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="supannListeRouge" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="supannRefId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="telephoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="uid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="userPassword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="eduPersonNickname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="objectClass" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supannRoleGenerique" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="reprographie" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="copieur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraAccountStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraMailTransport" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WifiAffiliation" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1">
+        <nodes expression="" name="users" type="id_Document" xpath="row1/users">
+          <children main="true" name="users" type="id_String" xpath="row1.users:/users">
+            <children loop="true" main="true" name="user" type="id_String" xpath="row1.users:/users/user">
+              <children name="record_type" type="id_String" xpath="row1.users:/users/user/record_type"/>
+              <children name="primary_id" outgoingConnections="//@node.1/@nodeData/@connections.3 //@node.1/@nodeData/@connections.7 //@node.1/@nodeData/@connections.9 //@node.1/@nodeData/@connections.11 //@node.1/@nodeData/@connections.12" type="id_String" xpath="row1.users:/users/user/primary_id"/>
+              <children name="first_name" outgoingConnections="//@node.1/@nodeData/@connections.5" type="id_String" xpath="row1.users:/users/user/first_name"/>
+              <children name="middle_name" type="id_String" xpath="row1.users:/users/user/middle_name"/>
+              <children name="last_name" outgoingConnections="//@node.1/@nodeData/@connections.6" type="id_String" xpath="row1.users:/users/user/last_name"/>
+              <children name="full_name" outgoingConnections="//@node.1/@nodeData/@connections.0 //@node.1/@nodeData/@connections.1 //@node.1/@nodeData/@connections.10" type="id_String" xpath="row1.users:/users/user/full_name"/>
+              <children name="pin_number" type="id_String" xpath="row1.users:/users/user/pin_number"/>
+              <children name="user_title" outgoingConnections="//@node.1/@nodeData/@connections.8" type="id_String" xpath="row1.users:/users/user/user_title"/>
+              <children name="job_category" type="id_String" xpath="row1.users:/users/user/job_category"/>
+              <children name="job_description" type="id_String" xpath="row1.users:/users/user/job_description"/>
+              <children name="gender" type="id_String" xpath="row1.users:/users/user/gender"/>
+              <children name="user_group" outgoingConnections="//@node.1/@nodeData/@connections.2 //@node.1/@nodeData/@connections.4 //@node.1/@nodeData/@connections.14" type="id_String" xpath="row1.users:/users/user/user_group"/>
+              <children name="campus_code" type="id_String" xpath="row1.users:/users/user/campus_code"/>
+              <children name="web_site_url" type="id_String" xpath="row1.users:/users/user/web_site_url"/>
+              <children name="cataloger_level" type="id_String" xpath="row1.users:/users/user/cataloger_level"/>
+              <children name="preferred_language" type="id_String" xpath="row1.users:/users/user/preferred_language"/>
+              <children name="birth_date" outgoingConnections="//@node.1/@nodeData/@connections.13" pattern="&quot;yyyy-MM-dd'Z'&quot;" type="id_Date" xpath="row1.users:/users/user/birth_date"/>
+              <children name="expiry_date" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="row1.users:/users/user/expiry_date"/>
+              <children name="purge_date" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="row1.users:/users/user/purge_date"/>
+              <children name="account_type" type="id_String" xpath="row1.users:/users/user/account_type"/>
+              <children name="external_id" type="id_String" xpath="row1.users:/users/user/external_id"/>
+              <children name="password" type="id_String" xpath="row1.users:/users/user/password"/>
+              <children name="force_password_change" type="id_String" xpath="row1.users:/users/user/force_password_change"/>
+              <children name="status" type="id_String" xpath="row1.users:/users/user/status"/>
+              <children name="status_date" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="row1.users:/users/user/status_date"/>
+              <children name="contact_info" type="id_String" xpath="row1.users:/users/user/contact_info"/>
+              <children name="pref_first_name" type="id_String" xpath="row1.users:/users/user/pref_first_name"/>
+              <children name="pref_middle_name" type="id_String" xpath="row1.users:/users/user/pref_middle_name"/>
+              <children name="pref_last_name" type="id_String" xpath="row1.users:/users/user/pref_last_name"/>
+              <children name="pref_name_suffix" type="id_String" xpath="row1.users:/users/user/pref_name_suffix"/>
+              <children name="user_identifiers" type="id_String" xpath="row1.users:/users/user/user_identifiers"/>
+              <children name="user_statistics" type="id_String" xpath="row1.users:/users/user/user_statistics"/>
+              <children name="proxy_for_users" type="id_String" xpath="row1.users:/users/user/proxy_for_users"/>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="document">
+        <nodes expression=" [row1.users:/users/user/full_name]" incomingConnections="//@node.1/@nodeData/@connections.0" name="cn" pattern="" type="id_String" xpath="document/cn"/>
+        <nodes expression=" [row1.users:/users/user/full_name]" incomingConnections="//@node.1/@nodeData/@connections.1" name="displayName" pattern="" type="id_String" xpath="document/displayName"/>
+        <nodes expression="[row1.users:/users/user/user_group].equals(&quot;1_UEVE&quot;)?&quot;registered-reader&quot;:&quot;&quot; " incomingConnections="//@node.1/@nodeData/@connections.2" name="eduPersonAffiliation" pattern="" type="id_String" xpath="document/eduPersonAffiliation"/>
+        <nodes expression="[row1.users:/users/user/user_group].equals(&quot;1_UEVE&quot;)?&quot;registered-reader&quot;:&quot;&quot; " incomingConnections="//@node.1/@nodeData/@connections.4" name="eduPersonPrimaryAffiliation" pattern="" type="id_String" xpath="document/eduPersonPrimaryAffiliation"/>
+        <nodes expression="StringHandling.CHANGE(StringHandling.CHANGE([row1.users:/users/user/primary_id],&quot;@visiteurs-bu@univ-evry.fr&quot;,&quot;&quot;),&#13;&#10;&quot;@lecteurs-bu@univ-evry.fr&quot;,&quot;&quot;) +&quot;@exterieur-bu.univ-evry.fr&quot; " incomingConnections="//@node.1/@nodeData/@connections.9" name="eduPersonPrincipalName" pattern="" type="id_String" xpath="document/eduPersonPrincipalName"/>
+        <nodes expression="&quot;perso&quot;" name="description" pattern="" type="id_String" xpath="document/description"/>
+        <nodes expression=" [row1.users:/users/user/first_name]" incomingConnections="//@node.1/@nodeData/@connections.5" name="givenName" pattern="" type="id_String" xpath="document/givenName"/>
+        <nodes expression="StringHandling.CHANGE(StringHandling.CHANGE([row1.users:/users/user/primary_id],&quot;@visiteurs-bu@univ-evry.fr&quot;,&quot;&quot;),&#13;&#10;&quot;@lecteurs-bu@univ-evry.fr&quot;,&quot;&quot;) +&quot;@exterieur-bu.univ-evry.fr&quot; " incomingConnections="//@node.1/@nodeData/@connections.3" name="mail" pattern="" type="id_String" xpath="document/mail"/>
+        <nodes name="roomNumber" pattern="" type="id_Integer" xpath="document/roomNumber"/>
+        <nodes expression=" [row1.users:/users/user/last_name]" incomingConnections="//@node.1/@nodeData/@connections.6" name="sn" pattern="" type="id_String" xpath="document/sn"/>
+        <nodes expression="StringHandling.CHANGE(StringHandling.CHANGE([row1.users:/users/user/primary_id],&quot;@visiteurs-bu@univ-evry.fr&quot;,&quot;&quot;),&#13;&#10;&quot;@lecteurs-bu@univ-evry.fr&quot;,&quot;&quot;) +&quot;@univ-evry.upsay.fr&quot; " incomingConnections="//@node.1/@nodeData/@connections.7" name="supannAutreMail" pattern="" type="id_String" xpath="document/supannAutreMail"/>
+        <nodes expression=" [row1.users:/users/user/user_title]" incomingConnections="//@node.1/@nodeData/@connections.8" name="supannCivilite" pattern="" type="id_String" xpath="document/supannCivilite"/>
+        <nodes expression="&quot;{AFF}BIBLIO&quot;" name="supannEntiteAffectation" pattern="" type="id_String" xpath="document/supannEntiteAffectation"/>
+        <nodes expression="" name="supannEntiteAffectationPrincipale" pattern="" type="id_String" xpath="document/supannEntiteAffectationPrincipale"/>
+        <nodes expression="" name="supannEtablissement" pattern="" type="id_String" xpath="document/supannEtablissement"/>
+        <nodes name="supannListeRouge" pattern="" type="id_String" xpath="document/supannListeRouge"/>
+        <nodes expression="" name="supannRefId" pattern="" type="id_String" xpath="document/supannRefId"/>
+        <nodes expression="" name="telephoneNumber" pattern="" type="id_String" xpath="document/telephoneNumber"/>
+        <nodes expression="" name="title" pattern="" type="id_String" xpath="document/title"/>
+        <nodes expression="StringHandling.CHANGE(StringHandling.CHANGE([row1.users:/users/user/primary_id],&quot;@visiteurs-bu@univ-evry.fr&quot;,&quot;&quot;),&#13;&#10;&quot;@lecteurs-bu@univ-evry.fr&quot;,&quot;&quot;) " incomingConnections="//@node.1/@nodeData/@connections.12" name="uid" pattern="" type="id_String" xpath="document/uid"/>
+        <nodes expression="&quot;{SHA}&quot;+(HASH.test(TalendDate.formatDate(&quot;dd/MM/yyyy&quot;,[row1.users:/users/user/birth_date]))) " incomingConnections="//@node.1/@nodeData/@connections.13" name="userPassword" pattern="" type="id_String" xpath="document/userPassword"/>
+        <nodes expression=" [row1.users:/users/user/full_name]" incomingConnections="//@node.1/@nodeData/@connections.10" name="eduPersonNickname" pattern="" type="id_String" xpath="document/eduPersonNickname"/>
+        <nodes expression="&quot;inetOrgPerson;eduPerson;supannPerson;zimbraAccount&quot;" name="objectClass" pattern="" type="id_String" xpath="document/objectClass"/>
+        <nodes expression="&quot;uid=&quot;+StringHandling.CHANGE(StringHandling.CHANGE([row1.users:/users/user/primary_id],&quot;@visiteurs-bu@univ-evry.fr&quot;,&quot;&quot;),&#13;&#10;&quot;@lecteurs-bu@univ-evry.fr&quot;,&quot;&quot;) " incomingConnections="//@node.1/@nodeData/@connections.11" name="dn" pattern="" type="id_String" xpath="document/dn"/>
+        <nodes expression="" name="supannRoleGenerique" pattern="" type="id_String" xpath="document/supannRoleGenerique"/>
+        <nodes expression="&quot;0&quot;" name="reprographie" pattern="" type="id_String" xpath="document/reprographie"/>
+        <nodes expression="&quot;0&quot;" name="copieur" pattern="" type="id_String" xpath="document/copieur"/>
+        <nodes expression="&quot;Active&quot;" name="zimbraAccountStatus" pattern="" type="id_String" xpath="document/zimbraAccountStatus"/>
+        <nodes expression="&quot;12&quot;" name="zimbraId" pattern="" type="id_String" xpath="document/zimbraId"/>
+        <nodes expression="" name="zimbraMailTransport" pattern="" type="id_String" xpath="document/zimbraMailTransport"/>
+        <nodes expression="[row1.users:/users/user/user_group].equals(&quot;1_UEVE&quot;)?&quot;employee&quot;:&quot;&quot; " incomingConnections="//@node.1/@nodeData/@connections.14" name="WifiAffiliation" pattern="" type="id_String" xpath="document/WifiAffiliation"/>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.11" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.11" target="//@node.1/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.7" target="//@node.1/@nodeData/@outputTrees.0/@nodes.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.21" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.23" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.19" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.16" target="//@node.1/@nodeData/@outputTrees.0/@nodes.20" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.11" target="//@node.1/@nodeData/@outputTrees.0/@nodes.30" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="cn"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="displayName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eduPersonAffiliation"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eduPersonPrimaryAffiliation"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eduPersonPrincipalName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="givenName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mail"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="roomNumber"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sn"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannAutreMail"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannCivilite"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannEntiteAffectation"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannEntiteAffectationPrincipale"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannEtablissement"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannListeRouge"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannRefId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="telephoneNumber"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uid"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="userPassword"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eduPersonNickname"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="objectClass"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dn"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannRoleGenerique"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reprographie"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="copieur"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraAccountStatus"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraMailTransport"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="document" name="tLogRow_1">
+      <column comment="" key="false" length="10" name="cn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="displayName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="eduPersonAffiliation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="eduPersonPrimaryAffiliation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="eduPersonPrincipalName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="description" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="givenName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="mail" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="roomNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="sn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="29" name="supannAutreMail" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="supannCivilite" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="59" name="supannEntiteAffectation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="59" name="supannEntiteAffectationPrincipale" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="supannEtablissement" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="supannListeRouge" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="supannRefId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="telephoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="uid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="userPassword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="eduPersonNickname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="objectClass" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supannRoleGenerique" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="reprographie" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="copieur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraAccountStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraMailTransport" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//HASH.toSHA1(&quot;password&quot;.getBytes()) ;&#10;//HASH.base64(&quot;password&quot;) ;&#10;//System.out.println(HASH.toSHA1(&quot;password&quot;.getBytes()) );&#10;&#10;&#10;System.out.println(HASH.test(&quot;password&quot;));&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tLDAPOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPOutput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.120.101&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="636"/>
+    <elementParameter field="TEXT" name="BASEDN" value="&quot;ou=people,dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="LDAPS"/>
+    <elementParameter field="CHECK" name="ADVANCEDCA" value="false"/>
+    <elementParameter field="FILE" name="STORECA" show="false" value="&quot;c:/mycacerts&quot;"/>
+    <elementParameter field="PASSWORD" name="STORECAPWD" show="false" value="enc:system.encryption.key.v1:R4vRdDgYqjucOgOtIKsMPMZ5BART6GRttwtVgaX2"/>
+    <elementParameter field="CHECK" name="ALWAYS_TRUST" show="false" value="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;cn=manager,dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:D8DaWZpITk++ft4uyRn5/LNIrX4AFotd/vxMYlM5uVXcj/fXfNR9Uw=="/>
+    <elementParameter field="TEXT" name="MULTI_VALUE_SEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ALIASES" value="always"/>
+    <elementParameter field="CLOSED_LIST" name="REFERRALS" value="ignore"/>
+    <elementParameter field="CLOSED_LIST" name="INSERT_MODE" value="INSERT_UPDATA"/>
+    <elementParameter field="COLUMN_LIST" name="DN_COLUMN_NAME" value="dn"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="cn"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="displayName"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eduPersonAffiliation"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eduPersonPrimaryAffiliation"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eduPersonPrincipalName"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="givenName"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mail"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="roomNumber"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sn"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannAutreMail"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannCivilite"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannEntiteAffectation"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannEntiteAffectationPrincipale"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannEtablissement"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannListeRouge"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannRefId"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="telephoneNumber"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uid"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="userPassword"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eduPersonNickname"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="objectClass"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dn"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supannRoleGenerique"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reprographie"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="copieur"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraAccountStatus"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraId"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraMailTransport"/>
+      <elementValue elementRef="BASE64" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ATTRIBUTE_OPTIONS" show="false" value="false"/>
+    <elementParameter field="TABLE" name="ATTRIBUTE_OPTIONS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="LDAP DSI PROD"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="document" name="tLDAPOutput_1">
+      <column comment="" key="false" length="10" name="cn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="displayName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="eduPersonAffiliation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="eduPersonPrimaryAffiliation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="eduPersonPrincipalName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="description" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="givenName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="mail" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="roomNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="sn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="29" name="supannAutreMail" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="supannCivilite" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="59" name="supannEntiteAffectation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="59" name="supannEntiteAffectationPrincipale" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="supannEtablissement" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="supannListeRouge" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="supannRefId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="telephoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="uid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="userPassword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="eduPersonNickname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="objectClass" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supannRoleGenerique" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="reprographie" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="copieur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraAccountStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraMailTransport" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="document" name="REJECT">
+      <column comment="" key="false" length="10" name="cn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="displayName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="eduPersonAffiliation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="eduPersonPrimaryAffiliation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="eduPersonPrincipalName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="description" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="givenName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="mail" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="roomNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="sn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="29" name="supannAutreMail" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="supannCivilite" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="59" name="supannEntiteAffectation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="59" name="supannEntiteAffectationPrincipale" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="supannEtablissement" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="supannListeRouge" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="supannRefId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="telephoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="uid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="userPassword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="eduPersonNickname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="objectClass" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supannRoleGenerique" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="reprographie" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="copieur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraAccountStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraMailTransport" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/execution_travaux/log/import_ldap/rejet_ldap_BU.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="document" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="10" name="cn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="displayName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="eduPersonAffiliation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="eduPersonPrimaryAffiliation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="eduPersonPrincipalName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="description" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="givenName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="mail" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="roomNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="sn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="29" name="supannAutreMail" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="supannCivilite" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="59" name="supannEntiteAffectation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="59" name="supannEntiteAffectationPrincipale" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="supannEtablissement" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="supannListeRouge" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="supannRefId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="telephoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="uid" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="userPassword" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="eduPersonNickname" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="objectClass" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supannRoleGenerique" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="reprographie" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="copieur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraAccountStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zimbraMailTransport" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputXML_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputXML_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="document" lineStyle="0" metaname="document" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="document"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tLDAPOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="REJECT" label="row2" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" source="tLDAPOutput_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputXML_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPOutput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_72d46a98-d99a-4d64-b66d-34fa8e95165d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jVp169F7SYLvl+to7vtQ8GLHPvqL73cKSN0xHN2ViaF80N5k6jLcOJAXINaUGxPgSE1lMcGkTUz2&#13;
+hKX+/d+PhA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3512bb6d-908b-480f-b570-195036499de7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Jm/gyhTfotkXYcYopcMdd93a7FKIC/Uq2hMLuKtkzsSKUYWJ+7Wn6wBH+T5yDQDfrgbOdIz5Jv9B&#13;
+IBoKZ/IdhA==</DigestValue></Reference></SignedInfo><SignatureValue>V1nn4wk8jidIVfj/KdeendkPUp+iq+KjkNATFXX1ihbBc3DH4OvsG8Ip+a11Xj21OC/3VHB9M1+7&#13;
+RM2/ZjDhmxuRwo45dsgTS9j0pf2LRHO9DCWTl2x69HJv/SkcQOaW5HJRIvlpAf56PADZibjdh7tT&#13;
+QGwmTQBM0B/I0SDNLvMuy81C+466LXEB3ze2l4OaWpW7iOl6VaKjxLHJg2GWeYZIGQVtXjnLkys0&#13;
+w+J/Ec6YwHNoEK6S+XwwJFveKrDcjNYWM3Zs4HNns+5Y+g8779MmWHhhWPnErOGRyQZXKSQcIbX6&#13;
+zcVjn2AhwwEWT0EGkohHj0XLU9XauYSJBE/aAg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3512bb6d-908b-480f-b570-195036499de7" Target="#_72d46a98-d99a-4d64-b66d-34fa8e95165d"><Timestamp>2022-02-17 10:15:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

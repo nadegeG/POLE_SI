@@ -1,0 +1,65 @@
+{
+  "itemId" : "_lNKngOUYEem72b_zZ1-zyA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_9uZkcKh9EeSeOuUyCWmqtg",
+    "parameterList" : [ {
+      "id" : "_z09R1Bl5Eemua4MpESTNBA",
+      "name" : "BDD_sifac_AdditionalParams"
+    }, {
+      "id" : "_z09R1xl5Eemua4MpESTNBA",
+      "name" : "BDD_sifac_Login"
+    }, {
+      "id" : "_z09R1Rl5Eemua4MpESTNBA",
+      "name" : "BDD_sifac_Password"
+    }, {
+      "id" : "_z09R0hl5Eemua4MpESTNBA",
+      "name" : "BDD_sifac_Port"
+    }, {
+      "id" : "_z09R0xl5Eemua4MpESTNBA",
+      "name" : "BDD_sifac_Schema"
+    }, {
+      "id" : "_z09R1hl5Eemua4MpESTNBA",
+      "name" : "BDD_sifac_Server"
+    }, {
+      "id" : "_z09R0Rl5Eemua4MpESTNBA",
+      "name" : "BDD_sifac_Sid"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_ZlHVsLOMEeSbZJwgZOkMYg",
+    "parameterList" : [ {
+      "id" : "_z1WTYRl5Eemua4MpESTNBA",
+      "name" : "fichier_env"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_MgC8oBfrEeSLZ6RklZsrwQ",
+    "parameterList" : [ {
+      "id" : "_z1sRoRl5Eemua4MpESTNBA",
+      "name" : "FIC_in"
+    }, {
+      "id" : "_z1sRoxl5Eemua4MpESTNBA",
+      "name" : "FIC_log"
+    }, {
+      "id" : "_z1sRohl5Eemua4MpESTNBA",
+      "name" : "FIC_out"
+    }, {
+      "id" : "_z1sRpBl5Eemua4MpESTNBA",
+      "name" : "FIC_racine"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_7T72sKiJEeSc7uDruCRCMQ",
+    "parameterList" : [ {
+      "id" : "_z78DkRl5Eemua4MpESTNBA",
+      "name" : "mandant"
+    }, {
+      "id" : "_z78Dkhl5Eemua4MpESTNBA",
+      "name" : "pana"
+    }, {
+      "id" : "_z78Dkxl5Eemua4MpESTNBA",
+      "name" : "pfi"
+    } ]
+  } ]
+}

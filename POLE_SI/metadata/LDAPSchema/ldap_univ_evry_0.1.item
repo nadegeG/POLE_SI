@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:LDAPSchemaConnection Aliases="always" BindPassword="enc:system.encryption.key.v1:M5nf/VNyH63UYGivz/s5LuhWPBrV96BbNl65cItF8tFFtX5fhFU=" BindPrincipal="cn=manager,dc=univ-evry,dc=fr" CountLimit="100" EncryptionMethodName="LDAPS(SSL)" Filter="(&amp;(uid=*))" Host="192.168.120.101" Port="636" Protocol="Authentification simple" Referrals="ignore" SavePassword="true" SelectedDN="dc=univ-evry,dc=fr" TimeOutLimit="0" UseAuthen="true" dataPackage="_8K-WsbAjEeO0AKvzoxMoZg" name="repository.metadataLDAPSchema" xmi:id="_8K-WsLAjEeO0AKvzoxMoZg">
+    <Value>cn</Value>
+    <Value>displayName</Value>
+    <Value>eduPersonAffiliation</Value>
+    <Value>eduPersonPrimaryAffiliation</Value>
+    <Value>eduPersonPrincipalName</Value>
+    <Value>facsimileTelephoneNumber</Value>
+    <Value>givenName</Value>
+    <Value>jpegPhoto</Value>
+    <Value>mail</Value>
+    <Value>mailForwardingAddress</Value>
+    <Value>mobile</Value>
+    <Value>postalAddress</Value>
+    <Value>roomNumber</Value>
+    <Value>sn</Value>
+    <Value>supannActivite</Value>
+    <Value>supannAutreMail</Value>
+    <Value>supannAutreTelephone</Value>
+    <Value>supannCivilite</Value>
+    <Value>supannCodeINE</Value>
+    <Value>supannEmpId</Value>
+    <Value>supannEntiteAffectation</Value>
+    <Value>supannEntiteAffectationPrincipale</Value>
+    <Value>supannEtablissement</Value>
+    <Value>supannEtuAnneeInscription</Value>
+    <Value>supannEtuCursusAnnee</Value>
+    <Value>supannEtuDiplome</Value>
+    <Value>supannEtuEtape</Value>
+    <Value>supannEtuId</Value>
+    <Value>supannEtuInscription</Value>
+    <Value>supannEtuRegimeInscription</Value>
+    <Value>supannListeRouge</Value>
+    <Value>supannRefId</Value>
+    <Value>telephoneNumber</Value>
+    <Value>title</Value>
+    <Value>uid</Value>
+    <Value>userPassword</Value>
+    <Value>supannEmpCorps</Value>
+    <Value>supannEtuSecteurDisciplinaire</Value>
+    <Value>labeledURI</Value>
+    <Value>supannEtuTypeDiplome</Value>
+    <Value>supannParrainDN</Value>
+    <Value>eduPersonNickname</Value>
+    <BaseDNs/>
+    <BaseDNs>dc=univ-evry,dc=fr</BaseDNs>
+    <BaseDNs>ou=peoples,dc=univ-evry,dc=fr</BaseDNs>
+  </TalendMetadata:LDAPSchemaConnection>
+  <TalendMetadata:GenericPackage dataManager="_8K-WsLAjEeO0AKvzoxMoZg" name="repository.metadataLDAPSchema" xmi:id="_8K-WsbAjEeO0AKvzoxMoZg">
+    <ownedElement id="_f5HgELAiEeO0AKvzoxMoZg" label="metadata_ldap_people" xmi:id="_8K-WsrAjEeO0AKvzoxMoZg" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="cn" length="10" name="cn" talendType="id_String" xmi:id="_4cQCELQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="displayName" length="9" name="displayName" talendType="id_String" xmi:id="_4cQCEbQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonAffiliation" length="6" name="eduPersonAffiliation" talendType="id_String" xmi:id="_4cQCErQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonPrimaryAffiliation" length="7" name="eduPersonPrimaryAffiliation" talendType="id_String" xmi:id="_4cQCE7QcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonPrincipalName" length="23" name="eduPersonPrincipalName" talendType="id_String" xmi:id="_4cQCFLQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="facsimileTelephoneNumber" length="10" name="facsimileTelephoneNumber" talendType="id_String" xmi:id="_4cQCFbQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="givenName" length="4" name="givenName" talendType="id_String" xmi:id="_4cQCFrQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="jpegPhoto" length="9" name="jpegPhoto" talendType="id_String" xmi:id="_4cQCF7QcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="mail" length="23" name="mail" talendType="id_String" xmi:id="_4cQCGLQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="mailForwardingAddress" length="23" name="mailForwardingAddress" talendType="id_String" xmi:id="_4cQCGbQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="mobile" length="10" name="mobile" talendType="id_String" xmi:id="_4cQCGrQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="postalAddress" length="42" name="postalAddress" talendType="id_String" xmi:id="_4cQCG7QcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="roomNumber" length="3" name="roomNumber" talendType="id_Integer" xmi:id="_4cQCHLQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="sn" length="7" name="sn" talendType="id_String" xmi:id="_4cQCHbQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannActivite" length="10" name="supannActivite" talendType="id_String" xmi:id="_4cQCHrQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannAutreMail" length="29" name="supannAutreMail" talendType="id_String" xmi:id="_4cQCH7QcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannAutreTelephone" length="12" name="supannAutreTelephone" talendType="id_String" xmi:id="_4cQCILQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannCivilite" length="2" name="supannCivilite" talendType="id_String" xmi:id="_4cQCIbQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannCodeINE" length="11" name="supannCodeINE" talendType="id_Long" xmi:id="_4cQCIrQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEmpId" length="19" name="supannEmpId" talendType="id_String" xmi:id="_4cQCI7QcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEntiteAffectation" length="59" name="supannEntiteAffectation" talendType="id_String" xmi:id="_4cQCJLQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEntiteAffectationPrincipale" length="59" name="supannEntiteAffectationPrincipale" talendType="id_String" xmi:id="_4cQCJbQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEtablissement" length="13" name="supannEtablissement" talendType="id_String" xmi:id="_4cQCJrQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEtuAnneeInscription" length="4" name="supannEtuAnneeInscription" talendType="id_Integer" xmi:id="_4cQCJ7QcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEtuCursusAnnee" length="1" name="supannEtuCursusAnnee" talendType="id_Character" xmi:id="_4cQCKLQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEtuDiplome" length="14" name="supannEtuDiplome" talendType="id_String" xmi:id="_4cQCKbQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEtuEtape" length="14" name="supannEtuEtape" talendType="id_String" xmi:id="_4cQCKrQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEtuId" length="14" name="supannEtuId" talendType="id_String" xmi:id="_4cQCK7QcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEtuInscription" length="6" name="supannEtuInscription" talendType="id_String" xmi:id="_4cQCLLQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEtuRegimeInscription" length="9" name="supannEtuRegimeInscription" talendType="id_String" xmi:id="_4cQCLbQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannListeRouge" length="4" name="supannListeRouge" talendType="id_String" xmi:id="_4cQCLrQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannRefId" length="6" name="supannRefId" talendType="id_String" xmi:id="_4cQCL7QcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="telephoneNumber" length="11" name="telephoneNumber" talendType="id_String" xmi:id="_4cQCMLQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="title" length="12" name="title" talendType="id_String" xmi:id="_4cQCMbQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature key="true" label="uid" length="11" name="uid" talendType="id_Long" xmi:id="_4cQCMrQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="userPassword" length="10" name="userPassword" talendType="id_String" xmi:id="_4cQCM7QcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEmpCorps" length="13" name="supannEmpCorps" talendType="id_String" xmi:id="_4cQCNLQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEtuSecteurDisciplinaire" length="9" name="supannEtuSecteurDisciplinaire" talendType="id_String" xmi:id="_4cQCNbQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="labeledURI" length="16" name="labeledURI" talendType="id_String" xmi:id="_4cQCNrQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEtuTypeDiplome" length="8" name="supannEtuTypeDiplome" talendType="id_String" xmi:id="_4cQCN7QcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannParrainDN" length="40" name="supannParrainDN" talendType="id_String" xmi:id="_4cQCOLQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonNickname" length="5" name="eduPersonNickname" talendType="id_String" xmi:id="_4cQCObQcEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="objectClass" name="objectClass" talendType="id_String" xmi:id="_09Ob0LQvEeOWw4yxTvmUgQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="dn" name="" talendType="id_String" xmi:id="_LqokcLTLEeOkFZDqbhwoUQ" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3136611b-9d81-4d5c-a7ac-f9147d29e6c1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZsCK6Oapr8y2NVWiVBkj/1hEFso30HSRSUJfBBP8OlDmE3+l+/pGFifUDrTAMjQwr12R3srOsrVt&#13;
+3dgjsU6WVg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_90e2e66e-7f53-4801-ab37-f95405279295"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rD26bKV6LqTjHBOLcsZ56ij81IE6G8LR2Ngd0DeSgnzkxkxW8Gmx2KbH/RGA3AFAFaJlhFgqCSbH&#13;
+x8G0DbVjZw==</DigestValue></Reference></SignedInfo><SignatureValue>D/ZAVr7XbzXYmtCVDiv2Y9q7k1Aux9szm4IgJvhN3twW/nA3+2V6JLslOdD7rVgqzX0X1ksotMWM&#13;
+uL8iWKRCuelDrCtl569DC22B5GyyTP3s3kGzS+uhsKqQmi8TOw8aSOJGSAh+G8GvQGSpOexjbTXG&#13;
+jzUGZT+upm0ePs9mQLIA+se2DKbmtcBVDiGZhGVbBWb4GrdagEBXMews7xPVXI9mY32GuCOAVi9A&#13;
+Mc9Nur4hngniOmrGHtKiVPh+cZuy8HxZuH40Kq7cAhrq93adZAhkHjy/8YYnlI/BHfqaqC4uNQH5&#13;
+ZkbbUejet5TEt95brinTxMMrtadA+FfEdZJnyQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_90e2e66e-7f53-4801-ab37-f95405279295" Target="#_3136611b-9d81-4d5c-a7ac-f9147d29e6c1"><Timestamp>2022-02-17 10:19:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

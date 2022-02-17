@@ -1,0 +1,54 @@
+{
+  "itemId" : "_E_9bsNCJEemgDJ3oILXieQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_qtqtgKF-Eemh3cf7jJnMNA",
+    "parameterList" : [ {
+      "id" : "_qt0egaF-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Port"
+    }, {
+      "id" : "_qt0egqF-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Sid"
+    }, {
+      "id" : "_qt0eg6F-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Server"
+    }, {
+      "id" : "_qt0ehKF-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Schema"
+    }, {
+      "id" : "_qt0ehaF-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Login"
+    }, {
+      "id" : "_qt0ehqF-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Password"
+    }, {
+      "id" : "_qt0eh6F-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_AdditionalParams"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_R3BuoKF_Eemh3cf7jJnMNA",
+    "parameterList" : [ {
+      "id" : "_R3K4kaF_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Port"
+    }, {
+      "id" : "_R3K4lKF_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Schema"
+    }, {
+      "id" : "_R3K4laF_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Login"
+    }, {
+      "id" : "_R3K4lqF_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Password"
+    }, {
+      "id" : "_R3K4kqF_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Sid"
+    }, {
+      "id" : "_R3K4l6F_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_AdditionalParams"
+    }, {
+      "id" : "_R3K4k6F_Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_REFADMIN_Server"
+    } ]
+  } ]
+}

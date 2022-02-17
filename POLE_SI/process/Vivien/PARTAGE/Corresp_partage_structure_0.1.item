@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Schema" prompt="referentiel_dsi_PROD1_Schema?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value=""/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Sid" prompt="referentiel_dsi_PROD1_Sid?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value="refetb"/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Password" prompt="referentiel_dsi_PROD1_Password?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_Password" value="enc:system.encryption.key.v1:/6hcxsUJWVL/7k7QFArngwglm/QR7K5wx10jMBfsmk7vAg=="/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Login" prompt="referentiel_dsi_PROD1_Login?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value="refadmin"/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_AdditionalParams" prompt="referentiel_dsi_PROD1_AdditionalParams?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value=""/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Port" prompt="referentiel_dsi_PROD1_Port?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value="1521"/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Server" prompt="referentiel_dsi_PROD1_Server?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value="192.168.120.102"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Port" prompt="DB_REFETB_REFADMIN_Port?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Schema" prompt="DB_REFETB_REFADMIN_Schema?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value=""/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Login" prompt="DB_REFETB_REFADMIN_Login?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="refadmin"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Password" prompt="DB_REFETB_REFADMIN_Password?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_Password" value="enc:system.encryption.key.v1:hJaNOv8Pa4X2xKzd222GdVZt14bGqA+oo+QscZiUl4z3cg=="/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Sid" prompt="DB_REFETB_REFADMIN_Sid?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="refetb"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_AdditionalParams" prompt="DB_REFETB_REFADMIN_AdditionalParams?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value=""/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Server" prompt="DB_REFETB_REFADMIN_Server?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="192.168.120.102"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:rPCWJtKt/ZTxmKna1aGlX8L63P/K+smCcSU3o3ie"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/vivien.crossay/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Lo4fmleWX6NVcBrq5e9g+fixoht1b0Vo7Piy2RxK"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_NJY-cBUuEeeowanb9BA60Q" name="DataOperation"/>
+    <routinesParameter id="_NJsgcBUuEeeowanb9BA60Q" name="Mathematical"/>
+    <routinesParameter id="_NKSWUBUuEeeowanb9BA60Q" name="Numeric"/>
+    <routinesParameter id="_NKSWVBUuEeeowanb9BA60Q" name="Relational"/>
+    <routinesParameter id="_NKcHUBUuEeeowanb9BA60Q" name="StringHandling"/>
+    <routinesParameter id="_NKcHVBUuEeeowanb9BA60Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_NKlRQBUuEeeowanb9BA60Q" name="TalendDate"/>
+    <routinesParameter id="_NKlRRBUuEeeowanb9BA60Q" name="TalendString"/>
+    <routinesParameter id="_OZw6MPfWEeW8qKZNjgDL0A" name="Copy_of_partageRenater"/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_pR7KAIsDEea6I5FOr86KPA" name="Divers"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter id="_PYwWwNryEeWH3qE0lgMPvA" name="partageRenater"/>
+    <routinesParameter id="_uougAHjCEeauQso9LUnuPA" name="partageRenater_SAV_2016_09_12"/>
+    <routinesParameter id="_Mo86oEobEeiPKskVmFzbWQ" name="SQLike"/>
+    <routinesParameter id="_Mnds4EobEeiPKskVmFzbWQ" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_xLyRQDvTEeeHnqM_f37RdQ"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/SI/imports/PARTAGE/Non connecté PARTAGE 18 05 2017.xlsx&quot;"/>
+    <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
+    <elementParameter field="TABLE" name="SHEETLIST" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
+    <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_xLyRQDvTEeeHnqM_f37RdQ - metadata"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_xLyRQDvTEeeHnqM_f37RdQ - metadata"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="used"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quota"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="displayName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraAccountStatus"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mail"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraLastLogonTimestamp"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraMailQuota"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraCOSId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cos_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="admin"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="search_total"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
+    <elementParameter field="TABLE" name="DATESELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="status"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type2"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="used"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type3"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quota"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="displayName"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraAccountStatus"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mail"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraLastLogonTimestamp"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraMailQuota"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraCOSId"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cos_name"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="admin"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="search_total"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type4"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="READ_REAL_VALUE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
+    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" show="false" value="false"/>
+    <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="TEXT" name="LABEL" value="PARTAGE_non_connecté_18-05-2017"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
+      <column comment="" key="false" length="1" name="status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="message" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="type2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="used" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="quota" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="displayName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="zimbraAccountStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="mail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="zimbraLastLogonTimestamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="zimbraMailQuota" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="zimbraCOSId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="cos_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="admin" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="search_total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="1" name="status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="message" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="type2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="used" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="quota" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="displayName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="zimbraAccountStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="mail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="zimbraLastLogonTimestamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="zimbraMailQuota" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="zimbraCOSId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="cos_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="admin" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="search_total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_mVkyIDvSEeeHnqM_f37RdQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="1" name="status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="message" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="type2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="used" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="quota" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="displayName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="zimbraAccountStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="mail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="zimbraLastLogonTimestamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="zimbraMailQuota" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="zimbraCOSId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="cos_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="admin" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="search_total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="LL_STRUCTURE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.status " name="status" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.type " name="type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.message " name="message" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.type2 " name="type2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.name " name="name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.id " name="id" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.used " name="used" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.type3 " name="type3" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.quota " name="quota" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.displayName " name="displayName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.zimbraAccountStatus " name="zimbraAccountStatus" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.mail " name="mail" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.zimbraLastLogonTimestamp " name="zimbraLastLogonTimestamp" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.zimbraMailQuota " name="zimbraMailQuota" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.zimbraCOSId " name="zimbraCOSId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.cos_name " name="cos_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.description " name="description" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.admin " name="admin" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.search_total " name="search_total" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.type4 " name="type4" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.LL_STRUCTURE " name="LL_STRUCTURE" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="status" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="message" nullable="true" type="id_String"/>
+        <mapperTableEntries name="type2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="id" nullable="true" type="id_String"/>
+        <mapperTableEntries name="used" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="type3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="quota" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="displayName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="zimbraAccountStatus" nullable="true" type="id_String"/>
+        <mapperTableEntries name="mail" nullable="true" type="id_String"/>
+        <mapperTableEntries name="zimbraLastLogonTimestamp" nullable="true" type="id_String"/>
+        <mapperTableEntries name="zimbraMailQuota" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="zimbraCOSId" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cos_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="description" nullable="true" type="id_String"/>
+        <mapperTableEntries name="admin" nullable="true" type="id_String"/>
+        <mapperTableEntries name="search_total" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="type4" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" lookupMode="LOAD_ONCE" matchingMode="FIRST_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="REF_COMPTE" type="id_BigDecimal"/>
+        <mapperTableEntries name="REF_IND_ID" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.mail " name="COMPTE_MAIL" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="LL_STRUCTURE" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="status"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="used"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type3"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quota"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="displayName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraAccountStatus"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mail"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraLastLogonTimestamp"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraMailQuota"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraCOSId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cos_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="admin"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="search_total"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type4"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LL_STRUCTURE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="1" name="status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="message" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="type2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="used" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="quota" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="displayName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="zimbraAccountStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="mail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="zimbraLastLogonTimestamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="zimbraMailQuota" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="zimbraCOSId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="cos_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="admin" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="search_total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="LL_STRUCTURE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_VJEiAOwpEeWY0ZqGhB774g"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DB_REFETB_REFADMIN_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DB_REFETB_REFADMIN_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DB_REFETB_REFADMIN_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DB_REFETB_REFADMIN_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.DB_REFETB_REFADMIN_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1HsfPb2P2CZ3WJD3WQUf5nSz5jhlj9GsZwRpeE5GtG2f1p3GOH5fu9TskVtEFBb2GOYdI5x1mj1ban7uQBMs"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  compte.ref_compte,&#13;&#10;compte.REF_IND_ID,&#13;&#10;to_char(compte.mail),&#13;&#10;to_char(STRUCTURE.LL_STRUCTURE)&#13;&#10;from compte&#13;&#10;INNER JOIN IND_STRUCTURE&#13;&#10;ON compte.REF_IND_ID = IND_STRUCTURE.REF_IND_ID&#13;&#10;&#13;&#10;INNER JOIN STRUCTURE&#13;&#10;ON  IND_STRUCTURE.C_STRUCTURE_REF=STRUCTURE.C_STRUCTURE_REF&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DB_REFETB_REFADMIN_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_COMPTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMPTE_MAIL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LL_STRUCTURE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Selection identité - structure"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_1">
+      <column comment="" defaultValue="" key="false" length="10" name="REF_COMPTE" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="REF_IND_ID" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="COMPTE_MAIL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="LL_STRUCTURE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_1"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/SI/exports/PARTAGE_non_connecté_18-05-2017.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" show="false" value="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" show="false" value="0"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="status"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type2"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="used"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type3"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quota"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="displayName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraAccountStatus"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mail"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraLastLogonTimestamp"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraMailQuota"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraCOSId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cos_name"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="admin"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="search_total"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type4"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LL_STRUCTURE"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputExcel_1">
+      <column comment="" key="false" length="1" name="status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="message" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="type2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="used" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="quota" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="displayName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="zimbraAccountStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="mail" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="zimbraLastLogonTimestamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="zimbraMailQuota" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="zimbraCOSId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="cos_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="admin" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="search_total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="type4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="LL_STRUCTURE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="used"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="quota"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="displayName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraAccountStatus"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="mail"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraLastLogonTimestamp"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraMailQuota"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraCOSId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cos_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="description"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="admin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="search_total"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="used"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="quota"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="displayName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraAccountStatus"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="mail"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraLastLogonTimestamp"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraMailQuota"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraCOSId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cos_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="description"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="admin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="search_total"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LL_STRUCTURE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tFileOutputExcel_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="used"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="quota"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="displayName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraAccountStatus"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="mail"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraLastLogonTimestamp"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraMailQuota"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraCOSId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cos_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="description"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="admin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="search_total"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LL_STRUCTURE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="REF_COMPTE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COMPTE_MAIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LL_STRUCTURE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9d1ae28b-68f5-4f66-92be-b86042577203"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>v1VBCiIAD/ve6SRBlquQg6OsRkHfF1lyKXyRj3Pe9/JQNeW9WCIPxtPL5dG3JHhN/D+6BihREx8d&#13;
+IPMN8VcqXA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7432f9d0-e3b9-4f2a-a8e8-57750a59b82d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5gS+tXqte+5V3g28zkZK1BLQVBzvrdBNlQy4f7+Hc9xmPMAgjGdmjeKmtvJYY2sBGJnH8WxfaqCa&#13;
+4dkGoo9Efw==</DigestValue></Reference></SignedInfo><SignatureValue>Ii843eZ3Vv2cjKLxDzQJDzRi0tcU9AngtxZj7UbNOvyJXlaS6LG4bchHtrqFVt1h0bUb3ON2gfpz&#13;
+Ni7riAG4gfyFxg30vp3ejsmyTOcRJ82p7sviT9fyVyfAW4HId5yJi9usi2SZnqvs+bg0S011Wpnt&#13;
+B4xr8a8BJZKgB3LjKJRpR0/gzyBPwtEHMVHFU0z12KaL1cw6qm5ZWvy4kG5IQsVKc480aT+TnleZ&#13;
+fs1LGed3ZtWBXvdFcaEH0QTzNNX8b2Zqjv7xhoWoOhFb7MkK+/BeO8HCx0EfTFmP2Dzl6QWOMWPr&#13;
+0KkgeYpSRw587AvrFhMcb0580g/JRSNsGtPKeg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7432f9d0-e3b9-4f2a-a8e8-57750a59b82d" Target="#_9d1ae28b-68f5-4f66-92be-b86042577203"><Timestamp>2022-02-17 10:16:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

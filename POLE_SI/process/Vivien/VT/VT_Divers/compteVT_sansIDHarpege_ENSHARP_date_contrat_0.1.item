@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Login" prompt="referentiel_dsi_PROD1_Login?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value="refadmin"/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Password" prompt="referentiel_dsi_PROD1_Password?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_Password" value="enc:system.encryption.key.v1:XWrYbWZO/yLM6kS7LTzza6KOz3tMeFRmYnfkAmzp7pEbFQ=="/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Server" prompt="referentiel_dsi_PROD1_Server?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value="192.168.120.102"/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Schema" prompt="referentiel_dsi_PROD1_Schema?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value=""/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_AdditionalParams" prompt="referentiel_dsi_PROD1_AdditionalParams?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value=""/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Sid" prompt="referentiel_dsi_PROD1_Sid?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value="refetb"/>
+    <contextParameter comment="" name="referentiel_dsi_PROD1_Port" prompt="referentiel_dsi_PROD1_Port?" promptNeeded="false" repositoryContextId="_bdYhAOzfEeWIxuGaxCQNUw" type="id_String" value="1521"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Port" prompt="DB_REFETB_REFADMIN_Port?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Schema" prompt="DB_REFETB_REFADMIN_Schema?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value=""/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Login" prompt="DB_REFETB_REFADMIN_Login?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="refadmin"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Password" prompt="DB_REFETB_REFADMIN_Password?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_Password" value="enc:system.encryption.key.v1:9tfffZ4KEKSWiUw7nN5/e34WaTgk63EQ9dmWO2AcAmXrDA=="/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Sid" prompt="DB_REFETB_REFADMIN_Sid?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="refetb"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_AdditionalParams" prompt="DB_REFETB_REFADMIN_AdditionalParams?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value=""/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Server" prompt="DB_REFETB_REFADMIN_Server?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="192.168.120.102"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:1sCETUbH2HXjY6emdSjh30z+oKmSPPOIFFGNDYEW"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/vivien.crossay/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fErRJJcGZDdJe+SNzO69gwEZryOnlVWKfxWww9gD"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_n9RGsrVIEeWDxLfSYY0_xw" name="DataOperation"/>
+    <routinesParameter id="_n9tyoLVIEeWDxLfSYY0_xw" name="Mathematical"/>
+    <routinesParameter id="_n93joLVIEeWDxLfSYY0_xw" name="Numeric"/>
+    <routinesParameter id="_n93jpLVIEeWDxLfSYY0_xw" name="Relational"/>
+    <routinesParameter id="_n-AtkLVIEeWDxLfSYY0_xw" name="StringHandling"/>
+    <routinesParameter id="_n-AtlLVIEeWDxLfSYY0_xw" name="TalendDataGenerator"/>
+    <routinesParameter id="_n-KekLVIEeWDxLfSYY0_xw" name="TalendDate"/>
+    <routinesParameter id="_n-KelLVIEeWDxLfSYY0_xw" name="TalendString"/>
+    <routinesParameter id="_OZw6MPfWEeW8qKZNjgDL0A" name="Copy_of_partageRenater"/>
+    <routinesParameter id="_pR7KAIsDEea6I5FOr86KPA" name="Divers"/>
+    <routinesParameter id="_PYwWwNryEeWH3qE0lgMPvA" name="partageRenater"/>
+    <routinesParameter id="_uougAHjCEeauQso9LUnuPA" name="partageRenater_SAV_2016_09_12"/>
+    <routinesParameter id="_Mo86oEobEeiPKskVmFzbWQ" name="SQLike"/>
+    <routinesParameter id="_Mnds4EobEeiPKskVmFzbWQ" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_FYIfMIriEea6I5FOr86KPA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.120.105&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;VT_2016_2017&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gSzHxXTLgTq4V+NvpVwmmBSwEE5fT7FsklWgNEpSWSa5SFp62CwgR58="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ressources_profs&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT *  FROM VT_2016_2017.ressources_profs &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="codeProf"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="couleurFond"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="couleurPolice"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="prenom"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codeGrade"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="numero"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codePostal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ville"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pays"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="telephone1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="telephone2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="specialite"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codeCnu"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alias"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateModif"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deleted"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="identifiant"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codeProprietaire"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="email"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateCreation"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commentaire"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codeComposante"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="titulaire"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateValidationDossier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="volStatSpecif"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="volCompSpecif"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="identifiantNational"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="prenom2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateNaissance"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateDebutContrat"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateFinContrat"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="ressources_profs VT_PROD_2016-2017"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlInput_1">
+      <column comment="" defaultValue="" key="false" length="11" name="codeProf" nullable="false" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="couleurFond" nullable="false" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="couleurPolice" nullable="false" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="nom" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="prenom" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="codeGrade" nullable="false" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="numero" nullable="false" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="rue" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="codePostal" nullable="false" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ville" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="pays" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="telephone1" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="telephone2" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="specialite" nullable="false" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="codeCnu" nullable="false" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="alias" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="dateModif" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="deleted" nullable="false" pattern="" precision="0" sourceType="" type="id_Byte" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="identifiant" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="codeProprietaire" nullable="false" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="email" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="dateCreation" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="commentaire" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="codeComposante" nullable="false" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="titulaire" nullable="false" pattern="" precision="0" sourceType="" type="id_Short" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dateValidationDossier" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="volStatSpecif" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="volCompSpecif" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="identifiantNational" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="prenom2" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dateNaissance" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dateDebutContrat" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dateFinContrat" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_JHc2cA-xEeeIk6A6g_5FlA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="sortie" name="sortie">
+      <column comment="" defaultValue="" key="false" length="11" name="codeProf" nullable="false" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="nom" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="prenom" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="alias" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="codeGrade" nullable="false" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="identifiantNational" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_DEBUT_AFF" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_FIN_AFF" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="sortie" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="vt.codeProf " name="codeProf" type="id_Integer"/>
+        <mapperTableEntries expression="vt.nom " name="nom" type="id_String"/>
+        <mapperTableEntries expression="vt.prenom " name="prenom" type="id_String"/>
+        <mapperTableEntries expression="vt.alias " name="alias" type="id_String"/>
+        <mapperTableEntries expression="vt.codeGrade " name="codeGrade" type="id_Long"/>
+        <mapperTableEntries expression="vt.identifiantNational " name="identifiantNational" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="ens_harp.DATE_DEBUT_AFF " name="DATE_DEBUT_AFF" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="ens_harp.DATE_FIN_AFF " name="DATE_FIN_AFF" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="vt" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="codeProf" type="id_Integer"/>
+        <mapperTableEntries name="couleurFond" type="id_Long"/>
+        <mapperTableEntries name="couleurPolice" type="id_Long"/>
+        <mapperTableEntries name="nom" type="id_String"/>
+        <mapperTableEntries name="prenom" type="id_String"/>
+        <mapperTableEntries name="codeGrade" type="id_Long"/>
+        <mapperTableEntries name="numero" type="id_Long"/>
+        <mapperTableEntries name="rue" type="id_String"/>
+        <mapperTableEntries name="codePostal" type="id_Long"/>
+        <mapperTableEntries name="ville" type="id_String"/>
+        <mapperTableEntries name="pays" type="id_String"/>
+        <mapperTableEntries name="telephone1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="telephone2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="specialite" type="id_Long"/>
+        <mapperTableEntries name="codeCnu" type="id_Long"/>
+        <mapperTableEntries name="alias" type="id_String"/>
+        <mapperTableEntries name="dateModif" type="id_Date"/>
+        <mapperTableEntries name="deleted" type="id_Byte"/>
+        <mapperTableEntries name="identifiant" type="id_String"/>
+        <mapperTableEntries name="codeProprietaire" type="id_Long"/>
+        <mapperTableEntries name="email" type="id_String"/>
+        <mapperTableEntries name="dateCreation" type="id_Date"/>
+        <mapperTableEntries name="commentaire" nullable="true" type="id_String"/>
+        <mapperTableEntries name="codeComposante" type="id_Integer"/>
+        <mapperTableEntries name="titulaire" type="id_Short"/>
+        <mapperTableEntries name="dateValidationDossier" type="id_Date"/>
+        <mapperTableEntries name="volStatSpecif" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="volCompSpecif" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="identifiantNational" nullable="true" type="id_String"/>
+        <mapperTableEntries name="prenom2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="dateNaissance" type="id_Date"/>
+        <mapperTableEntries name="dateDebutContrat" type="id_Date"/>
+        <mapperTableEntries name="dateFinContrat" type="id_Date"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" activateExpressionFilter="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="ens_harp" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="vt.identifiantNational " name="NO_INDIVIDU" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="NOM_USUEL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PRENOM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NOM_PATRONYMIQUE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CIV" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATE_NAIS" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="C_SITUATION_FAMILLE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MAIL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ENSEIGNANT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TITULAIRE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TYP_CONTRAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TEM_RENUM_PRINC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POPULATION" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATE_DEBUT_AFF" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DATE_FIN_AFF" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="CORPS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="GRADE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SECTION_CNU" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SOUS_SECTION_CNU" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FONCTION" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="C_STRUCTURE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TEM_STRUC_RECH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NO_OCCUPATION" nullable="true" type="id_String"/>
+        <mapperTableEntries name="C_ORGANISME_RECH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INDICE_MAJORE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BTE_MESS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SERVICE_ENS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LOGIN" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_VJEiAOwpEeWY0ZqGhB774g"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.referentiel_dsi_PROD1_Server"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DB_REFETB_REFADMIN_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DB_REFETB_REFADMIN_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DB_REFETB_REFADMIN_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.referentiel_dsi_PROD1_Sid"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DB_REFETB_REFADMIN_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.DB_REFETB_REFADMIN_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NkDt5Ag4KFvCJZGgyF/JH2ZuCh5MebPVW3plCGuWZUnrjUqBOxextzLZnOofGBs7A6NglEJBuAAL/E7IJqYy"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ENS_HARP&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;   ENS_HARP.NO_INDIVIDU, &#13;&#10;  TRANSLATE (lower(ENS_HARP.NOM_USUEL), 'éèêàâÄïùûöô', 'eeeaaaiuuoo') as NOM_USUEL , &#13;&#10;  TRANSLATE (lower(ENS_HARP.PRENOM ), 'éèêàâÄïùûöô', 'eeeaaaiuuoo') as PRENOM, &#13;&#10;  TRANSLATE (lower(ENS_HARP.NOM_PATRONYMIQUE ), 'éèêàâÄïùûöôç',&#10;  'eeeaaaiuuooc') as NOM_PATRONYMIQUE,&#10;  &#13;&#10;  CASE&#13;&#10;  WHEN ENS_HARP.CIV like '%M.%'&#13;&#10;  THEN 'monsieur'&#13;&#10;  WHEN ENS_HARP.CIV like '%MME%'&#13;&#10;  THEN 'madame'&#13;&#10; WHEN ENS_HARP.CIV like '%MLLE%'&#13;&#10;  THEN 'mademoiselle'&#13;&#10;  END as CIV, &#13;&#10;  ENS_HARP.DATE_NAIS, &#13;&#10;  ENS_HARP.C_SITUATION_FAMILLE, &#13;&#10;  ENS_HARP.MAIL, &#13;&#10;  ENS_HARP.ENSEIGNANT, &#13;&#10;  ENS_HARP.TITULAIRE, &#13;&#10;  ENS_HARP.TYP_CONTRAT, &#13;&#10;  ENS_HARP.TEM_RENUM_PRINC,&#13;&#10;  CASE&#13;&#10;     WHEN ENS_HARP.POPULATION like '%CHE_OR%'&#13;&#10;     THEN 'heberge'&#13;&#10;     WHEN  ENS_HARP.POPULATION like '%HEB%'&#13;&#10;     THEN 'heberge'&#13;&#10;     WHEN  ENS_HARP.POPULATION like '%ENS_EME%'&#13;&#10;     THEN 'heberge'&#13;&#10;     WHEN  ENS_HARP.POPULATION like '%ENS_ESP%'&#13;&#10;     THEN 'heberge'&#13;&#10;     WHEN ENS_HARP.POPULATION like '%VAC%'&#13;&#10;     THEN 'vacataire'&#13;&#10;     WHEN ENS_HARP.POPULATION like '%TIT%'&#13;&#10;     THEN 'titulaire'&#13;&#10;     WHEN ENS_HARP.POPULATION like '%CONT%'&#13;&#10;     THEN 'contractuel'&#13;&#10;  END as POPULATION, &#13;&#10;  ENS_HARP.DATE_DEBUT_AFF, &#13;&#10;  NVL(ENS_HARP.DATE_FIN_AFF,to_date('20500101','YYYYMMDD')), &#13;&#10;  ENS_HARP.CORPS, &#13;&#10;  ENS_HARP.GRADE, &#13;&#10;  ENS_HARP.SECTION_CNU, &#13;&#10;  ENS_HARP.SOUS_SECTION_CNU, &#13;&#10;  ENS_HARP.FONCTION, &#13;&#10;  ENS_HARP.C_STRUCTURE, &#13;&#10;  ENS_HARP.TEM_STRUC_RECH, &#13;&#10;  ENS_HARP.NO_OCCUPATION, &#13;&#10;  ENS_HARP.C_ORGANISME_RECH, &#13;&#10;  ENS_HARP.INDICE_MAJORE, &#13;&#10;  ENS_HARP.BTE_MESS, &#13;&#10;  ENS_HARP.SERVICE_ENS,&#13;&#10;  TRANSLATE (lower(REPLACE(PRENOM || '.'|| NOM_USUEL, ' ', '')), 'éèêàâÄïùûöô',&#10;  'eeeaaaiuuoo') as login&#13;&#10;FROM ENS_HARP&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DB_REFETB_REFADMIN_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_USUEL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_PATRONYMIQUE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CIV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_NAIS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_SITUATION_FAMILLE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAIL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ENSEIGNANT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TITULAIRE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYP_CONTRAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_RENUM_PRINC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POPULATION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_DEBUT_AFF"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN_AFF"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CORPS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRADE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SECTION_CNU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOUS_SECTION_CNU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FONCTION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_STRUCTURE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_STRUC_RECH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_OCCUPATION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_ORGANISME_RECH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INDICE_MAJORE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BTE_MESS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_ENS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOGIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_1">
+      <column comment="" key="false" length="8" name="NO_INDIVIDU" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_USUEL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_PATRONYMIQUE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CIV" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_NAIS" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="C_SITUATION_FAMILLE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="MAIL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ENSEIGNANT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TITULAIRE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="TYP_CONTRAT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TEM_RENUM_PRINC" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="POPULATION" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_DEBUT_AFF" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_FIN_AFF" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="CORPS" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="GRADE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SECTION_CNU" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SOUS_SECTION_CNU" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="FONCTION" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="C_STRUCTURE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TEM_STRUC_RECH" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="NO_OCCUPATION" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="C_ORGANISME_RECH" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="INDICE_MAJORE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="BTE_MESS" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="SERVICE_ENS" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2944" name="LOGIN" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="codeProf"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="prenom"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alias"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codeGrade"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="identifiantNational"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_DEBUT_AFF"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_FIN_AFF"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="sortie" name="tLogRow_1">
+      <column comment="" defaultValue="" key="false" length="11" name="codeProf" nullable="false" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="nom" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="prenom" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="alias" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="codeGrade" nullable="false" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="identifiantNational" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_DEBUT_AFF" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_FIN_AFF" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/VC/Exports/VT/compteVTavecID_harpege_date_contrat.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="sortie" name="tFileOutputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="11" name="codeProf" nullable="false" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="nom" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="prenom" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="alias" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="codeGrade" nullable="false" pattern="" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="identifiantNational" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_DEBUT_AFF" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_FIN_AFF" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="vt" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="codeProf"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="couleurFond"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="couleurPolice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="nom"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prenom"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codeGrade"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="numero"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="rue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codePostal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ville"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="pays"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="telephone1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="telephone2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="specialite"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codeCnu"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="alias"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateModif"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="deleted"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="identifiant"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codeProprietaire"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="email"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateCreation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="commentaire"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codeComposante"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="titulaire"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateValidationDossier"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="volStatSpecif"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="volCompSpecif"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="identifiantNational"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prenom2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateNaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateDebutContrat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateFinContrat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="vt"/>
+  </connection>
+  <connection connectorName="FLOW" label="sortie" lineStyle="0" metaname="sortie" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="codeProf"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="nom"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prenom"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codeGrade"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="identifiantNational"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_DEBUT_AFF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN_AFF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="alias"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="sortie"/>
+  </connection>
+  <connection connectorName="FLOW" label="ens_harp" lineStyle="8" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_USUEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_PATRONYMIQUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CIV"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_NAIS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_SITUATION_FAMILLE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ENSEIGNANT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TITULAIRE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYP_CONTRAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_RENUM_PRINC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POPULATION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_DEBUT_AFF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN_AFF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CORPS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRADE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SECTION_CNU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SOUS_SECTION_CNU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FONCTION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_STRUCTURE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_STRUC_RECH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NO_OCCUPATION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_ORGANISME_RECH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INDICE_MAJORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BTE_MESS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERVICE_ENS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOGIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ens_harp"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="codeProf"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="nom"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prenom"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codeGrade"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="identifiantNational"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_DEBUT_AFF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_FIN_AFF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8c31181e-a521-47f6-accf-56ca0b3b5f10"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UXeU5h5xDE15rX56mOIeKGMMs2WrPbO7Ty+conXlyzs15nymg2g+melmzC9ZBLA+MJlImZCnqk3G&#13;
+IvT+2xWjpA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c51d7186-7f99-4185-8bfc-b18633477b01"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Q7NiD3UvUNoJRjnDSCqEOOshL9oD+/B46unhUjLERrRoSXAnp2jTB4e1LphAPfi5x1usw0qjso5e&#13;
+YvH+/xjBPA==</DigestValue></Reference></SignedInfo><SignatureValue>LYWLhQnO0qhP7ZNfphfMqFr4QvOwim4TuU5Ss/PXc4Z+LZFhziWup2y/kmXrGxv58NlyWINhW6MO&#13;
+5maCgf/iId7M2VJ3kZuG4TmhHQVe3VdMW7WtytqNRsD7TH1Sv6g6shYp4Zr3tEpz9dBcoWNrr/iY&#13;
+7HJ9fOF3P/iUHgbKG4xE5TuUKr8UXwqxNpSrC1dpFwDULjsEbPYc3roTume8aYQ9iBsrF5nphE/f&#13;
+reBKXZFWe71xm0UG1qqsaeSauXV/sGOpHyk0Ur54efMvPhcPDa7kL571Q1wvFk0iJ6tm824MIW0n&#13;
+9ow04xbm9Ip7gmT5RNGvWs4hsgWGAyljYRe1lA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c51d7186-7f99-4185-8bfc-b18633477b01" Target="#_8c31181e-a521-47f6-accf-56ca0b3b5f10"><Timestamp>2022-02-17 10:17:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

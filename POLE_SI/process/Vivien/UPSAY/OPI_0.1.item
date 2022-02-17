@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="DB_APOGEE_UPSAY_Port" prompt="DB_APOGEE_UPSAY_Port?" promptNeeded="false" repositoryContextId="_-6BZcKF7Eemh3cf7jJnMNA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="DB_APOGEE_UPSAY_Server" prompt="DB_APOGEE_UPSAY_Server?" promptNeeded="false" repositoryContextId="_-6BZcKF7Eemh3cf7jJnMNA" type="id_String" value="brindibou.univ-evry.fr"/>
+    <contextParameter comment="" name="DB_APOGEE_UPSAY_Schema" prompt="DB_APOGEE_UPSAY_Schema?" promptNeeded="false" repositoryContextId="_-6BZcKF7Eemh3cf7jJnMNA" type="id_String" value=""/>
+    <contextParameter comment="" name="DB_APOGEE_UPSAY_Login" prompt="DB_APOGEE_UPSAY_Login?" promptNeeded="false" repositoryContextId="_-6BZcKF7Eemh3cf7jJnMNA" type="id_String" value="upsay"/>
+    <contextParameter comment="" name="DB_APOGEE_UPSAY_Password" prompt="DB_APOGEE_UPSAY_Password?" promptNeeded="false" repositoryContextId="_-6BZcKF7Eemh3cf7jJnMNA" type="id_Password" value="enc:system.encryption.key.v1:lbhO3nGB8xaq6NKDQqf6o9n858QX+KXNA8tEajUGaXcCYP4="/>
+    <contextParameter comment="" name="DB_APOGEE_UPSAY_ServiceName" prompt="DB_APOGEE_UPSAY_ServiceName?" promptNeeded="false" repositoryContextId="_-6BZcKF7Eemh3cf7jJnMNA" type="id_String" value="apoprd"/>
+    <contextParameter comment="" name="DB_APOGEE_UPSAY_AdditionalParams" prompt="DB_APOGEE_UPSAY_AdditionalParams?" promptNeeded="false" repositoryContextId="_-6BZcKF7Eemh3cf7jJnMNA" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="32"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="32"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Qx3c7AMSpwnUDXB+fjlbgVqIhr2+id0Ygx1ObyC+"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/vivien.crossay/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:10oIpbya3V1c3oPhD1BKrDaQi2MFUNieZd29xPjk"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_NJY-cBUuEeeowanb9BA60Q" name="DataOperation"/>
+    <routinesParameter id="_NJsgcBUuEeeowanb9BA60Q" name="Mathematical"/>
+    <routinesParameter id="_NKSWUBUuEeeowanb9BA60Q" name="Numeric"/>
+    <routinesParameter id="_NKSWVBUuEeeowanb9BA60Q" name="Relational"/>
+    <routinesParameter id="_NKcHUBUuEeeowanb9BA60Q" name="StringHandling"/>
+    <routinesParameter id="_NKcHVBUuEeeowanb9BA60Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_NKlRQBUuEeeowanb9BA60Q" name="TalendDate"/>
+    <routinesParameter id="_NKlRRBUuEeeowanb9BA60Q" name="TalendString"/>
+    <routinesParameter id="_OZw6MPfWEeW8qKZNjgDL0A" name="Copy_of_partageRenater"/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_pR7KAIsDEea6I5FOr86KPA" name="Divers"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter id="_PYwWwNryEeWH3qE0lgMPvA" name="partageRenater"/>
+    <routinesParameter id="_uougAHjCEeauQso9LUnuPA" name="partageRenater_SAV_2016_09_12"/>
+    <routinesParameter id="_Mo86oEobEeiPKskVmFzbWQ" name="SQLike"/>
+    <routinesParameter id="_Mnds4EobEeiPKskVmFzbWQ" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_vA8DIGV8Eeetz_99LXfqPA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;venustst.sig.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;boustiflore.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;apoprd&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;apotst&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;APOGEE&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;apogee&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VebogvpgkOKy2e50AC7C3JJGNcdxW6iu4OXN6F0wqFvI0xRGRLc="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;VOEUX_INS&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * FROM VOEUX_INS&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_CGE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_VRS_VET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DIP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_VRS_VDI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_CMP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_MFO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_CMT_JUR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEM_DOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEC_VEU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ATT_DEC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_CLS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DHH_CVC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DMN_CVC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAT_CVC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_EDT_CVC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_APL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_VAL_PSD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DAC_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TPE_DAC_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB_DAC_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEP_PAY_DAC_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYP_DEP_PAY_DAC_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_DAC_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SPE1_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SPE2_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SPE3_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DIS_ETU_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_UNI1_ETU_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_UNI2_ETU_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_1">
+      <column comment="" defaultValue="" key="false" length="8" name="COD_IND_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="COD_CGE" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="COD_ETP" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_VRS_VET" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="COD_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_VRS_VDI" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="COD_CMP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="COD_TYD" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="COD_MFO" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="LIB_CMT_JUR" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_DEM_DOS" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_DEC_VEU" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_ATT_DEC" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="NUM_CLS" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="DHH_CVC" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="DMN_CVC" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="DAT_CVC" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_EDT_CVC" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_APL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_VAL_PSD" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="COD_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_TPE_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETB_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_DEP_PAY_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TYP_DEP_PAY_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="DAA_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="COD_SPE1_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="COD_SPE2_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="COD_SPE3_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_DIS_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_UNI1_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_UNI2_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_1"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;//tanker/apogee$/OPI-2017-2018/OPI.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;VOEUX_INS&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" show="false" value="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" show="false" value="0"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="true"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_CGE"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETP"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_VRS_VET"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DIP"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_VRS_VDI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_CMP"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYD"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_MFO"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_CMT_JUR"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEM_DOS"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEC_VEU"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ATT_DEC"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_CLS"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DHH_CVC"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DMN_CVC"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAT_CVC"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_EDT_CVC"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_APL"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_VAL_PSD"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DAC_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TPE_DAC_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB_DAC_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEP_PAY_DAC_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYP_DEP_PAY_DAC_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_DAC_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SPE1_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SPE2_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SPE3_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DIS_ETU_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_UNI1_ETU_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_UNI2_ETU_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="VOEUX_INS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputExcel_1">
+      <column comment="" defaultValue="" key="false" length="8" name="COD_IND_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="COD_CGE" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="COD_ETP" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_VRS_VET" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="COD_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_VRS_VDI" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="COD_CMP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="COD_TYD" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="COD_MFO" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="LIB_CMT_JUR" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_DEM_DOS" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_DEC_VEU" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_ATT_DEC" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="NUM_CLS" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="DHH_CVC" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="DMN_CVC" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="DAT_CVC" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_EDT_CVC" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_APL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_VAL_PSD" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="COD_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_TPE_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETB_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_DEP_PAY_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TYP_DEP_PAY_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="DAA_DAC_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="COD_SPE1_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="COD_SPE2_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="COD_SPE3_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_DIS_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_UNI1_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_UNI2_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_vA8DIGV8Eeetz_99LXfqPA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;venustst.sig.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;boustiflore.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;apoprd&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;apotst&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;APOGEE&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;apogee&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JDmNG2CeQj+oVOztX2IZgdIz1P3OcjBFdbTjeZN+0k0tLFz9evM="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;IND_OPI&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * FROM IND_OPI&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SIM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_PAY_NAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_IND"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_NNE_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_CLE_NNE_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DAP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_NAI_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_DATE_NAI_REL_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_LBT_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DMM_LBT_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ENT_ETB_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_NOM_PAT_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_NOM_USU_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_PR1_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_PR2_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_PR3_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_TEL_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETU_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_VIL_NAI_ETU_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_OPI_INT_EPO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DUR_EXP_PRO_EPO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_TEL_TEMP_EPO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_EXP_PRO_EPO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_INT_EPO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_MI_TPS_EPO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_FAM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_PCS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEP_PAY_NAI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYP_DEP_PAY_NAI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ENS_SUP_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ETB_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SEX_ETU_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_THP_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_SNS_PRG_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_PRG_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETR_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_THB_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADR_MAIL_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_TEL_POR_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TPE_ANT_IAA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB_ANT_IAA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEP_PAY_ANT_IAA_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYP_DEP_PAY_ANT_IAA_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ETB_ANT_IAA_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SIS_ANN_PRE_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB_ANN_PRE_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEP_PAY_ANN_PRE_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYP_DEP_PAY_ANN_PRE_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TDS_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB_DER_DIP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ETB_DER_DIP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TPE_ANN_CRT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB_ANN_CRT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ETR_SUP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_PRL_ANN_CRT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_TRF_ANN_CRT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TDE_DER_DIP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEP_PAY_DER_DIP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYP_DEP_PAY_DER_DIP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NB_ENF_ETU_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_PCS_AP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_RGI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_STU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_COM_NAI_ETU_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_2">
+      <column comment="" defaultValue="" key="false" length="8" name="COD_IND_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_SIM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="COD_PAY_NAT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="COD_ETB" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_IND" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="COD_NNE_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_CLE_NNE_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="COD_DAP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_NAI_IND_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TEM_DATE_NAI_REL_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="DAA_LBT_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="DMM_LBT_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="DAA_ENT_ETB_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="LIB_NOM_PAT_IND_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="LIB_NOM_USU_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LIB_PR1_IND_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LIB_PR2_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LIB_PR3_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUM_TEL_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="LIB_VIL_NAI_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="COD_OPI_INT_EPO" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="DUR_EXP_PRO_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUM_TEL_TEMP_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_EXP_PRO_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_INT_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="TEM_MI_TPS_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_FAM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_PCS" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_DEP_PAY_NAI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TYP_DEP_PAY_NAI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="DAA_ENS_SUP_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="DAA_ETB_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_SEX_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_THP_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_SNS_PRG_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_PRG_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETR_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_THB_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="200" name="ADR_MAIL_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUM_TEL_POR_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_TPE_ANT_IAA" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETB_ANT_IAA" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_DEP_PAY_ANT_IAA_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TYP_DEP_PAY_ANT_IAA_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="DAA_ETB_ANT_IAA_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_SIS_ANN_PRE_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETB_ANN_PRE_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_DEP_PAY_ANN_PRE_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TYP_DEP_PAY_ANN_PRE_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TDS_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETB_DER_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="DAA_ETB_DER_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_TPE_ANN_CRT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETB_ANN_CRT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="DAA_ETR_SUP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_PRL_ANN_CRT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_TRF_ANN_CRT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_TDE_DER_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_DEP_PAY_DER_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TYP_DEP_PAY_DER_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="NB_ENF_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_PCS_AP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_RGI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_STU" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="COD_COM_NAI_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_2"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;//tanker/apogee$/OPI-2017-2018/OPI.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;IND_OPI&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" show="false" value="0"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="true"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SIM"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_PAY_NAT"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_IND"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_NNE_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_CLE_NNE_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DAP"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_NAI_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_DATE_NAI_REL_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_LBT_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DMM_LBT_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ENT_ETB_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_NOM_PAT_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_NOM_USU_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_PR1_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_PR2_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_PR3_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_TEL_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETU_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_VIL_NAI_ETU_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_OPI_INT_EPO"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DUR_EXP_PRO_EPO"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_TEL_TEMP_EPO"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_EXP_PRO_EPO"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_INT_EPO"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_MI_TPS_EPO"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_FAM"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_PCS"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEP_PAY_NAI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYP_DEP_PAY_NAI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ENS_SUP_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ETB_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SEX_ETU_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_THP_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_SNS_PRG_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_PRG_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETR_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_THB_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADR_MAIL_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUM_TEL_POR_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TPE_ANT_IAA"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB_ANT_IAA"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEP_PAY_ANT_IAA_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYP_DEP_PAY_ANT_IAA_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ETB_ANT_IAA_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_SIS_ANN_PRE_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB_ANN_PRE_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEP_PAY_ANN_PRE_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYP_DEP_PAY_ANN_PRE_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TDS_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB_DER_DIP"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ETB_DER_DIP"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TPE_ANN_CRT"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETB_ANN_CRT"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAA_ETR_SUP"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_PRL_ANN_CRT"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEM_TRF_ANN_CRT"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TDE_DER_DIP"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEP_PAY_DER_DIP"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_TYP_DEP_PAY_DER_DIP"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NB_ENF_ETU_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_PCS_AP"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_RGI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_STU"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_COM_NAI_ETU_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="IND_OPI"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputExcel_2">
+      <column comment="" defaultValue="" key="false" length="8" name="COD_IND_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_SIM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="COD_PAY_NAT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="COD_ETB" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_IND" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="COD_NNE_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_CLE_NNE_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="COD_DAP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_NAI_IND_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TEM_DATE_NAI_REL_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="DAA_LBT_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="DMM_LBT_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="DAA_ENT_ETB_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="LIB_NOM_PAT_IND_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="LIB_NOM_USU_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LIB_PR1_IND_OPI" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LIB_PR2_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LIB_PR3_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUM_TEL_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="LIB_VIL_NAI_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="COD_OPI_INT_EPO" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="DUR_EXP_PRO_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUM_TEL_TEMP_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_EXP_PRO_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_INT_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="TEM_MI_TPS_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_FAM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_PCS" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_DEP_PAY_NAI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TYP_DEP_PAY_NAI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="DAA_ENS_SUP_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="DAA_ETB_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_SEX_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_THP_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_SNS_PRG_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_PRG_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETR_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_THB_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="200" name="ADR_MAIL_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUM_TEL_POR_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_TPE_ANT_IAA" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETB_ANT_IAA" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_DEP_PAY_ANT_IAA_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TYP_DEP_PAY_ANT_IAA_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="DAA_ETB_ANT_IAA_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_SIS_ANN_PRE_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETB_ANN_PRE_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_DEP_PAY_ANN_PRE_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TYP_DEP_PAY_ANN_PRE_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TDS_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETB_DER_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="DAA_ETB_DER_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_TPE_ANN_CRT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_ETB_ANN_CRT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="DAA_ETR_SUP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_PRL_ANN_CRT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEM_TRF_ANN_CRT" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_TDE_DER_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COD_DEP_PAY_DER_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_TYP_DEP_PAY_DER_DIP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="NB_ENF_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_PCS_AP" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="COD_RGI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="COD_STU" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="COD_COM_NAI_ETU_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_3"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_YOlwABzSEeaEt-sgZPSkaQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;venustst.sig.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;boustiflore.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;APOPRD&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;apotst&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;UPSAY&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;upsay&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oZEnEAd59B3tx9UyEvvIRgg0eaFfBIoIBOm3MhqsTuZhFPqNAA=="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CORRESP_COD_IND_OPI_PCL&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;ID_CANDIDATURE,&#13;&#10;ID_CANDIDAT,&#13;&#10;C_MENTION,&#13;&#10;C_ELEMENT_FORMATION,&#13;&#10;COD_IND_OPI,&#13;&#10;COD_OPI_INT_EPO,&#13;&#10;COD_IND,&#13;&#10;DATE_MAIL AS DATE_ENVOI_MAIL,&#13;&#10;DECODE(TYPE_INSCRIPTION,&#13;&#10;      'PRETR','PRIMO ETRANGER',&#13;&#10;      'PRINE','PRIMO INE INVALIDE',&#13;&#10;      'PRWEB','PRIMO WEB',&#13;&#10;      'REPRE','REINSCRIPTION PRESENTIEL',&#13;&#10;      'REWEB','REINSCRIPTION WEB'&#13;&#10;      ) as TYPE_INSCRIPTION_MAIL&#13;&#10;&#13;&#10;&#13;&#10;FROM CORRESP_COD_IND_OPI_PCL&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_CANDIDATURE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_CANDIDAT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_MENTION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_ELEMENT_FORMATION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_IND_OPI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_OPI_INT_EPO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_IND"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_ENVOI_MAIL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_INSCRIPTION_MAIL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_3">
+      <column comment="" key="false" length="90" name="ID_CANDIDATURE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="32" name="ID_CANDIDAT" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="C_MENTION" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="C_ELEMENT_FORMATION" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="COD_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="COD_OPI_INT_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_IND" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_ENVOI_MAIL" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="TYPE_INSCRIPTION_MAIL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_3"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;//tanker/apogee$/OPI-2017-2018/OPI.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;INFO_INSCRIPTION&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" show="false" value="0"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="true"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_CANDIDATURE"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_CANDIDAT"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_MENTION"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_ELEMENT_FORMATION"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_IND_OPI"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_OPI_INT_EPO"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_IND"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_ENVOI_MAIL"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_INSCRIPTION_MAIL"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="IND_OPI"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputExcel_3">
+      <column comment="" key="false" length="90" name="ID_CANDIDATURE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="32" name="ID_CANDIDAT" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="C_MENTION" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="C_ELEMENT_FORMATION" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="COD_IND_OPI" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="COD_OPI_INT_EPO" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="COD_IND" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_ENVOI_MAIL" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="TYPE_INSCRIPTION_MAIL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;//tanker/apogee$/OPI-2017-2018/OPI.xlsx&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/VC/delete_folder&quot;"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/VC/delete_folder or delete_file&quot;"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exists or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_1"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tFileOutputExcel_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="COD_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_CGE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_ETP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_VRS_VET"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_DIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_VRS_VDI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_CMP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_TYD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_MFO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIB_CMT_JUR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_DEM_DOS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_DEC_VEU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_ATT_DEC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUM_CLS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DHH_CVC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DMN_CVC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAT_CVC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_EDT_CVC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_APL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_VAL_PSD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_DAC_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_TPE_DAC_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_ETB_DAC_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_DEP_PAY_DAC_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_TYP_DEP_PAY_DAC_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAA_DAC_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_SPE1_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_SPE2_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_SPE3_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_DIS_ETU_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_UNI1_ETU_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_UNI2_ETU_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputExcel_1" target="tOracleInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tOracleInput_2" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_2" target="tFileOutputExcel_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="COD_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_SIM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_PAY_NAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_ETB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_IND"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_NNE_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_CLE_NNE_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_DAP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_NAI_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_DATE_NAI_REL_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAA_LBT_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DMM_LBT_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAA_ENT_ETB_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIB_NOM_PAT_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIB_NOM_USU_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIB_PR1_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIB_PR2_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIB_PR3_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUM_TEL_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_ETU_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIB_VIL_NAI_ETU_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_OPI_INT_EPO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DUR_EXP_PRO_EPO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUM_TEL_TEMP_EPO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_EXP_PRO_EPO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_INT_EPO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_MI_TPS_EPO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_FAM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_PCS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_DEP_PAY_NAI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_TYP_DEP_PAY_NAI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAA_ENS_SUP_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAA_ETB_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_SEX_ETU_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_THP_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_SNS_PRG_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_PRG_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_ETR_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_THB_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADR_MAIL_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUM_TEL_POR_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_TPE_ANT_IAA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_ETB_ANT_IAA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_DEP_PAY_ANT_IAA_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_TYP_DEP_PAY_ANT_IAA_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAA_ETB_ANT_IAA_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_SIS_ANN_PRE_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_ETB_ANN_PRE_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_DEP_PAY_ANN_PRE_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_TYP_DEP_PAY_ANN_PRE_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_TDS_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_ETB_DER_DIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAA_ETB_DER_DIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_TPE_ANN_CRT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_ETB_ANN_CRT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DAA_ETR_SUP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_PRL_ANN_CRT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_TRF_ANN_CRT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_TDE_DER_DIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_DEP_PAY_DER_DIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_TYP_DEP_PAY_DER_DIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NB_ENF_ETU_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_PCS_AP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_RGI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_STU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_COM_NAI_ETU_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileOutputExcel_2" target="tOracleInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tOracleInput_3" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_3" target="tFileOutputExcel_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="ID_CANDIDATURE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ID_CANDIDAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_MENTION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_ELEMENT_FORMATION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_IND_OPI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_OPI_INT_EPO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_IND"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_ENVOI_MAIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYPE_INSCRIPTION_MAIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFileDelete_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_493a0547-8475-4955-b252-28be247204aa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yVAXyTTvcN+ZcEOJZxzRsgLFoIA0qdjBJ8iSpE3XrcZpUe59hIcwNDc0y2KWzuJV94dXvLHJCJL6&#13;
+HsmulBMYcA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c5e98934-9cec-4ea9-b291-4161a08093b6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zsAltq+A2qpoQo6Avwg8nMt82IxhldznvbocSF//VqcPuBYMofPMK8oudTotXKFjkpS7xVzWoFiz&#13;
+fI452ha5sA==</DigestValue></Reference></SignedInfo><SignatureValue>b8JuhcN3wz431GxjUpw8C2ELI2BHWFCxH8Tu1b4MddWffgxwM4luAFN+7Wiia5BLU9uPElmr9q1s&#13;
+6b1mDKlWc0QhE+qt/rLwbP30ySUngfuUXCWHGgIeKhqX8oRb10A/TmfKo8R4C+vKYtjZZAYilplr&#13;
+vEHfhUlRA+28GjfJBPfFLYTWJDit8wMU66oRajr2dIBnEFGWzCS2mNcSmW15tv2ecOZWFt7xHsbr&#13;
+/SpSt5ORMBPLOoTkiTZMgypB8hG17jNoGi/pylkN9XOZdj7j+GR2ePxDPCV/+fGLtzvyd5ydNDm0&#13;
+ZHiE22CR7krmCjSgRWut9bYnx8DOtD1XRj1yag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c5e98934-9cec-4ea9-b291-4161a08093b6" Target="#_493a0547-8475-4955-b252-28be247204aa"><Timestamp>2022-02-17 10:17:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

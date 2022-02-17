@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_5e9yAI_aEeyUWr5Vyoj4tg" name="BDD_focus_AdditionalParams" prompt="BDD_focus_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_5e9yAY_aEeyUWr5Vyoj4tg" name="BDD_focus_Login" prompt="BDD_focus_Login?" promptNeeded="false" type="id_String" value="xxxxx"/>
+    <contextParameter comment="" internalId="_5e9yAo_aEeyUWr5Vyoj4tg" name="BDD_focus_Password" prompt="BDD_focus_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:9grw60HYkedlP8FzbnB4lhrvVTihtQbDGKfUDCGP93licVo="/>
+    <contextParameter comment="" internalId="_5e9yA4_aEeyUWr5Vyoj4tg" name="BDD_focus_Port" prompt="BDD_focus_Port?" promptNeeded="false" type="id_String" value="1521"/>
+    <contextParameter comment="" internalId="_5e9yBI_aEeyUWr5Vyoj4tg" name="BDD_focus_Schema" prompt="BDD_focus_Schema?" promptNeeded="false" type="id_String" value="FOCUS"/>
+    <contextParameter comment="" internalId="_5e9yBY_aEeyUWr5Vyoj4tg" name="BDD_focus_Server" prompt="BDD_focus_Server?" promptNeeded="false" type="id_String" value="172.20.128.36"/>
+    <contextParameter comment="" internalId="_5e9yBo_aEeyUWr5Vyoj4tg" name="BDD_focus_Sid" prompt="BDD_focus_Sid?" promptNeeded="false" type="id_String" value="FOCUSDEV"/>
+    <contextParameter comment="" name="fichier_env" prompt="fichier_env?" promptNeeded="false" repositoryContextId="_ZlHVsLOMEeSbZJwgZOkMYg" type="id_String" value="C:/TOS_user/contextes/param.properties"/>
+    <contextParameter comment="" name="FIC_in" prompt="FIC_in?" promptNeeded="false" repositoryContextId="_MgC8oBfrEeSLZ6RklZsrwQ" type="id_String" value="fichier_in"/>
+    <contextParameter comment="" name="FIC_log" prompt="FIC_log?" promptNeeded="false" repositoryContextId="_MgC8oBfrEeSLZ6RklZsrwQ" type="id_String" value="fichier_logs"/>
+    <contextParameter comment="" name="FIC_out" prompt="FIC_out?" promptNeeded="false" repositoryContextId="_MgC8oBfrEeSLZ6RklZsrwQ" type="id_String" value="fichier_out"/>
+    <contextParameter comment="" name="FIC_racine" prompt="FIC_racine?" promptNeeded="false" repositoryContextId="_MgC8oBfrEeSLZ6RklZsrwQ" type="id_String" value="C:/TOS_user"/>
+    <contextParameter comment="" name="mail_a" prompt="mail_a?" promptNeeded="false" repositoryContextId="_vNeacBfqEeSLZ6RklZsrwQ" type="id_String" value="florence.blanco@univ-nantes.fr"/>
+    <contextParameter comment="" name="mail_bcc" prompt="mail_bcc?" promptNeeded="false" repositoryContextId="_vNeacBfqEeSLZ6RklZsrwQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="mail_cc" prompt="mail_cc?" promptNeeded="false" repositoryContextId="_vNeacBfqEeSLZ6RklZsrwQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="mail_de" prompt="mail_de?" promptNeeded="false" repositoryContextId="_vNeacBfqEeSLZ6RklZsrwQ" type="id_String" value="florence.blanco@univ-nantes.fr"/>
+    <contextParameter comment="" name="mail_message" prompt="mail_message?" promptNeeded="false" repositoryContextId="_vNeacBfqEeSLZ6RklZsrwQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="mail_port" prompt="mail_port?" promptNeeded="false" repositoryContextId="_vNeacBfqEeSLZ6RklZsrwQ" type="id_String" value="25"/>
+    <contextParameter comment="" name="mail_smtp" prompt="mail_smtp?" promptNeeded="false" repositoryContextId="_vNeacBfqEeSLZ6RklZsrwQ" type="id_String" value="smtp.univ-nantes.prive"/>
+    <contextParameter comment="" name="mail_sujet" prompt="mail_sujet?" promptNeeded="false" repositoryContextId="_vNeacBfqEeSLZ6RklZsrwQ" type="id_String" value="null"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="256"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:eH09f1x7EqT/eZ0ph4NHY/vhwvIFXeZRaaABB91d"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/vivien.crossay/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rVa3IsKeVtJdFbY2pHXOdWvdE8/LGOymSoNokxdW"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_ebHwMuSoEeOqKJr9ImHyrQ" name="DataOperation"/>
+    <routinesParameter id="_ebRhM-SoEeOqKJr9ImHyrQ" name="Mathematical"/>
+    <routinesParameter id="_ebarIOSoEeOqKJr9ImHyrQ" name="Numeric"/>
+    <routinesParameter id="_ebarJOSoEeOqKJr9ImHyrQ" name="Relational"/>
+    <routinesParameter id="_ebarKOSoEeOqKJr9ImHyrQ" name="StringHandling"/>
+    <routinesParameter id="_ebarLOSoEeOqKJr9ImHyrQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_ebarMOSoEeOqKJr9ImHyrQ" name="TalendDate"/>
+    <routinesParameter id="_ebarNOSoEeOqKJr9ImHyrQ" name="TalendString"/>
+    <routinesParameter id="_Mo86oEobEeiPKskVmFzbWQ" name="SQLike"/>
+    <routinesParameter id="_Mnds4EobEeiPKskVmFzbWQ" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="destination"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_LJuHQBC2EeSuuowFYJilHQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="centre_financier"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_qkwCMOStEeOBfMXoDAakow"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_4"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;---&gt; Erreur sur le job article  :  ARRET DU TRAITEMENT :&quot; +projectName"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="736">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="centre_profit"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_NQUTcOTcEeOSgcAyrb0xDw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="article"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_t0tE0Or0EeOjqNuVmN6x7w"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_5"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="eotp"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_4huIQKxvEeSkMoqHC6cLpg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_5"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_6"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="centre_financier_periode"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_rWqngOTSEeOSgcAyrb0xDw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_6"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_7"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="centre_profit_periode"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_in_XMOWCEeOcpKLjNNE8YA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_7"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.mail_message = &quot;Bonjour, &lt;br /&gt;Rapport d'exécution de l'intégration des structures financières dans FCA-manager&lt;br /&gt; Ci-joint le fichier log du traitement&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&quot;;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.mail_a"/>
+    <elementParameter field="TEXT" name="FROM" value="context.mail_de"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" show="false" value="&quot;sender&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=" context.mail_cc"/>
+    <elementParameter field="TEXT" name="BCC" value=" context.mail_bcc"/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend : intégration des structures financières SIFAC vers FCA-manager &quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="context.mail_message"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS">
+      <elementValue elementRef="FILE" value="context.FIC_racine + &quot;/&quot; + context.FIC_log + &quot;/&quot; + projectName+&quot;_LOG_&quot; + TalendDate.getDate(&quot;CCYY-MM-DD&quot;)+&quot;.log&quot;"/>
+      <elementValue elementRef="CONTENT_TRANSFER_ENCODING" value="DEFAULT"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.mail_smtp"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.mail_port"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:tyFQz+pC6w4a2SAisXkmgThCH48Ya3Dk4xR+3QTUOTjJ9w8zePc="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tSendMail_1">
+      <column comment="" key="false" length="10" name="projet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="temps_traitement_total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;---&gt; Erreur sur le job eotp  :  ARRET DU TRAITEMENT :&quot; +projectName"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;---&gt; Erreur sur le job destination  :  ARRET DU TRAITEMENT :&quot; +projectName"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_3"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;---&gt; Erreur sur le job centre_financier :  ARRET DU TRAITEMENT :&quot; +projectName"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_4"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_5"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;---&gt; Erreur sur le job centre_financier_periode  :  ARRET DU TRAITEMENT :&quot; +projectName"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_5"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="736">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_6"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;---&gt; Erreur sur le job centre_profit  :  ARRET DU TRAITEMENT :&quot; +projectName"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_6"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_7"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;---&gt; Erreur sur le job centre_profit_periode  :  ARRET DU TRAITEMENT :&quot; +projectName"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_7"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="992">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_8"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="centre_cout"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_D887cGW6EeWnNKFsXLNOvA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_8"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="992">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_8"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;---&gt; Erreur sur le job centre_cout  :  ARRET DU TRAITEMENT :&quot; +projectName"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_8"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1152">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_9"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="centre_cout_periode"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_Tn1SIGZ5EeW6y8oLV3Q4mA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_9"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1152">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_9"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;---&gt; Erreur sur le job centre_cout_periode  :  ARRET DU TRAITEMENT :&quot; +projectName"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_9"/>
+  </node>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_3" offsetLabelX="0" offsetLabelY="0" source="tRunJob_3" target="tDie_3">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError4"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_3" offsetLabelX="0" offsetLabelY="0" source="tRunJob_3" target="tRunJob_4">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_4" offsetLabelX="0" offsetLabelY="0" source="tRunJob_4" target="tRunJob_6">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_4" offsetLabelX="0" offsetLabelY="0" source="tRunJob_4" target="tDie_4">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError5"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tDie_6">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError7"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_7">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tRunJob_3">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_5" offsetLabelX="0" offsetLabelY="0" source="tRunJob_5" target="tDie_2">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_6" offsetLabelX="0" offsetLabelY="0" source="tRunJob_6" target="tRunJob_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_6" offsetLabelX="0" offsetLabelY="0" source="tRunJob_6" target="tDie_5">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError6"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_7" offsetLabelX="0" offsetLabelY="0" source="tRunJob_7" target="tDie_7">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError8"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_7" offsetLabelX="0" offsetLabelY="0" source="tRunJob_7" target="tRunJob_8">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk10"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSendMail_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk9"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_8" offsetLabelX="0" offsetLabelY="0" source="tRunJob_8" target="tDie_8">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError11"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_8" offsetLabelX="0" offsetLabelY="0" source="tRunJob_8" target="tRunJob_9">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk12"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_9" offsetLabelX="0" offsetLabelY="0" source="tRunJob_9" target="tDie_9">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError12"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_9" offsetLabelX="0" offsetLabelY="0" source="tRunJob_9" target="tRunJob_5">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <note opaque="true" posX="128" posY="-256" sizeHeight="129" sizeWidth="801" text="Objectif : Intégration des structures financières de SIFAC dans la base de données FCA-manager&#13;&#10;&#13;&#10;Autheur : FB&#13;&#10;Date : 10/02/2015&#13;&#10;Maj :  ">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_7"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_7"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_8"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_8"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_9"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_9"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8e19b13e-a7f1-4d01-963f-59f8ab65f954"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g603cKxlH9bdcomMHj9x+yWdr3GN4jXRL7U/7YADqCVtnfz0jCDkrsbWA1pGy7ne+037oykEqozp&#13;
+r3WxnEYdrQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e20337bf-39ef-48f9-bd95-83770d898e95"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GVGeZjXmum062+iieSoIu0LlckvfxNAk53rGg54P12hZr6aVq5bOGRdpNnkhwh6vNFKSzKsX/3bz&#13;
+FETA3HknLg==</DigestValue></Reference></SignedInfo><SignatureValue>SV6MoGRDdO1esAeDK2M+/daJbPXHLVGWvR1udSyqqyZjw3tbjxPH1LaMtOzoGlZq5fOan08NqGQR&#13;
+BcjP5tDli8fuK+tqYjcoLxzAC9S9lyb4/Oris8IPLA/q8i8RvYfCq34HruaS4Rx438zXXB6VUbr0&#13;
+9/n3Hsnu2ZcgOSt3OqWu+ySOoELlBnsyaN/StXUnA/3NEG1fHpXPLbOntVTifHmUzDbMllo0Mniz&#13;
+ykYJvgiSoTzBnzVMz9MDw7uyjt78OyTOIdg/qLNqFnTRMdoo5lFxjfKR9wRhB5pEAzVhCFLOp5pL&#13;
+RvO6ocTYLnJ667ruGyI/h42ptdi0CeuzLXrCSA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e20337bf-39ef-48f9-bd95-83770d898e95" Target="#_8e19b13e-a7f1-4d01-963f-59f8ab65f954"><Timestamp>2022-02-17 10:18:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

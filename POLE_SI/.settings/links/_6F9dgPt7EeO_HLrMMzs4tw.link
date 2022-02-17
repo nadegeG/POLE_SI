@@ -1,0 +1,55 @@
+{
+  "itemId" : "_6F9dgPt7EeO_HLrMMzs4tw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_ZlHVsLOMEeSbZJwgZOkMYg",
+    "parameterList" : [ {
+      "id" : "_z1WTYRl5Eemua4MpESTNBA",
+      "name" : "fichier_env"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_MgC8oBfrEeSLZ6RklZsrwQ",
+    "parameterList" : [ {
+      "id" : "_z1sRoRl5Eemua4MpESTNBA",
+      "name" : "FIC_in"
+    }, {
+      "id" : "_z1sRoxl5Eemua4MpESTNBA",
+      "name" : "FIC_log"
+    }, {
+      "id" : "_z1sRohl5Eemua4MpESTNBA",
+      "name" : "FIC_out"
+    }, {
+      "id" : "_z1sRpBl5Eemua4MpESTNBA",
+      "name" : "FIC_racine"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_vNeacBfqEeSLZ6RklZsrwQ",
+    "parameterList" : [ {
+      "id" : "_z39igRl5Eemua4MpESTNBA",
+      "name" : "mail_a"
+    }, {
+      "id" : "_z39ihBl5Eemua4MpESTNBA",
+      "name" : "mail_bcc"
+    }, {
+      "id" : "_z39igxl5Eemua4MpESTNBA",
+      "name" : "mail_cc"
+    }, {
+      "id" : "_z39ighl5Eemua4MpESTNBA",
+      "name" : "mail_de"
+    }, {
+      "id" : "_z39ihhl5Eemua4MpESTNBA",
+      "name" : "mail_message"
+    }, {
+      "id" : "_z39iiBl5Eemua4MpESTNBA",
+      "name" : "mail_port"
+    }, {
+      "id" : "_z39ihxl5Eemua4MpESTNBA",
+      "name" : "mail_smtp"
+    }, {
+      "id" : "_z39ihRl5Eemua4MpESTNBA",
+      "name" : "mail_sujet"
+    } ]
+  } ]
+}

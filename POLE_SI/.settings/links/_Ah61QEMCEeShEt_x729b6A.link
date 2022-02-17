@@ -1,0 +1,26 @@
+{
+  "itemId" : "_Ah61QEMCEeShEt_x729b6A",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_m5aqsKF8Eemh3cf7jJnMNA",
+    "parameterList" : [ {
+      "id" : "_s1UfYdQpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_Port"
+    }, {
+      "id" : "_s1UfYtQpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_Server"
+    }, {
+      "id" : "_s1UfY9QpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_Schema"
+    }, {
+      "id" : "_s1UfZNQpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_Login"
+    }, {
+      "id" : "_s1UfZdQpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_Password"
+    }, {
+      "id" : "_s1UfZ9QpEeuCk4_9eEdUow",
+      "name" : "DB_APOGEE_REFAPO_AdditionalParams"
+    } ]
+  } ]
+}

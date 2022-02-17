@@ -1,0 +1,79 @@
+{
+  "itemId" : "_OaB6wKFoEemh3cf7jJnMNA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_bdYhAOzfEeWIxuGaxCQNUw",
+    "parameterList" : [ {
+      "id" : "_C1e4oRmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Schema"
+    }, {
+      "id" : "_C1e4ohmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Sid"
+    }, {
+      "id" : "_C1e4oxmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Password"
+    }, {
+      "id" : "_C1e4pBmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Login"
+    }, {
+      "id" : "_C1e4pRmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_AdditionalParams"
+    }, {
+      "id" : "_C1e4phmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Port"
+    }, {
+      "id" : "_C1e4pxmkEemu-_1PF99Ixw",
+      "name" : "referentiel_dsi_PROD1_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_UhIWsKF6Eemh3cf7jJnMNA",
+    "parameterList" : [ {
+      "id" : "_UhIWuKF6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_AdditionalParams"
+    }, {
+      "id" : "_UhIWs6F6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Sid"
+    }, {
+      "id" : "_UhIWtaF6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Schema"
+    }, {
+      "id" : "_UhIWt6F6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Password"
+    }, {
+      "id" : "_UhIWtKF6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Server"
+    }, {
+      "id" : "_UhIWsqF6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Port"
+    }, {
+      "id" : "_UhIWtqF6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Login"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_-6BZcKF7Eemh3cf7jJnMNA",
+    "parameterList" : [ {
+      "id" : "_-6LKcqF7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_Server"
+    }, {
+      "id" : "_-6LKdKF7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_Login"
+    }, {
+      "id" : "_-6LKdqF7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_ServiceName"
+    }, {
+      "id" : "_-6LKd6F7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_AdditionalParams"
+    }, {
+      "id" : "_-6LKcaF7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_Port"
+    }, {
+      "id" : "_-6LKc6F7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_Schema"
+    }, {
+      "id" : "_-6LKdaF7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_Password"
+    } ]
+  } ]
+}

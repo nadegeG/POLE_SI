@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:dovNTnEkqQRNnLaUQi1axSlxd2El94Mv6fhkp6Pb"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/vivien.crossay/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5uzaTrx/MA7fXREP0DY4lPq6OiFjJKmeDwk6sGCv"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_75o6sE9qEeinI95U_U61-w" name="DataOperation"/>
+    <routinesParameter id="_76PXpk9qEeinI95U_U61-w" name="Mathematical"/>
+    <routinesParameter id="_76YhmU9qEeinI95U_U61-w" name="Numeric"/>
+    <routinesParameter id="_76iSkE9qEeinI95U_U61-w" name="Relational"/>
+    <routinesParameter id="_77bqgE9qEeinI95U_U61-w" name="SQLike"/>
+    <routinesParameter id="_761NiU9qEeinI95U_U61-w" name="StringHandling"/>
+    <routinesParameter id="_76--hk9qEeinI95U_U61-w" name="TalendDataGenerator"/>
+    <routinesParameter id="_76--kE9qEeinI95U_U61-w" name="TalendDate"/>
+    <routinesParameter id="_77bqdk9qEeinI95U_U61-w" name="TalendStringUtil"/>
+    <routinesParameter id="_77R5eU9qEeinI95U_U61-w" name="TalendString"/>
+  </parameters>
+  <node componentName="tLDAPOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPOutput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.120.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="636"/>
+    <elementParameter field="TEXT" name="BASEDN" value="&quot;OU=ETUD,OU=Users,OU=UEVE,DC=ueve,DC=local&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="LDAPS"/>
+    <elementParameter field="CHECK" name="ADVANCEDCA" value="true"/>
+    <elementParameter field="FILE" name="STORECA" value="&quot;C:/Program Files/Java/jdk1.8.0_161/jre/lib/security/cacerts&quot;"/>
+    <elementParameter field="PASSWORD" name="STORECAPWD" value="enc:system.encryption.key.v1:c1ScoxPYs12oe2C++zLvEQvxi/hmGc7QUbpLjVYv1itfeeR9itU="/>
+    <elementParameter field="CHECK" name="ALWAYS_TRUST" value="true"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;administrateur@ueve&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lx7pEOFzDTiUsqhLylELyfqTZcJ2Nwj9p3+GUsmK83il2RFac5tK"/>
+    <elementParameter field="TEXT" name="MULTI_VALUE_SEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ALIASES" value="always"/>
+    <elementParameter field="CLOSED_LIST" name="REFERRALS" value="ignore"/>
+    <elementParameter field="CLOSED_LIST" name="INSERT_MODE" value="UPDATA"/>
+    <elementParameter field="COLUMN_LIST" name="DN_COLUMN_NAME" value="dn"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" show="false" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dn"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="unicodePwd"/>
+      <elementValue elementRef="BASE64" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="userAccountControl"/>
+      <elementValue elementRef="BASE64" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ATTRIBUTE_OPTIONS" value="true"/>
+    <elementParameter field="TABLE" name="ATTRIBUTE_OPTIONS">
+      <elementValue elementRef="ATTRIBUTE_NAME" value="unicodePwd"/>
+      <elementValue elementRef="ATTRIBUTE_OPTION" value="REPLACE"/>
+      <elementValue elementRef="UPDATEBASE64" value="true"/>
+      <elementValue elementRef="ATTRIBUTE_NAME" value="userAccountControl"/>
+      <elementValue elementRef="ATTRIBUTE_OPTION" value="REPLACE"/>
+      <elementValue elementRef="UPDATEBASE64" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="AD_MAJ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLDAPOutput_1">
+      <column comment="" key="true" length="-1" name="dn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unicodePwd" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_byte[]" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="userAccountControl" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" length="-1" name="dn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unicodePwd" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_byte[]" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="userAccountControl" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLDAPInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPInput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: This component only supports byte[], List and String types."/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tLDAPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;192.168.120.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="636"/>
+    <elementParameter field="TEXT" name="BASEDN" show="false" value="&quot;OU=ETUD,OU=Users,OU=UEVE,DC=ueve,DC=local&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" show="false" value="LDAPS"/>
+    <elementParameter field="CHECK" name="ADVANCEDCA" show="false" value="true"/>
+    <elementParameter field="FILE" name="STORECA" show="false" value="&quot;C:/Program Files/Java/jdk1.8.0_161/jre/lib/security/cacerts&quot;"/>
+    <elementParameter field="PASSWORD" name="STORECAPWD" show="false" value="enc:system.encryption.key.v1:hO0yj6x9Kxaoys3oxXZnuRqER8tRs9fbCjpERB7rM1nE9TNsmss="/>
+    <elementParameter field="CHECK" name="ALWAYS_TRUST" show="false" value="true"/>
+    <elementParameter field="CHECK" name="AUTHENTIFICATION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;administrateur@ueve&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:bznrihQjTbtDBSY+rw0hWzNOcWwbVwxYQYyyfwFlEn6InV3kFhlz+To="/>
+    <elementParameter field="CLOSED_LIST" name="ALIASES" show="false" value="always"/>
+    <elementParameter field="CLOSED_LIST" name="REFERRALS" show="false" value="ignore"/>
+    <elementParameter field="MEMO" name="FILTER" value="&quot;(&amp;(userAccountControl=66080))&quot;"/>
+    <elementParameter field="TEXT" name="MULTI_VALUE_SEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="LIMIT" value="0"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="ISPAGING" value="true"/>
+    <elementParameter field="TEXT" name="PAGESIZE" value="1200"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="cn"/>
+      <elementValue elementRef="BINARY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLDAPInput_1">
+      <column comment="" key="false" length="-1" name="cn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="cn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="cn"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="cn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLDAPConnection" componentVersion="1.2" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.120.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="636"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="LDAPS"/>
+    <elementParameter field="TEXT" name="BASEDN" value="&quot;OU=ETUD,OU=USERS,OU=UEVE,DC=ueve,DC=local&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCEDCA" value="true"/>
+    <elementParameter field="FILE" name="STORECA" value="&quot;C:/Program Files/Java/jdk1.8.0_161/jre/lib/security/cacerts&quot;"/>
+    <elementParameter field="PASSWORD" name="STORECAPWD" value="enc:system.encryption.key.v1:j3YXbre5wtucIAcbdQrsP4DTJrboxkxKjJXP+JuP4N5qP3lAaNE="/>
+    <elementParameter field="CHECK" name="ALWAYS_TRUST" value="true"/>
+    <elementParameter field="CHECK" name="AUTHENTIFICATION" value="true"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;CN=Administrateur,CN=Users,DC=ueve,DC=local&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lzocT4T+mPCCWS3v5zZ5la7k8JTthF21Yzbi6VGKBac7Ww9YbW5N"/>
+    <elementParameter field="CLOSED_LIST" name="ALIASES" value="always"/>
+    <elementParameter field="CLOSED_LIST" name="REFERRALS" value="ignore"/>
+    <elementParameter field="TEXT" name="LABEL" value="AD_"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tLDAPInput" componentVersion="0.102" offsetLabelX="1" offsetLabelY="5" posX="192" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPInput_3"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: This component only supports byte[], List and String types."/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tLDAPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;192.168.120.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="636"/>
+    <elementParameter field="TEXT" name="BASEDN" show="false" value="&quot;OU=ETUD,OU=Users,OU=UEVE,DC=ueve,DC=local&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" show="false" value="LDAPS"/>
+    <elementParameter field="CHECK" name="ADVANCEDCA" show="false" value="true"/>
+    <elementParameter field="FILE" name="STORECA" show="false" value="&quot;C:/Program Files/Java/jdk1.8.0_161/jre/lib/security/cacerts&quot;"/>
+    <elementParameter field="PASSWORD" name="STORECAPWD" show="false" value="enc:system.encryption.key.v1:TBN7lJ/TASM1gYaWmmnCnCgSn+LfAg8YU8yoizpIMXO0GWJ+vwg="/>
+    <elementParameter field="CHECK" name="ALWAYS_TRUST" show="false" value="true"/>
+    <elementParameter field="CHECK" name="AUTHENTIFICATION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;administrateur@ueve&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:IEkOyu5ZbWqroACYSoYoeUH7CxPkG/dmsciGsof4uvK8K10GgL2g3fU="/>
+    <elementParameter field="CLOSED_LIST" name="ALIASES" show="false" value="always"/>
+    <elementParameter field="CLOSED_LIST" name="REFERRALS" show="false" value="ignore"/>
+    <elementParameter field="MEMO" name="FILTER" value="&quot;(&amp;(memberOf=CN=2018-2019,OU=Groupe,OU=ETUD,OU=Users,OU=UEVE,DC=ueve,DC=local))&quot;"/>
+    <elementParameter field="TEXT" name="MULTI_VALUE_SEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="LIMIT" value="0"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="ISPAGING" value="true"/>
+    <elementParameter field="TEXT" name="PAGESIZE" value="1200"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="cn"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="userAccountControl"/>
+      <elementValue elementRef="BINARY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="AD"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLDAPInput_3">
+      <column comment="" key="false" length="-1" name="cn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="userAccountControl" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="cn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="userAccountControl" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MHbMsLvvEein0ecWfnqrpA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="exit" name="exit">
+      <column comment="" key="false" length="-1" name="cn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="userAcountControl" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateColumnNameFilter="true" activateCondensedTool="true" activateExpressionFilter="true" columnNameFilter="" name="exit" rejectInnerJoin="true" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="ad.cn " name="cn" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="ad.userAccountControl " name="userAcountControl" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="ad" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="cn" nullable="true" type="id_String"/>
+        <mapperTableEntries name="userAccountControl" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" activateExpressionFilter="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="ldap_dsi" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="dn" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="ad.cn " name="uid" nullable="true" operator="=" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLDAPInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPInput_2"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: This component only supports byte[], List and String types."/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value="tLDAPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.120.101&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="636"/>
+    <elementParameter field="TEXT" name="BASEDN" value="&quot;dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="LDAPS"/>
+    <elementParameter field="CHECK" name="ADVANCEDCA" value="false"/>
+    <elementParameter field="FILE" name="STORECA" show="false" value="&quot;c:/mycacerts&quot;"/>
+    <elementParameter field="PASSWORD" name="STORECAPWD" show="false" value="enc:system.encryption.key.v1:YiTRcA9v45auUvPkLreZIcZSUzSrPoQmW8CxByFU"/>
+    <elementParameter field="CHECK" name="ALWAYS_TRUST" show="false" value="false"/>
+    <elementParameter field="CHECK" name="AUTHENTIFICATION" value="true"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;cn=manager,dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Y1PtjJkI4QGOLc9pKk5dfFXIH9YNCzFWIvzBbp1GPzM4kHuRHRlDdA=="/>
+    <elementParameter field="CLOSED_LIST" name="ALIASES" value="always"/>
+    <elementParameter field="CLOSED_LIST" name="REFERRALS" value="ignore"/>
+    <elementParameter field="MEMO" name="FILTER" value="&quot;(&amp;(eduPersonAffiliation=student)(supannEtuAnneeInscription=2018))&quot;"/>
+    <elementParameter field="TEXT" name="MULTI_VALUE_SEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="LIMIT" value="0"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="ISPAGING" value="false"/>
+    <elementParameter field="TEXT" name="PAGESIZE" show="false" value="100"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_T6tOsG-BEeasOfR8m96YFA - metadata"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dn"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uid"/>
+      <elementValue elementRef="BINARY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="LDAP DSI"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLDAPInput_2">
+      <column comment="" key="false" length="59" name="dn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="uid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="59" name="dn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="uid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="cn"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="userAcountControl"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="exit" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="cn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="userAcountControl" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_1"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/workspace/export/listeEtudiantsAD_NonPresentLDAP.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" show="false" value="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" show="false" value="0"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="cn"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="userAcountControl"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="exit" name="tFileOutputExcel_1">
+      <column comment="" key="false" length="-1" name="cn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="userAcountControl" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLDAPInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPInput_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: This component only supports byte[], List and String types."/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value="tLDAPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.120.101&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="636"/>
+    <elementParameter field="TEXT" name="BASEDN" value="&quot;dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="LDAPS"/>
+    <elementParameter field="CHECK" name="ADVANCEDCA" value="false"/>
+    <elementParameter field="FILE" name="STORECA" show="false" value="&quot;c:/mycacerts&quot;"/>
+    <elementParameter field="PASSWORD" name="STORECAPWD" show="false" value="enc:system.encryption.key.v1:J/JgdvUOmmrHNOwYK85bis7lCdeFowa6kATUe9V8"/>
+    <elementParameter field="CHECK" name="ALWAYS_TRUST" show="false" value="false"/>
+    <elementParameter field="CHECK" name="AUTHENTIFICATION" value="true"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;cn=manager,dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wICI//pStjVBdOBVdWx7kFeMC5gBOMrqWXIbFSAonkPn/91C5DulSQ=="/>
+    <elementParameter field="CLOSED_LIST" name="ALIASES" value="always"/>
+    <elementParameter field="CLOSED_LIST" name="REFERRALS" value="ignore"/>
+    <elementParameter field="MEMO" name="FILTER" value="&quot;(&amp;(eduPersonAffiliation=student)(supannEtuAnneeInscription=2018))&quot;"/>
+    <elementParameter field="TEXT" name="MULTI_VALUE_SEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="LIMIT" value="0"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="ISPAGING" value="false"/>
+    <elementParameter field="TEXT" name="PAGESIZE" show="false" value="100"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_T6tOsG-BEeasOfR8m96YFA - metadata"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dn"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uid"/>
+      <elementValue elementRef="BINARY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="LDAP DSI"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLDAPInput_4">
+      <column comment="" key="false" length="59" name="dn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="uid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="59" name="dn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="uid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dn"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uid"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_3">
+      <column comment="" key="false" length="59" name="dn" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="uid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="TO" value="&quot;vivien@univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;talend@univ-evry.com&quot;"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" show="false" value="&quot;sender&quot;"/>
+    <elementParameter field="TEXT" name="CC" value="&quot;carbon@example.com&quot;"/>
+    <elementParameter field="TEXT" name="BCC" value="&quot;blindcarbon@example.com&quot;"/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;[TALEND] Export liste comptes etudiants&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Bonjour,&#13;&#10;&#13;&#10;Voici ci joint l'export des comptes etudiants présent dans l'Active Direcory et non présent dans le LDAP DSI.&#13;&#10;&#13;&#10;Cordialement,&#13;&#10;&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS">
+      <elementValue elementRef="FILE" value="&quot;C:\Talend\workspace\export\listeEtudiantsAD_NonPresentLDAP.xlsx&quot;"/>
+      <elementValue elementRef="CONTENT_TRANSFER_ENCODING" value="DEFAULT"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="25"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;assistance-gestion&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:x3HadERYiZDPTbKkTnm26ODJziusyiP4XbHhte464Uqx5SVUV3c="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_1"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLDAPInput_1" offsetLabelX="0" offsetLabelY="0" source="tLDAPInput_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="cn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tLDAPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tLDAPConnection_1" target="tLDAPInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="ad" lineStyle="0" metaname="tLDAPInput_3" offsetLabelX="0" offsetLabelY="0" source="tLDAPInput_3" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="userAccountControl"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ad"/>
+  </connection>
+  <connection connectorName="FLOW" label="exit" lineStyle="0" metaname="exit" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="userAcountControl"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="exit"/>
+  </connection>
+  <connection connectorName="FLOW" label="ldap_dsi" lineStyle="8" metaname="tLDAPInput_2" offsetLabelX="0" offsetLabelY="0" source="tLDAPInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ldap_dsi"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tFileOutputExcel_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputExcel_1" target="tSendMail_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLDAPInput_4" offsetLabelX="0" offsetLabelY="0" source="tLDAPInput_4" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPOutput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPInput_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLDAPInput_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b8f28d20-03a0-425d-88d0-d7aaf89f8230"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2B5/saNOJHe4syKosPTo0bVYtb65VhHjyoj5aKn/64V+dUBPWRD9Tn0fCnsoTmJ+UJiQNMPTOQnT&#13;
+7+krK9yDvA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_59101974-e941-401b-9b41-080a7eba5ebd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jTTn+m4PJXePRJY+69Gks5aiOh7NkFzey++mh9Q5IEDWwzcoudNvLe+IVDDtvnfvY2fs6xgXHx2V&#13;
+k9PsWuzemw==</DigestValue></Reference></SignedInfo><SignatureValue>oEPfKmYip2IY3RmcgJ1nTzaljA8NNIStKt7VSgMm6FWLkgmRQMeJIRwfx6AvyzQtAv65/OhRD222&#13;
+OaelljxND1Ju4lrTWBm5ATcAdX4C9Q+jDRIP8L5EI89brtqqJ66dN7FJrpxI4hBYJML51TT9z66k&#13;
+znUX6RfRbAW8P36zziDSZtl4weBjRC1wekGAMvvryQ3Xjz0AyE16DAH8xyCGYvcIiFX9VpsuH1DD&#13;
+pOgcTLg/fWi1UDbJaJLg4YQWuTcqueM3QpjXcD/DkoLm9gOhGAfLHokf8RaQvvjGnvbOMIwoB1QD&#13;
+CNBAVLFRTorm/xtQ4Qc6mMXqcd/V1Pngw6YL/A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_59101974-e941-401b-9b41-080a7eba5ebd" Target="#_b8f28d20-03a0-425d-88d0-d7aaf89f8230"><Timestamp>2022-02-17 10:17:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

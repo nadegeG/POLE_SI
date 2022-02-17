@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Port" prompt="DB_REFETB_REFADMIN_Port?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Sid" prompt="DB_REFETB_REFADMIN_Sid?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="refetb"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Server" prompt="DB_REFETB_REFADMIN_Server?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="192.168.120.102"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Schema" prompt="DB_REFETB_REFADMIN_Schema?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value=""/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Login" prompt="DB_REFETB_REFADMIN_Login?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value="refadmin"/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_Password" prompt="DB_REFETB_REFADMIN_Password?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_Password" value="enc:system.encryption.key.v1:Bl1Hxh3VI5Z0Q9Gt/9KnXMabnrUAJuW4YUCkD7lqtKlnNw=="/>
+    <contextParameter comment="" name="DB_REFETB_REFADMIN_AdditionalParams" prompt="DB_REFETB_REFADMIN_AdditionalParams?" promptNeeded="false" repositoryContextId="_R3BuoKF_Eemh3cf7jJnMNA" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:BBuXqvw4T7NNrXBqPXgw80VBr8k8Z1qf/tUByJ/H"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/vivien.crossay/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:bL08eTwsxBnK0AkG7ueSYOTmAT7VAuufOnFBBx6l"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_MXsLgEobEeiPKskVmFzbWQ" name="DataOperation"/>
+    <routinesParameter id="_McTlwEobEeiPKskVmFzbWQ" name="Mathematical"/>
+    <routinesParameter id="_MeFucEobEeiPKskVmFzbWQ" name="Numeric"/>
+    <routinesParameter id="_MfuGIEobEeiPKskVmFzbWQ" name="Relational"/>
+    <routinesParameter id="_Mo86oEobEeiPKskVmFzbWQ" name="SQLike"/>
+    <routinesParameter id="_MhEJ8EobEeiPKskVmFzbWQ" name="StringHandling"/>
+    <routinesParameter id="_MijXsEobEeiPKskVmFzbWQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_MkClcEobEeiPKskVmFzbWQ" name="TalendDate"/>
+    <routinesParameter id="_Mnds4EobEeiPKskVmFzbWQ" name="TalendStringUtil"/>
+    <routinesParameter id="_Ml-fIEobEeiPKskVmFzbWQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_VJEiAOwpEeWY0ZqGhB774g"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DB_REFETB_REFADMIN_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DB_REFETB_REFADMIN_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DB_REFETB_REFADMIN_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DB_REFETB_REFADMIN_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.DB_REFETB_REFADMIN_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jB/iwbzYfJoNFjen9NWSZy+zOqDeog3OFBRekjHo+TS0TP8Xt/S4csEXhjfpDNqIF+ENpCHqPP6iTMUPrY2e"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select distinct compte.ref_ind_id,&#13;&#10;ind_source.ref_ind_si,&#13;&#10;ind_source.ref_ind_si as login ,&#13;&#10;to_char(individu.nom_usu) as nom,&#13;&#10;to_char(individu.prenom) as prenom,&#13;&#10;case &#13;&#10;          WHEN    individu.cod_civilite='1' THEN 'MALE'&#13;&#10;          ELSE    'FEMALE'&#13;&#10;        END  AS civ,&#13;&#10;individu.date_nais as date_nais,&#13;&#10;trim(ZY0H.numtel) as phone_number,&#13;&#10;case &#13;&#10;WHEN vw_cartes.codebar IS NOT NULL then vw_cartes.codebar&#13;&#10;else  trim(CONCAT('7899',ind_source.ref_ind_si))&#13;&#10;end as barcode,&#13;&#10;TO_CHAR(compte.mail) as email_address,&#13;&#10;        'UEVE' AS campus_code,&#13;&#10;        'fr' as preferred_language,&#13;&#10;        'ACTIVE' as status,&#13;&#10;        '4' as user_group,&#13;&#10;        'work' as email_types, &#13;&#10;        case&#13;&#10;                when SUBSTR(ZY0H.numtel,1,2)='01' then 'office'&#13;&#10;                when  SUBSTR(ZY0H.numtel,1,2)='06'  then 'mobile'&#13;&#10;                when  SUBSTR(ZY0H.numtel,1,2)='07' then 'mobile'&#13;&#10;                when  SUBSTR(ZY0H.numtel,1,3)='336' then 'mobile'&#13;&#10;                when  SUBSTR(ZY0H.numtel,1,4)='+336' then 'mobile'&#13;&#10;                when  SUBSTR(ZY0H.numtel,1,3)='337' then 'mobile'&#13;&#10;                when  SUBSTR(ZY0H.numtel,1,4)='+337' then 'mobile'&#13;&#10;&#13;&#10;   else 'office'&#13;&#10;     end  as phone_types,&#13;&#10;    'home' as address_type,&#13;&#10;    trim( ZY0F.ZONADB) as lib_ad1_princ,&#13;&#10;trim(ZY0F.ZONADC) AS lib_ad2_princ,&#13;&#10;trim(ZY0F.CDPOST) as cod_bdi_princ,&#13;&#10;trim(replace(ZY0F.ZONADD,trim(ZY0F.CDPOST),'')) as lib_com_princ,&#13;&#10;ZY0F.CDPAYS as country&#13;&#10;from compte&#13;&#10;inner join individu&#13;&#10;on compte.ref_ind_id=individu.ref_ind_id&#13;&#10;inner join ind_source&#13;&#10;on ind_source.ref_ind_id=compte.ref_ind_id&#13;&#10;inner join ind_structure&#13;&#10;on ind_structure.ref_ind_id=compte.ref_ind_id&#13;&#10;inner join zy00@siham&#13;&#10;on ind_source.ref_ind_si=FORMAT_MATRICULE( zy00.matcle)&#13;&#10;inner join ZY0H@SIHAM&#13;&#10;on ZY0H.nudoss=zy00.nudoss&#13;&#10;inner join ZY0F@SIHAM&#13;&#10;on ZY0F.nudoss=zy00.nudoss&#13;&#10;left join vw_cartes@unicampus &#13;&#10;on vw_cartes.id_personne=CONCAT(ind_source.ref_ind_si,'pers0911975C')&#13;&#10;where trunc(sysdate) between trunc(nvl(ind_structure.date_debut-7,&#10; sysdate)) and trunc(nvl(ind_structure.date_fin+15,sysdate))&#13;&#10;and ind_source.source_id=2 and ZY0H.FLPHON=1 and vw_cartes.STATUT='ACTIF' and &#10; ((SUBSTR(trim(ZY0H.numtel),1,2)='06') or (SUBSTR(trim(ZY0H.numtel),1,2)='07'))&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DB_REFETB_REFADMIN_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REF_IND_SI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOGIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CIV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_NAIS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHONE_NUMBER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BARCODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMAIL_ADDRESS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CAMPUS_CODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PREFERRED_LANGUAGE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STATUS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USER_GROUP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMAIL_TYPES"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHONE_TYPES"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADDRESS_TYPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_AD1_PRINC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_AD2_PRINC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_BDI_PRINC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_COM_PRINC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_1">
+      <column comment="" defaultValue="" key="false" length="10" name="REF_IND_ID" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="REF_IND_SI" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="LOGIN" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="NOM" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="PRENOM" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="CIV" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATE_NAIS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="99" name="PHONE_NUMBER" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BARCODE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="EMAIL_ADDRESS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="CAMPUS_CODE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="32" name="PREFERRED_LANGUAGE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="32" name="STATUS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="32" name="USER_GROUP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="32" name="EMAIL_TYPES" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="PHONE_TYPES" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="32" name="ADDRESS_TYPE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="45" name="LIB_AD1_PRINC" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="40" name="LIB_AD2_PRINC" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="COD_BDI_PRINC" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1280" name="LIB_COM_PRINC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="COUNTRY" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="personnels" name="copyOfcopyOfcopyOfpersonnels">
+      <column comment="" key="false" length="-1" name="document" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="export_personnel">
+        <nodes name="REF_IND_ID" nullable="false" type="id_BigDecimal" xpath="export_personnel/REF_IND_ID"/>
+        <nodes name="REF_IND_SI" type="id_String" xpath="export_personnel/REF_IND_SI"/>
+        <nodes name="LOGIN" outgoingConnections="//@node.1/@nodeData/@connections.18" type="id_String" xpath="export_personnel/LOGIN"/>
+        <nodes name="NOM" outgoingConnections="//@node.1/@nodeData/@connections.2" type="id_String" xpath="export_personnel/NOM"/>
+        <nodes name="PRENOM" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_String" xpath="export_personnel/PRENOM"/>
+        <nodes name="CIV" outgoingConnections="//@node.1/@nodeData/@connections.3" type="id_String" xpath="export_personnel/CIV"/>
+        <nodes name="DATE_NAIS" outgoingConnections="//@node.1/@nodeData/@connections.7" type="id_Date" xpath="export_personnel/DATE_NAIS"/>
+        <nodes name="PHONE_NUMBER" nullable="false" outgoingConnections="//@node.1/@nodeData/@connections.15" type="id_String" xpath="export_personnel/PHONE_NUMBER"/>
+        <nodes name="BARCODE" outgoingConnections="//@node.1/@nodeData/@connections.17" type="id_String" xpath="export_personnel/BARCODE"/>
+        <nodes name="EMAIL_ADDRESS" outgoingConnections="//@node.1/@nodeData/@connections.0 //@node.1/@nodeData/@connections.13 //@node.1/@nodeData/@connections.19" type="id_String" xpath="export_personnel/EMAIL_ADDRESS"/>
+        <nodes name="CAMPUS_CODE" outgoingConnections="//@node.1/@nodeData/@connections.5" type="id_String" xpath="export_personnel/CAMPUS_CODE"/>
+        <nodes name="PREFERRED_LANGUAGE" outgoingConnections="//@node.1/@nodeData/@connections.6" type="id_String" xpath="export_personnel/PREFERRED_LANGUAGE"/>
+        <nodes name="STATUS" type="id_String" xpath="export_personnel/STATUS"/>
+        <nodes name="USER_GROUP" outgoingConnections="//@node.1/@nodeData/@connections.4" type="id_String" xpath="export_personnel/USER_GROUP"/>
+        <nodes name="EMAIL_TYPES" outgoingConnections="//@node.1/@nodeData/@connections.14" type="id_String" xpath="export_personnel/EMAIL_TYPES"/>
+        <nodes name="PHONE_TYPES" outgoingConnections="//@node.1/@nodeData/@connections.16" type="id_String" xpath="export_personnel/PHONE_TYPES"/>
+        <nodes name="ADDRESS_TYPE" outgoingConnections="//@node.1/@nodeData/@connections.12" type="id_String" xpath="export_personnel/ADDRESS_TYPE"/>
+        <nodes name="LIB_AD1_PRINC" nullable="false" outgoingConnections="//@node.1/@nodeData/@connections.8" type="id_String" xpath="export_personnel/LIB_AD1_PRINC"/>
+        <nodes name="LIB_AD2_PRINC" nullable="false" outgoingConnections="//@node.1/@nodeData/@connections.9" type="id_String" xpath="export_personnel/LIB_AD2_PRINC"/>
+        <nodes name="COD_BDI_PRINC" nullable="false" outgoingConnections="//@node.1/@nodeData/@connections.11" type="id_String" xpath="export_personnel/COD_BDI_PRINC"/>
+        <nodes name="LIB_COM_PRINC" outgoingConnections="//@node.1/@nodeData/@connections.10" type="id_String" xpath="export_personnel/LIB_COM_PRINC"/>
+        <nodes name="COUNTRY" nullable="false" type="id_String" xpath="export_personnel/COUNTRY"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" allInOne="true" enableEmptyElement="false" name="copyOfcopyOfcopyOfpersonnels">
+        <nodes expression="" name="document" pattern="" type="id_Document" xpath="copyOfcopyOfcopyOfpersonnels/document">
+          <children main="true" name="users" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children loop="true" main="true" name="user" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="&quot;PUBLIC&quot;" name="record_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/record_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="export_personnel.EMAIL_ADDRESS" incomingConnections="//@node.1/@nodeData/@connections.0" name="primary_id" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/primary_id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="export_personnel.PRENOM" incomingConnections="//@node.1/@nodeData/@connections.1" name="first_name" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/first_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="middle_name" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/middle_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="export_personnel.NOM" incomingConnections="//@node.1/@nodeData/@connections.2" name="last_name" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/last_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="pin_number" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/pin_number" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="user_title" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_title" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="job_category" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/job_category" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="job_description" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/job_description" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="export_personnel.CIV" incomingConnections="//@node.1/@nodeData/@connections.3" name="gender" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/gender" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="export_personnel.USER_GROUP" incomingConnections="//@node.1/@nodeData/@connections.4" name="user_group" type="id_Integer" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_group" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="export_personnel.CAMPUS_CODE" incomingConnections="//@node.1/@nodeData/@connections.5" name="campus_code" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/campus_code" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="web_site_url" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/web_site_url" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="&quot;00&quot;" name="cataloger_level" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/cataloger_level" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="export_personnel.PREFERRED_LANGUAGE" incomingConnections="//@node.1/@nodeData/@connections.6" name="preferred_language" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/preferred_language" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,export_personnel.DATE_NAIS) +&quot;Z&quot; " incomingConnections="//@node.1/@nodeData/@connections.7" name="birth_date" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/birth_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="expiry_date" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/expiry_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="purge_date" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/purge_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="account_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/account_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="external_id" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/external_id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="password" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/password" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="force_password_change" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/force_password_change" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="&quot;ACTIVE&quot;" name="status" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="contact_info" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="addresses" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="address" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address" xsi:type="TalendXMLMap:OutputTreeNode">
+                    <children expression="&quot;true&quot;" name="preferred" nodeType="ATTRIBUT" type="id_Boolean" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/@preferred" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="&quot;External&quot;" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="export_personnel.LIB_AD1_PRINC" incomingConnections="//@node.1/@nodeData/@connections.8" name="line1" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/line1" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="export_personnel.LIB_AD2_PRINC" incomingConnections="//@node.1/@nodeData/@connections.9" name="line2" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/line2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="" name="line3" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/line3" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="line4" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/line4" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="line5" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/line5" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="export_personnel.LIB_COM_PRINC" incomingConnections="//@node.1/@nodeData/@connections.10" name="city" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/city" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="" name="state_province" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/state_province" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="export_personnel.COD_BDI_PRINC" incomingConnections="//@node.1/@nodeData/@connections.11" name="postal_code" type="id_Integer" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/postal_code" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="&quot;FRA&quot;" name="country" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/country" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="" name="address_note" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/address_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="" name="start_date" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/start_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="" name="end_date" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/end_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="address_types" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/address_types" xsi:type="TalendXMLMap:OutputTreeNode">
+                      <children expression="export_personnel.ADDRESS_TYPE" incomingConnections="//@node.1/@nodeData/@connections.12" name="address_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/address_types/address_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    </children>
+                  </children>
+                </children>
+                <children name="emails" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/emails" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="email" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email" xsi:type="TalendXMLMap:OutputTreeNode">
+                    <children name="preferred" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/@preferred" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="export_personnel.EMAIL_ADDRESS" incomingConnections="//@node.1/@nodeData/@connections.13" name="email_address" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/email_address" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="description" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/description" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="email_types" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/email_types" xsi:type="TalendXMLMap:OutputTreeNode">
+                      <children expression="export_personnel.EMAIL_TYPES" incomingConnections="//@node.1/@nodeData/@connections.14" name="email_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/email_types/email_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    </children>
+                  </children>
+                </children>
+                <children name="phones" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/phones" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="phone" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone" xsi:type="TalendXMLMap:OutputTreeNode">
+                    <children expression="&quot;true&quot;" name="preferred" nodeType="ATTRIBUT" type="id_Boolean" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/@preferred" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="&quot;true&quot;" name="preferred_sms" nodeType="ATTRIBUT" type="id_Boolean" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/@preferred_sms" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="export_personnel.PHONE_NUMBER" incomingConnections="//@node.1/@nodeData/@connections.15" name="phone_number" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/phone_number" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="phone_types" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/phone_types" xsi:type="TalendXMLMap:OutputTreeNode">
+                      <children expression="export_personnel.PHONE_TYPES" incomingConnections="//@node.1/@nodeData/@connections.16" name="phone_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/phone_types/phone_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    </children>
+                  </children>
+                </children>
+              </children>
+              <children expression="" name="user_identifiers" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="user_identifier" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="&quot;External&quot;" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;UEVE&quot;+export_personnel.LOGIN" incomingConnections="//@node.1/@nodeData/@connections.18" name="id_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/id_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression=" export_personnel.EMAIL_ADDRESS" incomingConnections="//@node.1/@nodeData/@connections.19" name="value" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="note" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;ACTIVE&quot;" name="status" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+                <children expression="" name="user_identifier" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="&quot;External&quot;" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;BARCODE&quot;" name="id_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/id_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="export_personnel.BARCODE" incomingConnections="//@node.1/@nodeData/@connections.17" name="value" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="note" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;ACTIVE&quot;" name="status" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children name="user_roles" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_roles" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="user_role" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_roles/user_role" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="status" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="scope" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="role_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/role_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="expiry_date" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/expiry_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="parameters" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/parameters" xsi:type="TalendXMLMap:OutputTreeNode">
+                    <children name="parameter" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/parameters/parameter" xsi:type="TalendXMLMap:OutputTreeNode">
+                      <children name="type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/parameters/parameter/type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                      <children name="value" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/parameters/parameter/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    </children>
+                  </children>
+                </children>
+              </children>
+              <children name="user_blocks" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_blocks" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="user_block" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="block_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/block_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="block_description" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/block_description" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="block_status" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/block_status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="block_note" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/block_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="created_by" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/created_by" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="created_date" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/created_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="expiry_date" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/expiry_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children name="user_notes" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_notes" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="user_note" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_notes/user_note" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="note_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/note_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="note_text" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/note_text" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="user_viewable" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/user_viewable" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="popup_note" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/popup_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="created_by" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/created_by" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="created_date" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/created_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children expression="" name="user_statistics" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="user_statistic" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="statistic_category" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_category" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="category_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/category_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="statistic_note" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+                <children expression="" name="user_statistic" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="statistic_category" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_category" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="category_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/category_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="statistic_note" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+                <children expression="" name="user_statistic" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="statistic_category" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_category" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="category_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/category_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="statistic_note" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+                <children expression="" name="user_statistic" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="statistic_category" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_category" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="category_type" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/category_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="statistic_note" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children name="rs_libraries" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/rs_libraries" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="rs_library" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/rs_libraries/rs_library" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="code" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/rs_libraries/rs_library/code" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children name="library_notices" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/library_notices" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="library_notice" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/library_notices/library_notice" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="code" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/library_notices/library_notice/code" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="value" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/library_notices/library_notice/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children name="pref_first_name" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/pref_first_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="pref_middle_name" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/pref_middle_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="pref_last_name" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/pref_last_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="pref_name_suffix" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/pref_name_suffix" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="is_researcher" type="id_String" xpath="copyOfcopyOfcopyOfpersonnels.document:/users/user/is_researcher" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.9" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.13" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.10" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.11" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.17" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.18" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.20" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.19" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.16" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.0/@children.0/@children.14/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.9" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.1/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.14" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.1/@children.0/@children.4/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.7" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.2/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.15" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.2/@children.0/@children.4/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.8" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24/@children.1/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.9" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputXML_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/workspace/export/BU/personnels.xml&quot;"/>
+    <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="document"/>
+    <elementParameter field="TEXT" name="ROW_TAG" show="false" value="&quot;row&quot;"/>
+    <elementParameter field="CHECK" name="SPLIT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TABLE" name="ROOT_TAGS" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="document"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="personnels" name="tFileOutputXML_1">
+      <column comment="" key="false" length="-1" name="document" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileRowCount" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileRowCount_2"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/workspace/export/ecampus//appropriation_de_cours/appropriation-enseignant.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="IGNORE_EMPTY_ROW" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Tranfert sur le serveur&lt;br&gt; uniquement si le fichier&lt;br&gt;n'est pas vide"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="personnels" name="tFileRowCount_2">
+      <column comment="" key="false" length="-1" name="document" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tParallelize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+    <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="All"/>
+    <elementParameter field="TEXT" name="SLEEPTIME" value="100"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_3"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_VJEiAOwpEeWY0ZqGhB774g"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DB_REFETB_REFADMIN_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DB_REFETB_REFADMIN_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DB_REFETB_REFADMIN_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DB_REFETB_REFADMIN_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.DB_REFETB_REFADMIN_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wnzXFUzpRJEaMM/ha3XYE99f252rCquPIMlGlcj2YMJYKmSyYiiq5kBgwSs9nRsxwNO461nlCs0m3SwRae+3"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select distinct cod_nne_ind,&#13;&#10;cod_etu as login ,&#13;&#10;lib_nom_pat_ind as nom,&#13;&#10;lib_pr1_ind as prenom,&#13;&#10;case &#13;&#10;          WHEN    cod_civ='1' THEN 'MALE'&#13;&#10;          ELSE    'FEMALE'&#13;&#10;        END  AS civ,&#13;&#10;danais as date_nais,&#13;&#10;case&#13;&#10;WHEN num_tel_princ IS NOT NULL THEN num_tel_princ&#13;&#10;ELSE num_tel_SEC&#13;&#10;end as phone_number,&#13;&#10;cod_dip,cod_etp,&#13;&#10;codebar  as id_type,&#13;&#10;mail as email_address, eta_pmt_iae,&#13;&#10;        'UEVE' AS campus_code,&#13;&#10;        'fr' as preferred_language,&#13;&#10;        'ACTIVE' as status,&#13;&#10;        case&#13;&#10;&#9;&#9;when cod_etp='DUPRE' then 4&#13;&#10;        when SUBSTR(cod_VRS_VET,3,1)=2 then 4&#13;&#10;        when SUBSTR(cod_VRS_VET,2,1)=1 then 2&#13;&#10;         when SUBSTR(cod_VRS_VET,2,1)=2 then 2&#13;&#10;          when SUBSTR(cod_VRS_VET,2,1)=3 then 2&#13;&#10;          &#13;&#10;           when SUBSTR(cod_VRS_VET,2,1)=4 then 3&#13;&#10;            when SUBSTR(cod_VRS_VET,2,1)=5 then 3&#13;&#10;            &#13;&#10;             when SUBSTR(cod_VRS_VET,2,1)=6 then 4&#13;&#10;              when SUBSTR(cod_VRS_VET,2,1)=7 then 4&#13;&#10;               when SUBSTR(cod_VRS_VET,2,1)=0 then 4&#13;&#10;        end as user_group,&#13;&#10;        'work' as email_types, &#13;&#10;        case&#13;&#10;                when num_tel_princ is not null and SUBSTR(num_tel_princ,1,2)='01' then 'office'&#13;&#10;                when num_tel_princ is not null and SUBSTR(num_tel_princ,1,2)='06'  then 'mobile'&#13;&#10;                when num_tel_princ is not null and SUBSTR(num_tel_princ,1,2)='07' then 'mobile'&#13;&#10;                when num_tel_princ is not null and SUBSTR(num_tel_princ,1,3)='336' then 'mobile'&#13;&#10;                when num_tel_princ is not null and SUBSTR(num_tel_princ,1,4)='+336' then 'mobile'&#13;&#10;                when num_tel_princ is not null and SUBSTR(num_tel_princ,1,3)='337' then 'mobile'&#13;&#10;                when num_tel_princ is not null and SUBSTR(num_tel_princ,1,4)='+337' then 'mobile'&#13;&#10;                &#13;&#10;                when num_tel_princ is  null and SUBSTR(num_tel_SEC,1,2)='01' then 'office'&#13;&#10;                when num_tel_princ is  null and SUBSTR(num_tel_SEC,1,2)='06'  then 'mobile'&#13;&#10;                when num_tel_princ is  null and SUBSTR(num_tel_SEC,1,2)='07' then 'mobile'&#13;&#10;                when num_tel_princ is  null and SUBSTR(num_tel_SEC,1,3)='336' then 'mobile'&#13;&#10;                when num_tel_princ is  null and SUBSTR(num_tel_SEC,1,4)='+336' then 'mobile'&#13;&#10;                when num_tel_princ is  null and SUBSTR(num_tel_SEC,1,3)='337' then 'mobile'&#13;&#10;                when num_tel_princ is  null and SUBSTR(num_tel_SEC,1,4)='+337' then 'mobile'&#13;&#10;                &#13;&#10;                else 'office'&#13;&#10;     end  as phone_types,&#13;&#10;    'home' as address_type,&#13;&#10; lib_ad1_princ,&#13;&#10;lib_ad2_princ,&#13;&#10;lib_ad3_princ,&#13;&#10;cod_bdi_princ,&#13;&#10;lib_com_princ&#13;&#10;from etu_bibli etu, carte_etu@unicampus carte&#13;&#10;where substr(carte.id_personne,1,instr(carte.id_personne,'A')-1) = to_char(cod_etu)&#13;&#10;and(trunc(dat_sqr) between trunc(to_date('01072019','ddmmyyyy')) and trunc(sysdate)&#13;&#10;     or  trunc(date_attribution) between trunc(to_date('01072019','ddmmyyyy')) and trunc(sysdate) &#13;&#10;     or (eta_pmt_iae != 'P' and dat_sqr is null))&#13;&#10;union &#13;&#10;select distinct cod_nne_ind,&#13;&#10;cod_etu,&#13;&#10;&#13;&#10;lib_nom_pat_ind as nom,&#13;&#10;lib_pr1_ind as prenom,&#13;&#10;case &#13;&#10;          WHEN    cod_civ='1' THEN 'MALE'&#13;&#10;          ELSE    'FEMALE'&#13;&#10;        END  AS civ,&#13;&#10;danais as date_nais,&#13;&#10;num_tel_princ as phone_number,&#13;&#10;cod_dip,cod_etp,&#13;&#10;'7899'||cod_etu, &#13;&#10;mail, eta_pmt_iae,&#13;&#10;        'UEVE' AS campus_code,&#13;&#10;        'fr' as preferred_language,&#13;&#10;        'ACTIVE' as status,&#13;&#10;       case&#13;&#10;&#9;&#9;when cod_etp='DUPRE' then 4&#13;&#10;        when SUBSTR(cod_VRS_VET,3,1)=2 then 4&#13;&#10;        when SUBSTR(cod_VRS_VET,2,1)=1 then 2&#13;&#10;         when SUBSTR(cod_VRS_VET,2,1)=2 then 2&#13;&#10;          when SUBSTR(cod_VRS_VET,2,1)=3 then 2&#13;&#10;          &#13;&#10;           when SUBSTR(cod_VRS_VET,2,1)=4 then 3&#13;&#10;            when SUBSTR(cod_VRS_VET,2,1)=5 then 3&#13;&#10;            &#13;&#10;             when SUBSTR(cod_VRS_VET,2,1)=6 then 4&#13;&#10;              when SUBSTR(cod_VRS_VET,2,1)=7 then 4&#13;&#10;               when SUBSTR(cod_VRS_VET,2,1)=0 then 4&#13;&#10;        end as user_group,&#13;&#10;        'work' as email_types, &#13;&#10;        'office' as phone_types,&#13;&#10;        'home' as address_type,&#13;&#10; lib_ad1_princ,&#13;&#10;lib_ad2_princ,&#13;&#10;lib_ad3_princ,&#13;&#10;cod_bdi_princ,&#13;&#10;lib_com_princ&#13;&#10;from etu_bibli etu2 &#13;&#10;where  not exists (select 1 from carte_etu@unicampus carte2 ,annee_synchro an  &#13;&#10;                where annee_scolarite &lt;= an.ANNEE+1 and an.SOURCE_ID = 3  &#13;&#10;                and substr(carte2.id_personne,1,instr(carte2.id_personne,&#13;&#10; 'A')-1) = to_char(etu2.cod_etu))&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DB_REFETB_REFADMIN_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_NNE_IND"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOGIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CIV"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_NAIS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHONE_NUMBER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DIP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BARCODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMAIL_ADDRESS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ETA_PMT_IAE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CAMPUS_CODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PREFERRED_LANGUAGE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STATUS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USER_GROUP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMAIL_TYPES"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHONE_TYPES"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADDRESS_TYPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_AD1_PRINC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_AD2_PRINC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_AD3_PRINC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_BDI_PRINC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIB_COM_PRINC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_3">
+      <column comment="" key="false" length="10" name="COD_NNE_IND" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="LOGIN" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="NOM" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="PRENOM" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="CIV" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DATE_NAIS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PHONE_NUMBER" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="COD_DIP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="COD_ETP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="BARCODE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="58" name="EMAIL_ADDRESS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ETA_PMT_IAE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="CAMPUS_CODE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PREFERRED_LANGUAGE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="STATUS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="USER_GROUP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DEC" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="EMAIL_TYPES" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="PHONE_TYPES" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ADDRESS_TYPE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="LIB_AD1_PRINC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="LIB_AD2_PRINC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="LIB_AD3_PRINC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="COD_BDI_PRINC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="LIB_COM_PRINC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_3eQV4HAYEeqZVZ6Q2nrAxQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="EXPORT" name="EXPORT">
+      <column comment="" key="false" length="10" name="COD_NNE_IND" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="LOGIN" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="NOM" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="PRENOM" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="CIV" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DATE_NAIS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PHONE_NUMBER" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="COD_DIP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="COD_ETP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="BARCODE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="58" name="EMAIL_ADDRESS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ETA_PMT_IAE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="CAMPUS_CODE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PREFERRED_LANGUAGE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="STATUS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="USER_GROUP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="EMAIL_TYPES" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="PHONE_TYPES" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ADDRESS_TYPE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="LIB_AD1_PRINC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="LIB_AD2_PRINC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="LIB_AD3_PRINC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="COD_BDI_PRINC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="LIB_COM_PRINC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_CYC" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_CUR" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="COD_CMP" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="SISE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="EXPORT" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.COD_NNE_IND " name="COD_NNE_IND" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.LOGIN " name="LOGIN" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.NOM " name="NOM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PRENOM " name="PRENOM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.CIV " name="CIV" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;dd/MM/yy&quot;,row3.DATE_NAIS)) " name="DATE_NAIS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PHONE_NUMBER " name="PHONE_NUMBER" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.COD_DIP " name="COD_DIP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.COD_ETP " name="COD_ETP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.BARCODE " name="BARCODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.EMAIL_ADDRESS " name="EMAIL_ADDRESS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ETA_PMT_IAE " name="ETA_PMT_IAE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.CAMPUS_CODE " name="CAMPUS_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PREFERRED_LANGUAGE " name="PREFERRED_LANGUAGE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.STATUS " name="STATUS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.USER_GROUP " name="USER_GROUP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.EMAIL_TYPES " name="EMAIL_TYPES" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PHONE_TYPES " name="PHONE_TYPES" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ADDRESS_TYPE " name="ADDRESS_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.LIB_AD1_PRINC " name="LIB_AD1_PRINC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.LIB_AD2_PRINC " name="LIB_AD2_PRINC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.LIB_AD3_PRINC " name="LIB_AD3_PRINC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.COD_BDI_PRINC " name="COD_BDI_PRINC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.LIB_COM_PRINC " name="LIB_COM_PRINC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.COD_CYC " name="COD_CYC" type="id_String"/>
+        <mapperTableEntries expression="row4.SUBSTR_ETAPE_LIB_ETP_1_2_ " name="COD_CUR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.COD_CMP " name="COD_CMP" type="id_String"/>
+        <mapperTableEntries expression="row4.SISE " name="SISE" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="COD_NNE_IND" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LOGIN" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="NOM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PRENOM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CIV" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATE_NAIS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PHONE_NUMBER" nullable="true" type="id_String"/>
+        <mapperTableEntries name="COD_DIP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="COD_ETP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BARCODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EMAIL_ADDRESS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ETA_PMT_IAE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CAMPUS_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PREFERRED_LANGUAGE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="STATUS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="USER_GROUP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EMAIL_TYPES" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PHONE_TYPES" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ADDRESS_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_AD1_PRINC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_AD2_PRINC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_AD3_PRINC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="COD_BDI_PRINC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_COM_PRINC" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.COD_ETP " name="COD_ETP" operator="=" type="id_String"/>
+        <mapperTableEntries name="COD_CYC" type="id_String"/>
+        <mapperTableEntries name="SUBSTR_ETAPE_LIB_ETP_1_2_" nullable="true" type="id_String"/>
+        <mapperTableEntries name="COD_CMP" type="id_String"/>
+        <mapperTableEntries name="USER_GROUP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SISE" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_4"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_vA8DIGV8Eeetz_99LXfqPA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;brindibou.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;apoprd&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;apogee&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AtEM9VwR0KMRD27bBepOPinZDyGx/Ud5hJNgLoP0VSBWxm/7ROo="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select DISTINCT etape.COD_ETP,&#13;&#10;etape.COD_CYC,&#13;&#10;SUBSTR(etape.LIB_ETP,1,2),&#13;&#10;VERSION_ETAPE.cod_cmp,&#13;&#10;case&#13;&#10;        WHEN SUBSTR(etape.LIB_ETP,1,1)='L' THEN 2&#13;&#10;        WHEN SUBSTR(etape.LIB_ETP,1,1)='M' THEN 3&#13;&#10;        else   4&#13;&#10;        end as user_group,&#13;&#10;        sec_dis_sis.cod_sds as sise&#13;&#10;from etape &#13;&#10;inner join VERSION_ETAPE&#13;&#10;on etape.COD_ETP=VERSION_ETAPE.COD_ETP   &#13;&#10;inner join vdi_fractionner_vet&#13;&#10;ON vdi_fractionner_vet.COD_ETP=VERSION_ETAPE.COD_ETP&#13;&#10;inner join diplome&#13;&#10;on diplome.cod_dip=vdi_fractionner_vet.cod_dip&#13;&#10;left join sec_dis_sis&#13;&#10;on sec_dis_sis.cod_sds=diplome.cod_sds&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_ETP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_CYC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUBSTR_ETAPE_LIB_ETP_1_2_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_CMP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USER_GROUP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SISE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="APOGEE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_4">
+      <column comment="" key="false" length="6" name="COD_ETP" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COD_CYC" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SUBSTR_ETAPE_LIB_ETP_1_2_" nullable="true" originalDbColumnName="SUBSTR(ETAPE.LIB_ETP,1,2)" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="COD_CMP" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="USER_GROUP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="SISE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_3"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="personnels" name="copyOfcopyOfpersonnels">
+      <column comment="" key="false" length="-1" name="document" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="EXPORT">
+        <nodes name="COD_NNE_IND" type="id_String" xpath="EXPORT/COD_NNE_IND"/>
+        <nodes name="LOGIN" outgoingConnections="//@node.8/@nodeData/@connections.17" type="id_Integer" xpath="EXPORT/LOGIN"/>
+        <nodes name="NOM" outgoingConnections="//@node.8/@nodeData/@connections.2" type="id_String" xpath="EXPORT/NOM"/>
+        <nodes name="PRENOM" outgoingConnections="//@node.8/@nodeData/@connections.1" type="id_String" xpath="EXPORT/PRENOM"/>
+        <nodes name="CIV" outgoingConnections="//@node.8/@nodeData/@connections.3" type="id_String" xpath="EXPORT/CIV"/>
+        <nodes name="DATE_NAIS" outgoingConnections="//@node.8/@nodeData/@connections.6" pattern="" type="id_String" xpath="EXPORT/DATE_NAIS"/>
+        <nodes name="PHONE_NUMBER" outgoingConnections="//@node.8/@nodeData/@connections.15" type="id_String" xpath="EXPORT/PHONE_NUMBER"/>
+        <nodes name="COD_DIP" type="id_String" xpath="EXPORT/COD_DIP"/>
+        <nodes name="COD_ETP" outgoingConnections="//@node.8/@nodeData/@connections.21" type="id_String" xpath="EXPORT/COD_ETP"/>
+        <nodes name="BARCODE" outgoingConnections="//@node.8/@nodeData/@connections.18" type="id_String" xpath="EXPORT/BARCODE"/>
+        <nodes name="EMAIL_ADDRESS" outgoingConnections="//@node.8/@nodeData/@connections.0 //@node.8/@nodeData/@connections.13" type="id_String" xpath="EXPORT/EMAIL_ADDRESS"/>
+        <nodes name="ETA_PMT_IAE" type="id_String" xpath="EXPORT/ETA_PMT_IAE"/>
+        <nodes name="CAMPUS_CODE" outgoingConnections="//@node.8/@nodeData/@connections.4" type="id_String" xpath="EXPORT/CAMPUS_CODE"/>
+        <nodes name="PREFERRED_LANGUAGE" outgoingConnections="//@node.8/@nodeData/@connections.5" type="id_String" xpath="EXPORT/PREFERRED_LANGUAGE"/>
+        <nodes name="STATUS" type="id_String" xpath="EXPORT/STATUS"/>
+        <nodes name="USER_GROUP" outgoingConnections="//@node.8/@nodeData/@connections.22" type="id_String" xpath="EXPORT/USER_GROUP"/>
+        <nodes name="EMAIL_TYPES" outgoingConnections="//@node.8/@nodeData/@connections.14" type="id_String" xpath="EXPORT/EMAIL_TYPES"/>
+        <nodes name="PHONE_TYPES" outgoingConnections="//@node.8/@nodeData/@connections.16" type="id_String" xpath="EXPORT/PHONE_TYPES"/>
+        <nodes name="ADDRESS_TYPE" outgoingConnections="//@node.8/@nodeData/@connections.12" type="id_String" xpath="EXPORT/ADDRESS_TYPE"/>
+        <nodes name="LIB_AD1_PRINC" outgoingConnections="//@node.8/@nodeData/@connections.7" type="id_String" xpath="EXPORT/LIB_AD1_PRINC"/>
+        <nodes name="LIB_AD2_PRINC" outgoingConnections="//@node.8/@nodeData/@connections.8" type="id_String" xpath="EXPORT/LIB_AD2_PRINC"/>
+        <nodes name="LIB_AD3_PRINC" outgoingConnections="//@node.8/@nodeData/@connections.9" type="id_String" xpath="EXPORT/LIB_AD3_PRINC"/>
+        <nodes name="COD_BDI_PRINC" outgoingConnections="//@node.8/@nodeData/@connections.11" type="id_String" xpath="EXPORT/COD_BDI_PRINC"/>
+        <nodes name="LIB_COM_PRINC" outgoingConnections="//@node.8/@nodeData/@connections.10" type="id_String" xpath="EXPORT/LIB_COM_PRINC"/>
+        <nodes name="COD_CYC" nullable="false" type="id_String" xpath="EXPORT/COD_CYC"/>
+        <nodes name="COD_CUR" outgoingConnections="//@node.8/@nodeData/@connections.20" type="id_String" xpath="EXPORT/COD_CUR"/>
+        <nodes name="COD_CMP" nullable="false" outgoingConnections="//@node.8/@nodeData/@connections.19" type="id_String" xpath="EXPORT/COD_CMP"/>
+        <nodes name="SISE" outgoingConnections="//@node.8/@nodeData/@connections.23 //@node.8/@nodeData/@connections.24 //@node.8/@nodeData/@connections.25" type="id_String" xpath="EXPORT/SISE"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" allInOne="true" enableEmptyElement="false" name="copyOfcopyOfpersonnels">
+        <nodes expression="" name="document" pattern="" type="id_Document" xpath="copyOfcopyOfpersonnels/document">
+          <children main="true" name="users" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children loop="true" main="true" name="user" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="&quot;PUBLIC&quot;" name="record_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/record_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" EXPORT.EMAIL_ADDRESS" incomingConnections="//@node.8/@nodeData/@connections.0" name="primary_id" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/primary_id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" EXPORT.PRENOM" incomingConnections="//@node.8/@nodeData/@connections.1" name="first_name" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/first_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="middle_name" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/middle_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" EXPORT.NOM" incomingConnections="//@node.8/@nodeData/@connections.2" name="last_name" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/last_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="pin_number" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/pin_number" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="user_title" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_title" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="job_category" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/job_category" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="job_description" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/job_description" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" EXPORT.CIV" incomingConnections="//@node.8/@nodeData/@connections.3" name="gender" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/gender" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" EXPORT.USER_GROUP" incomingConnections="//@node.8/@nodeData/@connections.22" name="user_group" type="id_Integer" xpath="copyOfcopyOfpersonnels.document:/users/user/user_group" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression=" EXPORT.CAMPUS_CODE" incomingConnections="//@node.8/@nodeData/@connections.4" name="campus_code" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/campus_code" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="web_site_url" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/web_site_url" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="&quot;00&quot;" name="cataloger_level" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/cataloger_level" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="EXPORT.PREFERRED_LANGUAGE" incomingConnections="//@node.8/@nodeData/@connections.5" name="preferred_language" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/preferred_language" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="EXPORT.DATE_NAIS+&quot;Z&quot;" incomingConnections="//@node.8/@nodeData/@connections.6" name="birth_date" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="copyOfcopyOfpersonnels.document:/users/user/birth_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="expiry_date" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/expiry_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="purge_date" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/purge_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="" name="account_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/account_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="external_id" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/external_id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="password" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/password" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="force_password_change" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/force_password_change" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="&quot;ACTIVE&quot;" name="status" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="contact_info" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="addresses" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="address" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address" xsi:type="TalendXMLMap:OutputTreeNode">
+                    <children expression="&quot;true&quot;" name="preferred" nodeType="ATTRIBUT" type="id_Boolean" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/@preferred" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="&quot;External&quot;" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="EXPORT.LIB_AD1_PRINC" incomingConnections="//@node.8/@nodeData/@connections.7" name="line1" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/line1" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="EXPORT.LIB_AD2_PRINC" incomingConnections="//@node.8/@nodeData/@connections.8" name="line2" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/line2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression=" EXPORT.LIB_AD3_PRINC" incomingConnections="//@node.8/@nodeData/@connections.9" name="line3" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/line3" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="line4" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/line4" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="line5" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/line5" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression=" EXPORT.LIB_COM_PRINC" incomingConnections="//@node.8/@nodeData/@connections.10" name="city" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/city" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="" name="state_province" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/state_province" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="EXPORT.COD_BDI_PRINC" incomingConnections="//@node.8/@nodeData/@connections.11" name="postal_code" type="id_Integer" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/postal_code" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="&quot;FRA&quot;" name="country" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/country" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="address_note" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/address_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="(TalendDate.getPartOfDate(&quot;MONTH&quot;,TalendDate.getCurrentDate())+1)&lt;9?(TalendDate.getPartOfDate(&quot;YEAR&quot;,TalendDate.getCurrentDate())-1)+&quot;-09-01Z&quot;:(TalendDate.getPartOfDate(&quot;YEAR&quot;,TalendDate.getCurrentDate()))+&quot;-09-01Z&quot; " name="start_date" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/start_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="(TalendDate.getPartOfDate(&quot;MONTH&quot;,TalendDate.getCurrentDate())+1)&lt;6?(TalendDate.getPartOfDate(&quot;YEAR&quot;,TalendDate.getCurrentDate()))+&quot;-06-30Z&quot;:(TalendDate.getPartOfDate(&quot;YEAR&quot;,TalendDate.getCurrentDate())+1)+&quot;-06-30Z&quot; " name="end_date" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/end_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="address_types" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/address_types" xsi:type="TalendXMLMap:OutputTreeNode">
+                      <children expression=" EXPORT.ADDRESS_TYPE" incomingConnections="//@node.8/@nodeData/@connections.12" name="address_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/addresses/address/address_types/address_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    </children>
+                  </children>
+                </children>
+                <children name="emails" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/emails" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="email" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email" xsi:type="TalendXMLMap:OutputTreeNode">
+                    <children name="preferred" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/@preferred" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression=" EXPORT.EMAIL_ADDRESS" incomingConnections="//@node.8/@nodeData/@connections.13" name="email_address" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/email_address" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="description" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/description" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="email_types" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/email_types" xsi:type="TalendXMLMap:OutputTreeNode">
+                      <children expression="EXPORT.EMAIL_TYPES" incomingConnections="//@node.8/@nodeData/@connections.14" name="email_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/emails/email/email_types/email_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    </children>
+                  </children>
+                </children>
+                <children name="phones" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/phones" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="phone" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone" xsi:type="TalendXMLMap:OutputTreeNode">
+                    <children expression="&quot;true&quot;" name="preferred" nodeType="ATTRIBUT" type="id_Boolean" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/@preferred" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="&quot;true&quot;" name="preferred_sms" nodeType="ATTRIBUT" type="id_Boolean" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/@preferred_sms" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children expression="EXPORT.PHONE_NUMBER" incomingConnections="//@node.8/@nodeData/@connections.15" name="phone_number" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/phone_number" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    <children name="phone_types" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/phone_types" xsi:type="TalendXMLMap:OutputTreeNode">
+                      <children expression="EXPORT.PHONE_TYPES" incomingConnections="//@node.8/@nodeData/@connections.16" name="phone_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/contact_info/phones/phone/phone_types/phone_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    </children>
+                  </children>
+                </children>
+              </children>
+              <children expression="" name="user_identifiers" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="user_identifier" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="&quot;External&quot;" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;UNIV_ID&quot;" name="id_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/id_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression=" &quot;ueve&quot;+EXPORT.LOGIN" incomingConnections="//@node.8/@nodeData/@connections.17" name="value" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="note" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;ACTIVE&quot;" name="status" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+                <children expression="" name="user_identifier" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="&quot;External&quot;" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;BARCODE&quot;" name="id_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/id_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression=" EXPORT.BARCODE" incomingConnections="//@node.8/@nodeData/@connections.18" name="value" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="note" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;ACTIVE&quot;" name="status" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_identifiers/user_identifier/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children name="user_roles" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_roles" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="user_role" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_roles/user_role" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="status" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="scope" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="role_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/role_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="expiry_date" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/expiry_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="parameters" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/parameters" xsi:type="TalendXMLMap:OutputTreeNode">
+                    <children name="parameter" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/parameters/parameter" xsi:type="TalendXMLMap:OutputTreeNode">
+                      <children name="type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/parameters/parameter/type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                      <children name="value" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_roles/user_role/parameters/parameter/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                    </children>
+                  </children>
+                </children>
+              </children>
+              <children name="user_blocks" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_blocks" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="user_block" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="block_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/block_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="block_description" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/block_description" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="block_status" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/block_status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="block_note" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/block_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="created_by" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/created_by" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="created_date" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/created_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="expiry_date" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_blocks/user_block/expiry_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children name="user_notes" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_notes" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="user_note" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_notes/user_note" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="note_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/note_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="note_text" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/note_text" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="user_viewable" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/user_viewable" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="popup_note" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/popup_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="created_by" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/created_by" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="created_date" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_notes/user_note/created_date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children expression="" name="user_statistics" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="user_statistic" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="&quot;External&quot;" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression=" &quot;UEVE &quot;+EXPORT.COD_CMP" incomingConnections="//@node.8/@nodeData/@connections.19" name="statistic_category" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_category" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;COMPOSANTE&quot;" name="category_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/category_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="statistic_note" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+                <children expression="" name="user_statistic" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="&quot;External&quot;" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression=" EXPORT.COD_CUR" incomingConnections="//@node.8/@nodeData/@connections.20" name="statistic_category" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_category" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;NIVEAU&quot;" name="category_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/category_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="EXPORT.COD_ETP" incomingConnections="//@node.8/@nodeData/@connections.21" name="statistic_note" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+                <children expression="" name="user_statistic" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="&quot;External&quot;" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;UEVE&quot;" name="statistic_category" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_category" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="&quot;ETABLISSEMENT&quot;" name="category_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/category_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="" name="statistic_note" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+                <children expression="" name="user_statistic" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children expression="Relational.ISNULL(EXPORT.SISE)?&quot;&quot;:&quot;External&quot; " incomingConnections="//@node.8/@nodeData/@connections.24" name="segment_type" nodeType="ATTRIBUT" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/@segment_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="EXPORT.SISE" incomingConnections="//@node.8/@nodeData/@connections.23" name="statistic_category" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_category" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children expression="Relational.ISNULL(EXPORT.SISE)?&quot;&quot;:&quot;DISCIPLINE&quot; " incomingConnections="//@node.8/@nodeData/@connections.25" name="category_type" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/category_type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="statistic_note" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/user_statistics/user_statistic/statistic_note" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children name="rs_libraries" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/rs_libraries" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="rs_library" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/rs_libraries/rs_library" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="code" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/rs_libraries/rs_library/code" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children name="library_notices" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/library_notices" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children name="library_notice" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/library_notices/library_notice" xsi:type="TalendXMLMap:OutputTreeNode">
+                  <children name="code" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/library_notices/library_notice/code" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                  <children name="value" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/library_notices/library_notice/value" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                </children>
+              </children>
+              <children name="pref_first_name" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/pref_first_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="pref_middle_name" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/pref_middle_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="pref_last_name" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/pref_last_name" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="pref_name_suffix" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/pref_name_suffix" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children name="is_researcher" type="id_String" xpath="copyOfcopyOfpersonnels.document:/users/user/is_researcher" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.10" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.3" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.2" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.4" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.12" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.13" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.5" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.19" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.20" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.21" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.23" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.22" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.18" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.0/@children.0/@children.14/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.10" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.1/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.16" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.1/@children.0/@children.4/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.6" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.2/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.17" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23/@children.2/@children.0/@children.4/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.1" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.9" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24/@children.1/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.26" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.28/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.25" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.28/@children.1/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.8" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.28/@children.1/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.15" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.27" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.28/@children.3/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.27" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.28/@children.3/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.27" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.28/@children.3/@children.2" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputXML_3"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/workspace/export/BU/etudiants.xml&quot;"/>
+    <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="document"/>
+    <elementParameter field="TEXT" name="ROW_TAG" show="false" value="&quot;row&quot;"/>
+    <elementParameter field="CHECK" name="SPLIT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TABLE" name="ROOT_TAGS" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="document"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="personnels" name="tFileOutputXML_3">
+      <column comment="" key="false" length="-1" name="document" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileRowCount" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileRowCount_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/workspace/export/ecampus//appropriation_de_cours/appropriation-enseignant.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="IGNORE_EMPTY_ROW" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Tranfert sur le serveur&lt;br&gt; uniquement si le fichier&lt;br&gt;n'est pas vide"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileRowCount_1"/>
+  </node>
+  <node componentName="tFTPPut" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPPut_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;bibliopam.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="22"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;33ueve&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:ztSCWQFMwOSy+2x2xA7oHNemf9yUECstJJG1FzrkN7vm1Fdmcx1OEAQD/179dGU="/>
+    <elementParameter field="CHECK" name="SFTP" value="true"/>
+    <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:XXdEVFRLCAqktQpRVDAJF7HndRAx18kSUEWBC8F4nA+SkKXF"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;C:/Talend/workspace/export/BU&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/echanges/scolarite/&quot;"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:AhyES2zvijh88ajFclNjnPjLKl3CvEa04FQmomTJIH0WrZ2u"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
+    <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite"/>
+    <elementParameter field="CLOSED_LIST" name="FTPSOVERWRITE" show="false" value="always"/>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" show="false" value="Note: File can not be renamed while using &quot;append&quot; mode in SFTP"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;etudiants.xml&quot;"/>
+      <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:BWT6iVSWexxYMv0Jwm4u3+4IK8Z8FL81z09d5b7g"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990"/>
+    <metadata connector="FLOW" name="tFTPPut_1"/>
+  </node>
+  <node componentName="tFTPPut" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPPut_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;bibliopam.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="22"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;33ueve&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:40+WgEtGEvDhFgZe2YiPHW+o35e3RNoJu1MI54Cmyr+OcSsorXLUkJ/6R0ND+q0="/>
+    <elementParameter field="CHECK" name="SFTP" value="true"/>
+    <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:Csjo44pjQKrMI50DjsyOpyAd1kryUTlm4qTFiwCehBTyIvzY"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;C:/Talend/workspace/export/BU&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/echanges/personnels/&quot;"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:pSWAGZiCByLjxiKhttzdHZzns/UxgeqMtLs7mXjdAPeSGMEf"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
+    <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite"/>
+    <elementParameter field="CLOSED_LIST" name="FTPSOVERWRITE" show="false" value="always"/>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" show="false" value="Note: File can not be renamed while using &quot;append&quot; mode in SFTP"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;personnels.xml&quot;"/>
+      <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:tZRYnVk/yh5AgSZNZ4/Tg/seRtwb5xJ9iqfyuHX7"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990"/>
+    <metadata connector="FLOW" name="tFTPPut_2"/>
+  </node>
+  <connection connectorName="FLOW" label="export_personnel" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="export_personnel"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfcopyOfcopyOfpersonnels" lineStyle="0" metaname="copyOfcopyOfcopyOfpersonnels" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tFileOutputXML_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfcopyOfcopyOfpersonnels"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileOutputXML_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputXML_1" target="tFileRowCount_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileRowCount_2" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_2" target="tFTPPut_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileRowCount_2_COUNT&quot;))&gt;=2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tParallelize_1" target="tOracleInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tParallelize_1" target="tOracleInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tOracleInput_3" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="EXPORT" lineStyle="0" metaname="EXPORT" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tXMLMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="COD_CMP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SISE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="EXPORT"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tOracleInput_4" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfcopyOfpersonnels" lineStyle="0" metaname="copyOfcopyOfpersonnels" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_3" target="tFileOutputXML_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfcopyOfpersonnels"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputXML_3" offsetLabelX="0" offsetLabelY="0" source="tFileOutputXML_3" target="tFileRowCount_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileRowCount_1" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_1" target="tFTPPut_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileRowCount_1_COUNT&quot;))&gt;=2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Export PERSONNELS"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_3"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Export ETUDIANTS"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileRowCount_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPPut_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPPut_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3754c261-92cb-4bad-8e2d-b9488d55c838"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xMofSpX1NaxP4PX7SgU0mraQ+GDmQ+YcmHny38u8PzIPrjaVEvoYcMQSBCygBKRi5p+dF3RG7E91&#13;
+ZDjfjRjBqA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_28b07c16-eb00-429e-8737-7888c57eef38"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HDufbIkWE7X+ANWJGC/b7aP4iNUWhDrq5FqeP3oIBPA7PdRFCHq+mzI480xBlWMDw+TT7rnrWP/2&#13;
+ua8X1J7xTg==</DigestValue></Reference></SignedInfo><SignatureValue>TkoBYdcFCTBbXBPM0XlVnfmVBIXryxH3Nv2+Y7r7WSyPUAmuGopgW29FOWPGLwjbYEG9KBbzgKiQ&#13;
+Pa6wIV/95uSA1cMkEX9kHpssVRadzATpzcKyWMlad/dxV4EZ78DJUeipACswQvip9Q/oXNRErta8&#13;
+yY26YHSlLZjeBfzRbC1ObYozNKsuMjBk9stj0h8DphG9p4WtGkKuAh6mo4zGIr18Uljnyy+fALx8&#13;
+TNypH6Ya/aw5bp5FCXwG/ZbcYCsX6MRXpGlqklNeb1Yac6feFM7zACt1X0DQAnQiCgttrIFEW+Jb&#13;
+i0VRpAER1kfXxBx3BJoSuHkBcGMMhjZYJbidHA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_28b07c16-eb00-429e-8737-7888c57eef38" Target="#_3754c261-92cb-4bad-8e2d-b9488d55c838"><Timestamp>2022-02-17 10:15:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

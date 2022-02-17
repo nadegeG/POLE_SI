@@ -1,0 +1,942 @@
+package routines;
+
+import java.net.*;
+import java.io.*;
+
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.KeySpec;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
+
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.codec.binary.Hex;
+
+import com.sun.jmx.snmp.Timestamp;
+
+import java.util.*;
+
+import javax.crypto.Mac;
+
+import javax.crypto.spec.SecretKeySpec;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.CharacterData;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+import org.apache.commons.codec.digest.DigestUtils;
+
+
+
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class partageRenater {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+	
+    public static void helloExample(String message) {
+        if (message == null) {
+            message = "World"; //$NON-NLS-1$
+        }
+        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+    }
+    
+    public static void Alias(String token,String mail,String alias)
+    {
+    	try 
+    	{
+    		
+    		mail=URLEncoder.encode(mail, "UTF-8");
+    		alias=URLEncoder.encode(alias, "UTF-8");
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/AddAccountAlias/" + token +
+    		"?name="+mail+
+    		"&alias="+alias;
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur création Alias "+ e);
+    	}
+    }
+    
+    public static void DeleteAlias(String token,String mail,String alias)
+    {
+    	try 
+    	{
+    		
+    		mail=URLEncoder.encode(mail, "UTF-8");
+    		alias=URLEncoder.encode(alias, "UTF-8");
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/RemoveAccountAlias/" + token +
+    		"?name="+mail+
+    		"&alias="+alias;
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur suppression Alias "+ e);
+    	}
+    }
+    
+    public static void RenameAccount(String token,String mail,String newname)
+    {
+    	try 
+    	{
+    		
+    		mail=URLEncoder.encode(mail, "UTF-8");
+    		newname=URLEncoder.encode(newname, "UTF-8");
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/RenameAccount/" + token +
+    		"?name="+mail+
+    		"&newname="+newname;
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur renommage compte "+ e);
+    	}
+    }
+        
+    
+    public static String dateTimestamp() throws ParseException {
+       
+    	int i = (int) (new Date().getTime()/1000);
+		String dateActuelle = Integer.toString(i);
+		return dateActuelle;
+    }
+    
+    public static void creationGroupe(String token,String groupe,String nom_affiche)
+    {
+    	try 
+    	{
+    		token=URLEncoder.encode(token, "UTF-8");
+    		groupe=URLEncoder.encode(groupe, "UTF-8");
+    		nom_affiche=URLEncoder.encode(nom_affiche, "UTF-8");
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/CreateGroup/" + token +
+    		"?name="+groupe+
+    		"&displayName="+nom_affiche;
+    		System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        yc.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println(source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur création groupe "+ e);
+    	}
+    }
+    
+    public static void envoyerEnTantQueGroupe(String token,String groupe,String mail_a_autoriser)
+    {
+    	try 
+    	{
+    		token=URLEncoder.encode(token, "UTF-8");
+    		groupe=URLEncoder.encode(groupe, "UTF-8");
+    		mail_a_autoriser=URLEncoder.encode(mail_a_autoriser, "UTF-8");
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/AddSendAsGroup/" + token +
+    		"?name="+groupe+
+    		"&account="+mail_a_autoriser;
+    		System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        yc.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println(source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur envoi en tant que "+ e);
+    	}
+    }
+    
+    public static void suppressionGroupe(String token,String groupe)
+    {
+    	try 
+    	{
+    		token=URLEncoder.encode(token, "UTF-8");
+    		groupe=URLEncoder.encode(groupe, "UTF-8");
+    		
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/DeleteGroup/" + token +
+    		"?name="+groupe;
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        yc.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur suppression groupe "+ e);
+    	}
+    }
+    
+    public static void AjoutMembresGroupe(String token,String groupe,String mailRedirection)
+    {
+    	try 
+    	{
+    		token=URLEncoder.encode(token, "UTF-8");
+    		groupe=URLEncoder.encode(groupe, "UTF-8");
+    		mailRedirection=URLEncoder.encode(mailRedirection, "UTF-8");
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/AddGroupMembers/" + token +
+    		"?name="+groupe+
+    		"&members[]="+mailRedirection;
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        yc.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur ajout membre dans le groupe "+ e);
+    	}
+    }
+    
+    public static void AjoutAlias(String token,String groupe,String mailRedirection)
+    {
+    	try 
+    	{
+    		token=URLEncoder.encode(token, "UTF-8");
+    		groupe=URLEncoder.encode(groupe, "UTF-8");
+    		mailRedirection=URLEncoder.encode(mailRedirection, "UTF-8");
+    		
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/AddDistributionListAlias/" + token +
+    		"?name="+groupe+
+    		"&alias="+mailRedirection;
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur création alias "+ e);
+    	}
+    }
+    
+    public static void SuppressionAlias(String token,String mail,String aliasASupprimer)
+    {
+    	try 
+    	{
+    		token=URLEncoder.encode(token, "UTF-8");
+    		mail=URLEncoder.encode(mail, "UTF-8");
+    		aliasASupprimer=URLEncoder.encode(aliasASupprimer, "UTF-8");
+    		
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/RemoveAccountAlias/" + token +
+    		"?name="+mail+
+    		"&alias="+aliasASupprimer;
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur suppression alias "+ e);
+    	}
+    }
+    
+    public static void infoCompte(String token,String utilisateur)
+    {
+    	try 
+    	{
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/GetAccount/" + token +
+    		"?name="+utilisateur;
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur info compte "+ e);
+    	}
+    }
+    
+    public static void infoGroupe(String token,String groupe)
+    {
+    	try 
+    	{
+    		token=URLEncoder.encode(token, "UTF-8");
+    		groupe=URLEncoder.encode(groupe, "UTF-8");
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/GetGroup/" + token +
+    		"?name="+groupe;
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur info groupe "+ e);
+    	}
+    }
+    
+    public static String verifierCompte (String token,String utilisateur)
+    {
+    	try 
+    	{
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/GetAccount/" + token +
+    		"?name="+utilisateur;
+    		//System.out.println(urlConnexion);
+    		//String urlConnexion="https://api.partage.renater.fr/service/domain/Auth?domain=univ-evry.fr&timestamp=1457088257&preauth=e5dda205009955ede8c72cc8b5e64cbaeca4344e";
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        
+	        
+	        
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        //System.out.println(source);
+    		return "OK";	
+    	}
+    	catch (Exception e) 
+    	{
+    		String erreur="NOK";
+    		return erreur;
+    	}
+    }
+    
+    public static String verifierGroupe (String token,String groupe)
+    {
+    	try 
+    	{
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/GetGroup/" + token +
+    		"?name="+groupe;
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        //System.out.println(source);
+    		return "OK";	
+    	}
+    	catch (Exception e) 
+    	{
+    		String erreur="NOK";
+    		return erreur;
+    	}
+    }
+
+    public static void creationCompte (String token,String utilisateur,String motDePasse,String displayName,String nom,String prenom ,String description)
+    {
+    	try 
+    	{
+    		motDePasse=URLEncoder.encode(motDePasse, "UTF-8");
+    		displayName=URLEncoder.encode(displayName, "UTF-8");
+    		prenom=URLEncoder.encode(prenom, "UTF-8");
+    		nom=URLEncoder.encode(nom, "UTF-8");
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/CreateAccount/" + token +
+    		"?name="+utilisateur+
+    		"&userPassword="+motDePasse+
+    		"&password="+
+    		"&displayName="+displayName+
+    		"&carLicense="+utilisateur+
+    		"&givenName="+prenom+
+    		"&sn="+nom+
+    		"&st="+nom+
+    		"&description="+description;
+    		System.out.println(urlConnexion);
+    		//String urlConnexion="https://api.partage.renater.fr/service/domain/Auth?domain=univ-evry.fr&timestamp=1457088257&preauth=e5dda205009955ede8c72cc8b5e64cbaeca4344e";
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        yc.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur création compte "+ e);
+    	}
+    }
+    
+    public static void suppressionCompte (String token,String utilisateur)
+    {
+    	try 
+    	{
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/DeleteAccount/" + token +
+    		"?name="+utilisateur;
+    		//System.out.println(urlConnexion);
+    		//String urlConnexion="https://api.partage.renater.fr/service/domain/Auth?domain=univ-evry.fr&timestamp=1457088257&preauth=e5dda205009955ede8c72cc8b5e64cbaeca4344e";
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        yc.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur suppression compte "+ e);
+    	}
+    }
+    
+    public static void suppressionMembreGroupe (String token,String groupe,String membregroupe)
+    {
+    	try 
+    	{
+    		
+    		groupe=URLEncoder.encode(groupe, "UTF-8");
+    		membregroupe=URLEncoder.encode(membregroupe, "UTF-8");
+    		
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/RemoveGroupMembers/" + token +
+    		"?name="+groupe+"&members[]="+membregroupe;
+    		//System.out.println(urlConnexion);
+    		//String urlConnexion="https://api.partage.renater.fr/service/domain/Auth?domain=univ-evry.fr&timestamp=1457088257&preauth=e5dda205009955ede8c72cc8b5e64cbaeca4344e";
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        yc.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur suppression membre groupe "+ e);
+    	}
+    }
+    
+    public static void modifierMotDePasse (String token,String utilisateur,String motDePasse)
+    {
+    	try 
+    	{
+    		motDePasse=URLEncoder.encode(motDePasse, "UTF-8");
+    		
+    		
+    		//Géneration de l'empreinte du mot de passe
+    		//motDePasse = DigestUtils.shaHex(motDePasse + "salt");
+    		//System.out.println("Empreinte mot de passe : " + motDePasse);
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/ModifyAccount/" + token +
+    		"?name="+utilisateur+
+    		"&userPassword="+motDePasse;
+    		
+    		System.out.println(urlConnexion);
+    		//String urlConnexion="https://api.partage.renater.fr/service/domain/Auth?domain=univ-evry.fr&timestamp=1457088257&preauth=e5dda205009955ede8c72cc8b5e64cbaeca4344e";
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        
+	        yc.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        yc.setRequestProperty("Cookie", "foo=bar"); 
+	        
+	        
+	        
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+	        //return "OK";
+	        
+    	}
+    	
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur modification mot de passe : "+ e);
+    		//return "NOK";
+    	}
+    }
+    
+    public static void desactiverCompte(String token,String utilisateur)
+    {
+    	try 
+    	{
+    		
+    		//Géneration de l'empreinte du mot de passe
+    		//motDePasse = DigestUtils.shaHex(motDePasse + "salt");
+    		//System.out.println("Empreinte mot de passe : " + motDePasse);
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/ModifyAccount/" + token +
+    		"?name="+utilisateur+
+    		"&zimbraAccountStatus=closed";
+    		//"&zimbraAccountStatus=active";
+    		System.out.println(urlConnexion);
+    		//String urlConnexion="https://api.partage.renater.fr/service/domain/Auth?domain=univ-evry.fr&timestamp=1457088257&preauth=e5dda205009955ede8c72cc8b5e64cbaeca4344e";
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        
+	        yc.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        yc.setRequestProperty("Cookie", "foo=bar"); 
+	        
+	        
+	        
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+	        //return "OK";
+	        
+    	}
+    	
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur desactivation compte : "+ e);
+    		//return "NOK";
+    	}
+    }
+    
+    public static void reactiverCompte(String token,String utilisateur)
+    {
+    	try 
+    	{
+    		
+    		//Géneration de l'empreinte du mot de passe
+    		//motDePasse = DigestUtils.shaHex(motDePasse + "salt");
+    		//System.out.println("Empreinte mot de passe : " + motDePasse);
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/ModifyAccount/" + token +
+    		"?name="+utilisateur+
+    		//"&zimbraAccountStatus=closed";
+    		"&zimbraAccountStatus=active";
+    		System.out.println(urlConnexion);
+    		//String urlConnexion="https://api.partage.renater.fr/service/domain/Auth?domain=univ-evry.fr&timestamp=1457088257&preauth=e5dda205009955ede8c72cc8b5e64cbaeca4344e";
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        
+	        yc.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        yc.setRequestProperty("Cookie", "foo=bar"); 
+	        
+	        
+	        
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println( source);
+	        //return "OK";
+	        
+    	}
+    	
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur desactivation compte : "+ e);
+    		//return "NOK";
+    	}
+    }
+    
+    public static String getAllAccounts(String token)
+    {
+    	try 
+    	{
+    		
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/GetAllAccounts/" + token +
+    		"?offset=0&limit=8500&sortby=mail&sortascending=1";
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        yc.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        //System.out.println(source);
+	        return source;
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		String erreur ="Erreur création groupe "+ e;
+    		return erreur;
+    	}
+		
+    }
+    
+    public static void getAllAliases(String token)
+    {
+    	try 
+    	{
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/GetAllAliases/" + token +
+    		"?offset=0&limit=8500";
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        yc.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println(source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur liste alias "+ e);
+    	}
+    }
+    
+    public static void getAllGroups(String token)
+    {
+    	try 
+    	{
+    		String urlConnexion="https://api.partage.renater.fr/service/domain/GetAllGroups/" + token +
+    		"?offset=0&limit=8500&sortBy=mail&sortascending=1";
+    		//System.out.println(urlConnexion);
+	        String source ="";
+	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128)); 
+	        URL oracle = new URL(urlConnexion);
+	        URLConnection yc = oracle.openConnection(proxy);
+	        yc.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0");
+	        
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(
+	        yc.getInputStream()));
+	        String inputLine;
+	        
+	        while ((inputLine = in.readLine()) != null)
+	        source +=inputLine;
+	        in.close();
+	        System.out.println(source);
+    		
+    	}
+    	catch (Exception e) 
+    	{
+    		System.out.println("Erreur liste groupe "+ e);
+    	}
+    }
+    
+    
+    public static String connexion(String data,String key) {
+    	
+    	String result;
+    	 	
+    	try {
+    			
+    			data=URLEncoder.encode(data, "UTF-8");
+    			String domaine=data;
+    			key=URLEncoder.encode(key, "UTF-8");
+    			String separateur="|";
+    			String dateActuelle;
+    			String token="";
+				dateActuelle = dateTimestamp();
+				
+    			//System.out.println("date : " + dateActuelle);
+    		    data=data+separateur+dateActuelle;
+    		    //System.out.println("data : " + data);
+
+    	        // Get an hmac_sha1 key from the raw key bytes
+    	        byte[] keyBytes = key.getBytes();
+    	        SecretKeySpec signingKey = new SecretKeySpec(keyBytes, "HmacSHA1");
+
+    	        // Get an hmac_sha1 Mac instance and initialize with the signing key
+    	        Mac mac = Mac.getInstance("HmacSHA1");
+    	        mac.init(signingKey);
+
+    	        // Compute the hmac on input data bytes
+    	        byte[] rawHmac = mac.doFinal(data.getBytes());
+
+    	        // Convert raw bytes to Hex
+    	        byte[] hexBytes = new Hex().encode(rawHmac);
+
+    	        //  Covert array of Hex bytes to a String
+    	        result = new String(hexBytes, "ISO-8859-1");
+    	        //System.out.println("hash MAC SHA1 : " + result);
+    	        //System.out.println("https://api.partage.renater.fr/service/domain/Auth?domain=univ-evry.fr&timestamp=" + dateActuelle + "&preauth="+result);
+    	        String urlConnexion="https://api.partage.renater.fr/service/domain/Auth?domain=" + domaine + "&timestamp=" + dateActuelle + "&preauth="+result;
+    	        //System.out.println(urlConnexion);
+    	        //Sauvegarde dans les variables de contexte Talend
+  
+    	        //globalMap.put("preauth", result);
+    	        //globalMap.put("timestamp", dateActuelle);
+    	        
+    	        String source ="";
+    	        Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("greppo.univ-evry.fr", 3128));
+    	        URL oracle = new URL(urlConnexion);
+    	        URLConnection yc = oracle.openConnection(proxy);
+    	        BufferedReader in = new BufferedReader(
+    	        new InputStreamReader(
+    	        yc.getInputStream()));
+    	        String inputLine;
+    	         
+    	        while ((inputLine = in.readLine()) != null)
+    	        source +=inputLine;
+    	        in.close();
+    	        //System.out.println("Source : "+ source );
+    	        
+    	        DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+    	        InputSource is = new InputSource();
+    	        is.setCharacterStream(new StringReader(source));
+
+    	        Document doc = db.parse(is);
+    	        NodeList nodes = doc.getElementsByTagName("Response");
+
+    	        for (int i = 0; i < nodes.getLength(); i++) {
+    	          Element element = (Element) nodes.item(i);
+
+    	          NodeList name = element.getElementsByTagName("token");
+    	          Element line = (Element) name.item(0);
+    	          token = getCharacterDataFromElement(line);
+    	        		  
+    	        }
+    	        
+    	        return token;
+    		}
+    	catch (Exception e) 
+    	{
+    		String erreur="Erreur connexion (token)"+e;
+    		return erreur;
+    	}
+    	
+    }
+    
+    public static String getCharacterDataFromElement(Element e) 
+    {
+        Node child = e.getFirstChild();
+        if (child instanceof CharacterData) 
+        {
+          CharacterData cd = (CharacterData) child;
+          return cd.getData();
+        }
+        return "";
+     }
+    
+}
+
+    
+

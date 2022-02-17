@@ -1,0 +1,36 @@
+{
+  "itemId" : "_9RAnIBszEeq3qM-Uol8cWg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_z-M28FtwEemskYYZpLh-0A",
+    "parameterList" : [ {
+      "id" : "_9QStYFtwEemskYYZpLh-0A",
+      "name" : "NG"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_UhIWsKF6Eemh3cf7jJnMNA",
+    "parameterList" : [ {
+      "id" : "_UhIWuKF6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_AdditionalParams"
+    }, {
+      "id" : "_UhIWs6F6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Sid"
+    }, {
+      "id" : "_UhIWtaF6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Schema"
+    }, {
+      "id" : "_UhIWt6F6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Password"
+    }, {
+      "id" : "_UhIWtKF6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Server"
+    }, {
+      "id" : "_UhIWsqF6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Port"
+    }, {
+      "id" : "_UhIWtqF6Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_UPSAY_Login"
+    } ]
+  } ]
+}

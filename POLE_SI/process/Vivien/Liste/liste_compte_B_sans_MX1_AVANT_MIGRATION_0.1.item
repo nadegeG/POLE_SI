@@ -1,0 +1,1513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx1024M&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
+    <elementParameter field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
+    <elementParameter field="TEXT" name="HADOOP_APP_PATH" value=""/>
+    <elementParameter field="TEXT" name="JOBID_FOR_OOZIE" value=""/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value=""/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_10"/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <routinesParameter id="_qbwNsqflEeO0B-s1fkANJw" name="DataOperation"/>
+    <routinesParameter id="_qb5-sKflEeO0B-s1fkANJw" name="Mathematical"/>
+    <routinesParameter id="_qcDIo6flEeO0B-s1fkANJw" name="Numeric"/>
+    <routinesParameter id="_qcDIp6flEeO0B-s1fkANJw" name="Relational"/>
+    <routinesParameter id="_qcDIq6flEeO0B-s1fkANJw" name="StringHandling"/>
+    <routinesParameter id="_qcDIr6flEeO0B-s1fkANJw" name="TalendDataGenerator"/>
+    <routinesParameter id="_qcM5o6flEeO0B-s1fkANJw" name="TalendDate"/>
+    <routinesParameter id="_qcM5p6flEeO0B-s1fkANJw" name="TalendString"/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter id="_dbJKkDMXEeOTIuq5eWZPow" name="DQTechnical"/>
+    <routinesParameter id="_dbCc4DMXEeOTIuq5eWZPow" name="DataQuality"/>
+    <routinesParameter id="_dbFgMDMXEeOTIuq5eWZPow" name="DqStringHandling"/>
+    <routinesParameter id="_da9kYDMXEeOTIuq5eWZPow" name="MDM"/>
+    <routinesParameter id="_dbM08DMXEeOTIuq5eWZPow" name="SQLike"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/CC/20161004-comptes.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/CC&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="uid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_1">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_6"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;presto.sig.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;evehaprd&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;HARP_ADM&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;harp_adm&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0PlAjyvxlcHIU/mz6pxXvkMTBZbQN6GQ22Wy0SOeGlLtH99+S5g="/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select no_individu, nom_patronymique, nom_usuel,prenom, to_char(d_naissance,'YYYYMMDD')&#13;&#10;from individu&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_PATRONYMIQUE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_USUEL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_NAISSANCE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tOracleInput_6">
+      <column comment="" key="false" length="8" name="NO_INDIVIDU" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_PATRONYMIQUE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_USUEL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="D_NAISSANCE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_19"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ZORgIIvHEea6I5FOr86KPA-tMap_19-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="eme2_harpege_ok" name="eme2_harpege_ok">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="datenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="no_harpege" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="eme2_harpege_ok" name="eme2_harpege_nok">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="datenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="eme2_harpege_ok" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="fic_rebus.uid" name="uid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic_rebus.sn" name="sn" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic_rebus.givenname" name="givenname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic_rebus.datenaissance" name="datenaissance" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic_rebus.cevifdescription" name="cevifdescription" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="harpege2.NO_INDIVIDU " name="no_harpege" nullable="true" type="id_String"/>
+      </outputTables>
+      <outputTables name="eme2_harpege_nok" rejectInnerJoin="true" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="fic_rebus.uid" name="uid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic_rebus.sn" name="sn" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic_rebus.givenname" name="givenname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic_rebus.datenaissance" name="datenaissance" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic_rebus.cevifdescription" name="cevifdescription" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="fic_rebus" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="uid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="sn" nullable="true" type="id_String"/>
+        <mapperTableEntries name="givenname" nullable="true" type="id_String"/>
+        <mapperTableEntries name="datenaissance" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cevifdescription" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="harpege2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="NO_INDIVIDU" type="id_String"/>
+        <mapperTableEntries name="NOM_PATRONYMIQUE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic_rebus.sn " name="NOM_USUEL" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries expression="fic_rebus.givenname " name="PRENOM" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries expression="fic_rebus.datenaissance " name="D_NAISSANCE" nullable="true" operator="=" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_5"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;presto.sig.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;evehaprd&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;HARP_ADM&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;harp_adm&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SaieZghP0Ryj2tv6HWhVz3KqWjHEWCXE6uZ8uYvw+paG3ndKY3I="/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select no_individu, nom_patronymique, nom_usuel,prenom, to_char(d_naissance,'YYYYMMDD')&#13;&#10;from individu&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_PATRONYMIQUE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_USUEL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_NAISSANCE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tOracleInput_5">
+      <column comment="" key="false" length="8" name="NO_INDIVIDU" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_PATRONYMIQUE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_USUEL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="D_NAISSANCE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_18"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ZORgIIvHEea6I5FOr86KPA-tMap_18-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="harpege_ok" name="harpege_ok">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="datenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="no_harpege" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="harp_nok" name="harp_nok">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="datenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="harpege_ok" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="fic.uid " name="uid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic.sn" name="sn" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic.givenname " name="givenname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic.datenaissance " name="datenaissance" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic.cevifdescription " name="cevifdescription" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="harpege.NO_INDIVIDU " name="no_harpege" nullable="true" type="id_String"/>
+      </outputTables>
+      <outputTables name="harp_nok" rejectInnerJoin="true" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="fic.uid " name="uid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic.sn " name="sn" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic.givenname " name="givenname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic.datenaissance " name="datenaissance" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic.cevifdescription " name="cevifdescription" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="fic" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="" name="uid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="harpege.NOM_PATRONYMIQUE " name="sn" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="harpege.PRENOM " name="givenname" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="datenaissance" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cevifdescription" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="harpege" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="NO_INDIVIDU" type="id_String"/>
+        <mapperTableEntries expression="fic.sn " name="NOM_PATRONYMIQUE" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="NOM_USUEL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fic.givenname " name="PRENOM" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries expression="fic.datenaissance " name="D_NAISSANCE" nullable="true" operator="=" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_17"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ZORgIIvHEea6I5FOr86KPA-tMap_17-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="ok" name="ok">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="datenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="pas_ok" name="pas_ok">
+      <column comment="" key="false" name="uid_bte_phy" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="ok" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="ldapmail.uid" name="uid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.UPCASE(ldapmail.sn) " name="sn" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.UPCASE(ldapmail.givenname) " name="givenname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="ldapmail.cevifdatenaissance " name="datenaissance" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="ldapmail.cevifdescription " name="cevifdescription" nullable="true" type="id_String"/>
+      </outputTables>
+      <outputTables name="pas_ok" rejectInnerJoin="true" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="fichier.uid " name="uid_bte_phy" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="fichier" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="uid" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="ldapmail" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="sn" nullable="true" type="id_String"/>
+        <mapperTableEntries name="givenname" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cevifdatenaissance" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fichier.uid " name="uid" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="cevifdescription" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLDAPInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLDAPInput_19"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: This component only supports byte[], List and String types."/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ldapmail.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="389"/>
+    <elementParameter field="TEXT" name="BASEDN" value="&quot;ou=people,dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="LDAP"/>
+    <elementParameter field="CHECK" name="ADVANCEDCA" value="false"/>
+    <elementParameter field="FILE" name="STORECA" value="&quot;c:/mycacerts&quot;"/>
+    <elementParameter field="PASSWORD" name="STORECAPWD" value="enc:system.encryption.key.v1:YWY2kJXabVSI9vaXf7ey0nnx2lyo18Rhi+fRIaj0"/>
+    <elementParameter field="CHECK" name="ALWAYS_TRUST" value="false"/>
+    <elementParameter field="CHECK" name="AUTHENTIFICATION" value="true"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;cn=admin,dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lIlCYgsD4WZRObQKCIdbb1I8IrfmICDSg5/O/MLjizv9/wSDUvB1"/>
+    <elementParameter field="CLOSED_LIST" name="ALIASES" value="always"/>
+    <elementParameter field="CLOSED_LIST" name="REFERRALS" value="ignore"/>
+    <elementParameter field="MEMO" name="FILTER" value="&quot;(uid=*)&quot;"/>
+    <elementParameter field="TEXT" name="MULTI_VALUE_SEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="LIMIT" value="0"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="ISPAGING" value="false"/>
+    <elementParameter field="TEXT" name="PAGESIZE" value="100"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="sn"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="givenname"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cevifdatenaissance"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uid"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cevifdescription"/>
+      <elementValue elementRef="BINARY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tLDAPInput_19">
+      <column comment="" key="true" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdatenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdatenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_10"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/SCAS/1_OK_bte-phy-ldapmail-ok.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="ok" name="tFileOutputDelimited_10">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="datenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_11"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/SCAS/1_NOK_bte-phy-ldapmail-pas-ok.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="pas_ok" name="tFileOutputDelimited_11">
+      <column comment="" key="false" name="uid_bte_phy" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_12"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/SCAS/2_OK_btephy-ldapmail-compar-harpege.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="harpege_ok" name="tFileOutputDelimited_12">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="datenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="no_harpege" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_13"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/SCAS/2_NOK_btephy-ldapmail-compar-harpege-nok.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="harp_nok" name="tFileOutputDelimited_13">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="datenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_14"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/SCAS/3_OK_2eme-harepge-ok.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="eme2_harpege_ok" name="tFileOutputDelimited_14">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="datenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="no_harpege" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_15"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/SCAS/3_NOK_2eme-harepge-nok.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="eme2_harpege_ok" name="tFileOutputDelimited_15">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="datenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_16"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/CC/final.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_16"/>
+  </node>
+  <node componentName="tLDAPInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLDAPInput_2"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: This component only supports byte[], List and String types."/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.120.101&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="389"/>
+    <elementParameter field="TEXT" name="BASEDN" value="&quot;ou=people,dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="LDAP"/>
+    <elementParameter field="CHECK" name="ADVANCEDCA" value="false"/>
+    <elementParameter field="FILE" name="STORECA" value="&quot;c:/mycacerts&quot;"/>
+    <elementParameter field="PASSWORD" name="STORECAPWD" value="enc:system.encryption.key.v1:rXMFOIAEiWGjpNy1kXeWJHHzxYNA70TGN0etWpSC"/>
+    <elementParameter field="CHECK" name="ALWAYS_TRUST" value="false"/>
+    <elementParameter field="CHECK" name="AUTHENTIFICATION" value="true"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;cn=manager,dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4wF7oZeEBU3yRFDXAsAGeERbDXDnEPcQKGGZG3Qohs7jZZKTo//IDA=="/>
+    <elementParameter field="CLOSED_LIST" name="ALIASES" value="always"/>
+    <elementParameter field="CLOSED_LIST" name="REFERRALS" value="ignore"/>
+    <elementParameter field="MEMO" name="FILTER" value="&quot;(uid=*)&quot;"/>
+    <elementParameter field="TEXT" name="MULTI_VALUE_SEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="LIMIT" value="0"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="ISPAGING" value="false"/>
+    <elementParameter field="TEXT" name="PAGESIZE" value="100"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="sn"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="givenname"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uid"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraMailTransport"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zimbraMailHost"/>
+      <elementValue elementRef="BINARY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="LDAPDSI"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tLDAPInput_2">
+      <column comment="" key="true" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="zimbraMailTransport" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="zimbraMailHost" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="zimbraMailTransport" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="zimbraMailHost" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="803">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ZORgIIvHEea6I5FOr86KPA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="result" name="result">
+      <column comment="" key="true" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdatenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="zimbraMailTransport" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="zimbraMailHost" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifDateDebut" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateExpressionFilter="true" expressionFilter="Integer.parseInt(TalendDate.formatDate(&quot;yyyyMMdd&quot;,ldap1.cevifDateDebut))&lt;20160406" name="result" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="dsi.sn " name="sn" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="dsi.givenname " name="givenname" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="ldap1.cevifdatenaissance " name="cevifdatenaissance" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="dsi.uid " name="uid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="dsi.zimbraMailTransport " name="zimbraMailTransport" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="dsi.zimbraMailHost" name="zimbraMailHost" nullable="true" type="id_String"/>
+        <mapperTableEntries expression=" ldap1.cevifDateDebut" name="cevifDateDebut" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables activateExpressionFilter="true" expressionFilter="( &quot;B&quot;.equals(dsi.zimbraMailTransport)) &amp;&amp;&#10; (!&quot;mx1.partage.renater.fr&quot;.equals(dsi.zimbraMailHost))" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="dsi" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="sn" nullable="true" type="id_String"/>
+        <mapperTableEntries name="givenname" nullable="true" type="id_String"/>
+        <mapperTableEntries name="uid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="zimbraMailTransport" nullable="true" type="id_String"/>
+        <mapperTableEntries name="zimbraMailHost" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables activateExpressionFilter="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="ldap1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="" name="sn" nullable="true" type="id_String"/>
+        <mapperTableEntries name="givenname" nullable="true" type="id_String"/>
+        <mapperTableEntries name="cevifdatenaissance" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="dsi.uid " name="uid" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="cevifDateDebut" nullable="true" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/VC/liste_utilisateurAvecB_sansMX1_AVANT_MIGRATION.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="result" name="tFileOutputDelimited_1">
+      <column comment="" key="true" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdatenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="zimbraMailTransport" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="zimbraMailHost" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifDateDebut" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLDAPInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="928">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLDAPInput_1"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: This component only supports byte[], List and String types."/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ldap1.univ-evry.fr&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="389"/>
+    <elementParameter field="TEXT" name="BASEDN" value="&quot;ou=people,dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="LDAP"/>
+    <elementParameter field="CHECK" name="ADVANCEDCA" value="false"/>
+    <elementParameter field="FILE" name="STORECA" value="&quot;c:/mycacerts&quot;"/>
+    <elementParameter field="PASSWORD" name="STORECAPWD" value="enc:system.encryption.key.v1:3u+qIY+/IfqN/eXGXJ7WyFPg/uzzfIZYXvN0q/PV"/>
+    <elementParameter field="CHECK" name="ALWAYS_TRUST" value="false"/>
+    <elementParameter field="CHECK" name="AUTHENTIFICATION" value="true"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;cn=manager,dc=univ-evry,dc=fr&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ydTvLaP80f8Wom/ZW7JoprwZpwYShGerToHv2lf3iL0XAnKlCLU="/>
+    <elementParameter field="CLOSED_LIST" name="ALIASES" value="always"/>
+    <elementParameter field="CLOSED_LIST" name="REFERRALS" value="ignore"/>
+    <elementParameter field="MEMO" name="FILTER" value="&quot;(uid=*)&quot;"/>
+    <elementParameter field="TEXT" name="MULTI_VALUE_SEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="LIMIT" value="0"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="ISPAGING" value="false"/>
+    <elementParameter field="TEXT" name="PAGESIZE" value="100"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="sn"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="givenname"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cevifdatenaissance"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uid"/>
+      <elementValue elementRef="BINARY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cevifDateDebut"/>
+      <elementValue elementRef="BINARY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="LDAP1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tLDAPInput_1">
+      <column comment="" key="true" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdatenaissance" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifDateDebut" nullable="true" pattern="&quot;yyyyMMdd&quot;" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdatenaissance" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifDateDebut" nullable="true" pattern="&quot;yyyyMMdd&quot;" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="928">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tConvertType_1"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
+    <elementParameter field="TABLE" name="MANUALTABLE"/>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tConvertType_1">
+      <column comment="" key="true" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdatenaissance" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifDateDebut" nullable="true" pattern="&quot;yyyyMMdd&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdatenaissance" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifDateDebut" nullable="true" pattern="&quot;yyyyMMdd&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/TALEND/workspace/UEVE_PERSONAL/CC&quot;"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c type C:\\TALEND\\workspace\\UEVE_PERSONAL\\CC\\btephy-ldapmail-compar-harpege.csv C:\\TALEND\\workspace\\UEVE_PERSONAL\\CC\\2eme-harepge-ok.csv &gt; C:\\TALEND\\workspace\\UEVE_PERSONAL\\CC\\intermediaire.csv&quot; "/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="eme2_harpege_ok" name="tSystem_1">
+      <column comment="" key="false" name="uid" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="sn" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="givenname" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="datenaissance" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="cevifdescription" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="no_harpege" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="fichier" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_17">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="fichier"/>
+  </connection>
+  <connection connectorName="FLOW" label="harpege2" lineStyle="8" metaname="tOracleInput_6" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_6" target="tMap_19">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_PATRONYMIQUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_USUEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="D_NAISSANCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="harpege2"/>
+  </connection>
+  <connection connectorName="FLOW" label="eme2_harpege_ok" lineStyle="0" metaname="eme2_harpege_ok" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_19" target="tFileOutputDelimited_14">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="givenname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datenaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="no_harpege"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="eme2_harpege_ok"/>
+  </connection>
+  <connection connectorName="FLOW" label="eme2_harpege_nok" lineStyle="0" metaname="eme2_harpege_nok" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_19" target="tFileOutputDelimited_15">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="givenname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datenaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="no_harpege"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="eme2_harpege_nok"/>
+  </connection>
+  <connection connectorName="FLOW" label="harpege" lineStyle="8" metaname="tOracleInput_5" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_5" target="tMap_18">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="harpege"/>
+  </connection>
+  <connection connectorName="FLOW" label="harpege_ok" lineStyle="0" metaname="harpege_ok" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_18" target="tFileOutputDelimited_12">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="givenname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datenaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="no_harpege"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="harpege_ok"/>
+  </connection>
+  <connection connectorName="FLOW" label="harp_nok" lineStyle="0" metaname="harp_nok" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_18" target="tFileOutputDelimited_13">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="givenname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datenaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="harp_nok"/>
+  </connection>
+  <connection connectorName="FLOW" label="ok" lineStyle="0" metaname="ok" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_17" target="tFileOutputDelimited_10">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="givenname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datenaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ok"/>
+  </connection>
+  <connection connectorName="FLOW" label="pas_ok" lineStyle="0" metaname="pas_ok" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_17" target="tFileOutputDelimited_11">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="uid_bte_phy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="pas_ok"/>
+  </connection>
+  <connection connectorName="FLOW" label="ldapmail" lineStyle="8" metaname="tLDAPInput_19" offsetLabelX="0" offsetLabelY="0" source="tLDAPInput_19" target="tMap_17">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="sn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="givenname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdatenaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ldapmail"/>
+  </connection>
+  <connection connectorName="FLOW" label="fic" lineStyle="0" metaname="tFileOutputDelimited_10" offsetLabelX="-38" offsetLabelY="50" source="tFileOutputDelimited_10" target="tMap_18">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="givenname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datenaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="fic"/>
+  </connection>
+  <connection connectorName="FLOW" label="fic_rebus" lineStyle="0" metaname="tFileOutputDelimited_13" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_13" target="tMap_19">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="givenname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="datenaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="fic_rebus"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_14" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_14" target="tSystem_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="dsi" lineStyle="0" metaname="tLDAPInput_2" offsetLabelX="0" offsetLabelY="0" source="tLDAPInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="sn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="givenname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdatenaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraMailHost"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraMailTransport"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="dsi"/>
+  </connection>
+  <connection connectorName="FLOW" label="result" lineStyle="0" metaname="result" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="sn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="givenname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdatenaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraMailHost"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifDateDebut"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="zimbraMailTransport"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="result"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLDAPInput_1" offsetLabelX="0" offsetLabelY="0" source="tLDAPInput_1" target="tConvertType_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="sn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="givenname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifdatenaissance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="uid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="cevifDateDebut"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="ldap1" lineStyle="8" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tMap_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ldap1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_16"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLDAPInput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1a0cbcc2-b743-42de-a157-30e55bc7f6ae"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>s7DGaVFo1zZJMC4rMA+W1N3LgAJRFhUY3tDhuGfv5Sd+5sQwN0WirNHmE5YyRM0B7d+Ugdcc4MDe&#13;
+qbYrfMir7Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1e999863-c5d7-42e1-944a-c88d34f82beb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>V63XIL3vEFQYSqAXGMfMbLWEk873in/jG0GjMfT3FsMIP9zZpXy58aHkLNO7rYXK2/1bt9ur9xJs&#13;
+Za4qjH3TOw==</DigestValue></Reference></SignedInfo><SignatureValue>Ntqcu8QZGo5x9Lbcnkg8FM1G+Hpwl1ncHwJsozQZ7Zj8iGPP/ngBB28rBXXxt3M1Hx0wNXOpL59D&#13;
+oCGy6aiDQaoltUSPdWTsFYehAg4Ozn8pCU5VRbzVJUi4aT8Cv/xc6VmrrOaOr/dki7SQuN9FfqFT&#13;
+d9NKTZkciFCZm9bOgLnad2BN4TB2UxP6ZRMjd78SHilNUXPCCL8n3CVIV3Vguf6JF3YfA7tcu1UP&#13;
+dQbIprDwh+HJH0DBRheNRD1bAjwlRtZPvjMBQNXdIdlQd7c+dh46G8jOU7DuGtZvbUM6RN7ErwfW&#13;
+MAJJDyTFzsZPA5eVWW/jaOi4feHJKs1YfpCKcA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1e999863-c5d7-42e1-944a-c88d34f82beb" Target="#_1a0cbcc2-b743-42de-a157-30e55bc7f6ae"><Timestamp>2022-02-17 10:16:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

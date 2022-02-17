@@ -1,0 +1,29 @@
+{
+  "itemId" : "_SjvyQHB0Eeilg6PjjFrYYQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_-6BZcKF7Eemh3cf7jJnMNA",
+    "parameterList" : [ {
+      "id" : "_-6LKcaF7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_Port"
+    }, {
+      "id" : "_-6LKcqF7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_Server"
+    }, {
+      "id" : "_-6LKc6F7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_Schema"
+    }, {
+      "id" : "_-6LKdKF7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_Login"
+    }, {
+      "id" : "_-6LKdaF7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_Password"
+    }, {
+      "id" : "_-6LKdqF7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_ServiceName"
+    }, {
+      "id" : "_-6LKd6F7Eemh3cf7jJnMNA",
+      "name" : "DB_APOGEE_UPSAY_AdditionalParams"
+    } ]
+  } ]
+}

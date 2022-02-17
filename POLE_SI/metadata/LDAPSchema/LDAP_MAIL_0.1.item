@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:LDAPSchemaConnection Aliases="always" BindPassword="enc:system.encryption.key.v1:+6tL1a3EQWG0cKkKicBoOc+vGHKithjqQyfl4g==" BindPrincipal="" CountLimit="100" EncryptionMethodName="LDAP" Filter="(&amp;(objectClass=*))" Host="ldapmail.univ-evry.fr" Port="389" Protocol="Anonymous Authentication" Referrals="ignore" SelectedDN="dc=univ-evry,dc=fr" TimeOutLimit="0" contextName="Default" dataPackage="_vPnb0ewjEeWY0ZqGhB774g" name="repository.metadataLDAPSchema" xmi:id="_vPnb0OwjEeWY0ZqGhB774g">
+    <Value>CourierMailAccount</Value>
+    <Value>Vacation</Value>
+    <Value>agoraPrefs</Value>
+    <Value>anselPrefs</Value>
+    <Value>audio</Value>
+    <Value>businessCategory</Value>
+    <Value>calCAPURI</Value>
+    <Value>calCalURI</Value>
+    <Value>calEntry</Value>
+    <Value>calFBURL</Value>
+    <Value>calOtherCAPURIs</Value>
+    <Value>calOtherCalURIs</Value>
+    <Value>calOtherFBURLs</Value>
+    <Value>carLicense</Value>
+    <Value>cevifAccordPhoto</Value>
+    <Value>cevifAffectationPrincipale</Value>
+    <Value>cevifAliasMailLST</Value>
+    <Value>cevifBatimentDN</Value>
+    <Value>cevifCoursDN</Value>
+    <Value>cevifDateDebut</Value>
+    <Value>cevifDateFin</Value>
+    <Value>cevifDateNaissance</Value>
+    <Value>cevifDateValidation</Value>
+    <Value>cevifDescription</Value>
+    <Value>cevifDiplomeDN</Value>
+    <Value>cevifEtat</Value>
+    <Value>cevifEtudiantIA</Value>
+    <Value>cevifEtudiantIP</Value>
+    <Value>cevifGroupesAutresDN</Value>
+    <Value>cevifLoginCourt</Value>
+    <Value>cevifNomPatronymique</Value>
+    <Value>cevifOrigine</Value>
+    <Value>cevifPassPhrase</Value>
+    <Value>cevifPeriode</Value>
+    <Value>cevifPerson</Value>
+    <Value>cevifPhoneticGivenName</Value>
+    <Value>cevifPhoneticSN</Value>
+    <Value>cevifReponse</Value>
+    <Value>cevifTDDN</Value>
+    <Value>cevifTPDN</Value>
+    <Value>cevifTitle</Value>
+    <Value>choraPrefs</Value>
+    <Value>clearPassword</Value>
+    <Value>cn</Value>
+    <Value>dc</Value>
+    <Value>dcObject</Value>
+    <Value>defaultdelivery</Value>
+    <Value>departmentNumber</Value>
+    <Value>description</Value>
+    <Value>destinationIndicator</Value>
+    <Value>dimpPrefs</Value>
+    <Value>disableimap</Value>
+    <Value>disablepop3</Value>
+    <Value>disableshared</Value>
+    <Value>disablewebmail</Value>
+    <Value>displayName</Value>
+    <Value>eduPerson</Value>
+    <Value>eduPersonAffiliation</Value>
+    <Value>eduPersonEntitlement</Value>
+    <Value>eduPersonNickname</Value>
+    <Value>eduPersonOrgDN</Value>
+    <Value>eduPersonOrgUnitDN</Value>
+    <Value>eduPersonPrimaryAffiliation</Value>
+    <Value>eduPersonPrimaryOrgUnitDN</Value>
+    <Value>eduPersonPrincipalName</Value>
+    <Value>employeeNumber</Value>
+    <Value>employeeType</Value>
+    <Value>facsimileTelephoneNumber</Value>
+    <Value>gecos</Value>
+    <Value>geniePrefs</Value>
+    <Value>gidNumber</Value>
+    <Value>givenName</Value>
+    <Value>gollemPrefs</Value>
+    <Value>goopsPrefs</Value>
+    <Value>groupMemberShip</Value>
+    <Value>hermesPrefs</Value>
+    <Value>homeDirectory</Value>
+    <Value>homePhone</Value>
+    <Value>homePostalAddress</Value>
+    <Value>hordePerson</Value>
+    <Value>hordePrefs</Value>
+    <Value>impPrefs</Value>
+    <Value>inetOrgPerson</Value>
+    <Value>ingoPrefs</Value>
+    <Value>initials</Value>
+    <Value>internationaliSDNNumber</Value>
+    <Value>jetaPrefs</Value>
+    <Value>jonahPrefs</Value>
+    <Value>jpegPhoto</Value>
+    <Value>klutzPrefs</Value>
+    <Value>kronolithPrefs</Value>
+    <Value>l</Value>
+    <Value>labeledURI</Value>
+    <Value>loginShell</Value>
+    <Value>mail</Value>
+    <Value>mailbox</Value>
+    <Value>manager</Value>
+    <Value>merkPrefs</Value>
+    <Value>mimpPrefs</Value>
+    <Value>mnemoPrefs</Value>
+    <Value>mobile</Value>
+    <Value>mottlePrefs</Value>
+    <Value>nagPrefs</Value>
+    <Value>nicPrefs</Value>
+    <Value>o</Value>
+    <Value>objectClass</Value>
+    <Value>occamPrefs</Value>
+    <Value>organization</Value>
+    <Value>organizationalPerson</Value>
+    <Value>organizationalRole</Value>
+    <Value>organizationalUnit</Value>
+    <Value>ou</Value>
+    <Value>pager</Value>
+    <Value>person</Value>
+    <Value>photo</Value>
+    <Value>physicalDeliveryOfficeName</Value>
+    <Value>posixAccount</Value>
+    <Value>postOfficeBox</Value>
+    <Value>postalAddress</Value>
+    <Value>postalCode</Value>
+    <Value>preferredDeliveryMethod</Value>
+    <Value>preferredLanguage</Value>
+    <Value>quota</Value>
+    <Value>rakimPrefs</Value>
+    <Value>registeredAddress</Value>
+    <Value>roleOccupant</Value>
+    <Value>roomNumber</Value>
+    <Value>scryPrefs</Value>
+    <Value>searchGuide</Value>
+    <Value>secretary</Value>
+    <Value>seeAlso</Value>
+    <Value>seshaPrefs</Value>
+    <Value>shadowAccount</Value>
+    <Value>shadowExpire</Value>
+    <Value>shadowFlag</Value>
+    <Value>shadowInactive</Value>
+    <Value>shadowLastChange</Value>
+    <Value>shadowMax</Value>
+    <Value>shadowMin</Value>
+    <Value>shadowWarning</Value>
+    <Value>sharedgroup</Value>
+    <Value>simpleSecurityObject</Value>
+    <Value>sn</Value>
+    <Value>st</Value>
+    <Value>street</Value>
+    <Value>supannAffectation</Value>
+    <Value>supannAliasLogin</Value>
+    <Value>supannCivilite</Value>
+    <Value>supannCodeINE</Value>
+    <Value>supannEmpId</Value>
+    <Value>supannEmploye</Value>
+    <Value>supannEtuId</Value>
+    <Value>supannGroupe</Value>
+    <Value>supannGroupeAdminDN</Value>
+    <Value>supannGroupeDateFin</Value>
+    <Value>supannGroupeLecteurDN</Value>
+    <Value>supannListeRouge</Value>
+    <Value>supannOrganisme</Value>
+    <Value>supannParrainDN</Value>
+    <Value>supannPerson</Value>
+    <Value>supannRole</Value>
+    <Value>swooshPrefs</Value>
+    <Value>telephoneNumber</Value>
+    <Value>teletexTerminalIdentifier</Value>
+    <Value>telexNumber</Value>
+    <Value>title</Value>
+    <Value>top</Value>
+    <Value>treanPrefs</Value>
+    <Value>turbaPrefs</Value>
+    <Value>uid</Value>
+    <Value>uidNumber</Value>
+    <Value>ulaformPrefs</Value>
+    <Value>userCertificate</Value>
+    <Value>userPKCS12</Value>
+    <Value>userPassword</Value>
+    <Value>userSMIMECertificate</Value>
+    <Value>vacationActive</Value>
+    <Value>vacationEnd</Value>
+    <Value>vacationForward</Value>
+    <Value>vacationInfo</Value>
+    <Value>vacationStart</Value>
+    <Value>volosPrefs</Value>
+    <Value>vpnActif</Value>
+    <Value>whupsPrefs</Value>
+    <Value>wickedPrefs</Value>
+    <Value>x121Address</Value>
+    <Value>x500UniqueIdentifier</Value>
+    <BaseDNs/>
+    <BaseDNs>dc=univ-evry,dc=fr</BaseDNs>
+  </TalendMetadata:LDAPSchemaConnection>
+  <TalendMetadata:GenericPackage dataManager="_vPnb0OwjEeWY0ZqGhB774g" name="repository.metadataLDAPSchema" xmi:id="_vPnb0ewjEeWY0ZqGhB774g">
+    <ownedElement id="_D-MZIOwjEeWY0ZqGhB774g" label="metadata" xmi:id="_vPnb0uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="CourierMailAccount" name="CourierMailAccount" talendType="id_String" xmi:id="_vPnb0-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Vacation" name="Vacation" talendType="id_String" xmi:id="_vPnb1OwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="agoraPrefs" name="agoraPrefs" talendType="id_String" xmi:id="_vPnb1ewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="anselPrefs" name="anselPrefs" talendType="id_String" xmi:id="_vPnb1uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="audio" name="audio" talendType="id_String" xmi:id="_vPnb1-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="businessCategory" name="businessCategory" talendType="id_String" xmi:id="_vPnb2OwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="calCAPURI" name="calCAPURI" talendType="id_String" xmi:id="_vPnb2ewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="calCalURI" name="calCalURI" talendType="id_String" xmi:id="_vPnb2uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="calEntry" name="calEntry" talendType="id_String" xmi:id="_vPnb2-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="calFBURL" length="79" name="calFBURL" talendType="id_String" xmi:id="_vPnb3OwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="calOtherCAPURIs" name="calOtherCAPURIs" talendType="id_String" xmi:id="_vPnb3ewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="calOtherCalURIs" name="calOtherCalURIs" talendType="id_String" xmi:id="_vPnb3uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="calOtherFBURLs" name="calOtherFBURLs" talendType="id_String" xmi:id="_vPnb3-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="carLicense" name="carLicense" talendType="id_String" xmi:id="_vPnb4OwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifAccordPhoto" name="cevifAccordPhoto" talendType="id_String" xmi:id="_vPnb4ewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifAffectationPrincipale" name="cevifAffectationPrincipale" talendType="id_String" xmi:id="_vPnb4uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifAliasMailLST" name="cevifAliasMailLST" talendType="id_String" xmi:id="_vPnb4-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifBatimentDN" name="cevifBatimentDN" talendType="id_String" xmi:id="_vPnb5OwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifCoursDN" name="cevifCoursDN" talendType="id_String" xmi:id="_vPnb5ewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifDateDebut" name="cevifDateDebut" talendType="id_String" xmi:id="_vPnb5uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifDateFin" name="cevifDateFin" talendType="id_String" xmi:id="_vPnb5-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifDateNaissance" name="cevifDateNaissance" talendType="id_String" xmi:id="_vPnb6OwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifDateValidation" name="cevifDateValidation" talendType="id_String" xmi:id="_vPnb6ewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifDescription" length="6" name="cevifDescription" talendType="id_String" xmi:id="_vPnb6uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifDiplomeDN" name="cevifDiplomeDN" talendType="id_String" xmi:id="_vPnb6-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifEtat" length="1" name="cevifEtat" talendType="id_String" xmi:id="_vPnb7OwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifEtudiantIA" name="cevifEtudiantIA" talendType="id_String" xmi:id="_vPnb7ewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifEtudiantIP" name="cevifEtudiantIP" talendType="id_String" xmi:id="_vPnb7uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifGroupesAutresDN" name="cevifGroupesAutresDN" talendType="id_String" xmi:id="_vPnb7-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifLoginCourt" name="cevifLoginCourt" talendType="id_String" xmi:id="_vPnb8OwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifNomPatronymique" name="cevifNomPatronymique" talendType="id_String" xmi:id="_vPnb8ewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifOrigine" name="cevifOrigine" talendType="id_String" xmi:id="_vPnb8uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifPassPhrase" name="cevifPassPhrase" talendType="id_String" xmi:id="_vPnb8-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifPeriode" name="cevifPeriode" talendType="id_String" xmi:id="_vPnb9OwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifPerson" name="cevifPerson" talendType="id_String" xmi:id="_vPnb9ewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifPhoneticGivenName" name="cevifPhoneticGivenName" talendType="id_String" xmi:id="_vPnb9uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifPhoneticSN" name="cevifPhoneticSN" talendType="id_String" xmi:id="_vPnb9-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifReponse" name="cevifReponse" talendType="id_String" xmi:id="_vPnb-OwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifTDDN" name="cevifTDDN" talendType="id_String" xmi:id="_vPnb-ewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifTPDN" name="cevifTPDN" talendType="id_String" xmi:id="_vPnb-uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cevifTitle" length="14" name="cevifTitle" talendType="id_String" xmi:id="_vPnb--wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="choraPrefs" name="choraPrefs" talendType="id_String" xmi:id="_vPnb_OwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="clearPassword" name="clearPassword" talendType="id_String" xmi:id="_vPnb_ewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="cn" length="19" name="cn" talendType="id_String" xmi:id="_vPnb_uwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="dc" length="9" name="dc" talendType="id_String" xmi:id="_vPnb_-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="dcObject" name="dcObject" talendType="id_String" xmi:id="_vPncAOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="defaultdelivery" name="defaultdelivery" talendType="id_String" xmi:id="_vPncAewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="departmentNumber" name="departmentNumber" talendType="id_String" xmi:id="_vPncAuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="description" length="43" name="description" talendType="id_String" xmi:id="_vPncA-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="destinationIndicator" name="destinationIndicator" talendType="id_String" xmi:id="_vPncBOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="dimpPrefs" name="dimpPrefs" talendType="id_String" xmi:id="_vPncBewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="disableimap" length="1" name="disableimap" talendType="id_String" xmi:id="_vPncBuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="disablepop3" length="1" name="disablepop3" talendType="id_String" xmi:id="_vPncB-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="disableshared" name="disableshared" talendType="id_String" xmi:id="_vPncCOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="disablewebmail" name="disablewebmail" talendType="id_String" xmi:id="_vPncCewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="displayName" name="displayName" talendType="id_String" xmi:id="_vPncCuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPerson" name="eduPerson" talendType="id_String" xmi:id="_vPncC-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonAffiliation" length="13" name="eduPersonAffiliation" talendType="id_String" xmi:id="_vPncDOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonEntitlement" length="24" name="eduPersonEntitlement" talendType="id_String" xmi:id="_vPncDewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonNickname" name="eduPersonNickname" talendType="id_String" xmi:id="_vPncDuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonOrgDN" name="eduPersonOrgDN" talendType="id_String" xmi:id="_vPncD-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonOrgUnitDN" name="eduPersonOrgUnitDN" talendType="id_String" xmi:id="_vPncEOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonPrimaryAffiliation" name="eduPersonPrimaryAffiliation" talendType="id_String" xmi:id="_vPncEewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonPrimaryOrgUnitDN" name="eduPersonPrimaryOrgUnitDN" talendType="id_String" xmi:id="_vPncEuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="eduPersonPrincipalName" name="eduPersonPrincipalName" talendType="id_String" xmi:id="_vPncE-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="employeeNumber" name="employeeNumber" talendType="id_String" xmi:id="_vPncFOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="employeeType" length="4" name="employeeType" talendType="id_String" xmi:id="_vPncFewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="facsimileTelephoneNumber" name="facsimileTelephoneNumber" talendType="id_String" xmi:id="_vPncFuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="gecos" name="gecos" talendType="id_String" xmi:id="_vPncF-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="geniePrefs" name="geniePrefs" talendType="id_String" xmi:id="_vPncGOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="gidNumber" length="1" name="gidNumber" talendType="id_String" xmi:id="_vPncGewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="givenName" length="12" name="givenName" talendType="id_String" xmi:id="_vPncGuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="gollemPrefs" name="gollemPrefs" talendType="id_String" xmi:id="_vPncG-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="goopsPrefs" name="goopsPrefs" talendType="id_String" xmi:id="_vPncHOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="groupMemberShip" length="73" name="groupMemberShip" talendType="id_String" xmi:id="_vPncHewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="hermesPrefs" name="hermesPrefs" talendType="id_String" xmi:id="_vPncHuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="homeDirectory" length="31" name="homeDirectory" talendType="id_String" xmi:id="_vPncH-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="homePhone" name="homePhone" talendType="id_String" xmi:id="_vPncIOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="homePostalAddress" name="homePostalAddress" talendType="id_String" xmi:id="_vPncIewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="hordePerson" name="hordePerson" talendType="id_String" xmi:id="_vPncIuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="hordePrefs" length="5803" name="hordePrefs" talendType="id_String" xmi:id="_vPncI-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="impPrefs" length="4366" name="impPrefs" talendType="id_String" xmi:id="_vPncJOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="inetOrgPerson" name="inetOrgPerson" talendType="id_String" xmi:id="_vPncJewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="ingoPrefs" length="25978" name="ingoPrefs" talendType="id_String" xmi:id="_vPncJuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="initials" name="initials" talendType="id_String" xmi:id="_vPncJ-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="internationaliSDNNumber" name="internationaliSDNNumber" talendType="id_String" xmi:id="_vPncKOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="jetaPrefs" name="jetaPrefs" talendType="id_String" xmi:id="_vPncKewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="jonahPrefs" name="jonahPrefs" talendType="id_String" xmi:id="_vPncKuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="jpegPhoto" name="jpegPhoto" talendType="id_String" xmi:id="_vPncK-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="klutzPrefs" name="klutzPrefs" talendType="id_String" xmi:id="_vPncLOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="kronolithPrefs" length="957" name="kronolithPrefs" talendType="id_String" xmi:id="_vPncLewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="l" name="l" talendType="id_String" xmi:id="_vPncLuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="labeledURI" name="labeledURI" talendType="id_String" xmi:id="_vPncL-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="loginShell" name="loginShell" talendType="id_String" xmi:id="_vPncMOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="mail" length="59" name="mail" talendType="id_String" xmi:id="_vPncMewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="mailbox" name="mailbox" talendType="id_String" xmi:id="_vPncMuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="manager" name="manager" talendType="id_String" xmi:id="_vPncM-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="merkPrefs" name="merkPrefs" talendType="id_String" xmi:id="_vPncNOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="mimpPrefs" name="mimpPrefs" talendType="id_String" xmi:id="_vPncNewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="mnemoPrefs" length="170" name="mnemoPrefs" talendType="id_String" xmi:id="_vPncNuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="mobile" length="14" name="mobile" talendType="id_String" xmi:id="_vPncN-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="mottlePrefs" name="mottlePrefs" talendType="id_String" xmi:id="_vPncOOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="nagPrefs" length="217" name="nagPrefs" talendType="id_String" xmi:id="_vPncOewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="nicPrefs" name="nicPrefs" talendType="id_String" xmi:id="_vPncOuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="o" length="5" name="o" talendType="id_String" xmi:id="_vPncO-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="objectClass" length="183" name="objectClass" talendType="id_String" xmi:id="_vPncPOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="occamPrefs" name="occamPrefs" talendType="id_String" xmi:id="_vPncPewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="organization" name="organization" talendType="id_String" xmi:id="_vPncPuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="organizationalPerson" name="organizationalPerson" talendType="id_String" xmi:id="_vPncP-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="organizationalRole" name="organizationalRole" talendType="id_String" xmi:id="_vPncQOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="organizationalUnit" name="organizationalUnit" talendType="id_String" xmi:id="_vPncQewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="ou" length="21" name="ou" talendType="id_String" xmi:id="_vPncQuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="pager" name="pager" talendType="id_String" xmi:id="_vPncQ-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="person" name="person" talendType="id_String" xmi:id="_vPncROwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="photo" name="photo" talendType="id_String" xmi:id="_vPncRewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="physicalDeliveryOfficeName" name="physicalDeliveryOfficeName" talendType="id_String" xmi:id="_vPncRuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="posixAccount" name="posixAccount" talendType="id_String" xmi:id="_vPncR-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="postOfficeBox" name="postOfficeBox" talendType="id_String" xmi:id="_vPncSOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="postalAddress" name="postalAddress" talendType="id_String" xmi:id="_vPncSewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="postalCode" name="postalCode" talendType="id_String" xmi:id="_vPncSuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="preferredDeliveryMethod" name="preferredDeliveryMethod" talendType="id_String" xmi:id="_vPncS-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="preferredLanguage" name="preferredLanguage" talendType="id_String" xmi:id="_vPncTOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="quota" length="10" name="quota" talendType="id_String" xmi:id="_vPncTewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="rakimPrefs" name="rakimPrefs" talendType="id_String" xmi:id="_vPncTuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="registeredAddress" name="registeredAddress" talendType="id_String" xmi:id="_vPncT-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="roleOccupant" name="roleOccupant" talendType="id_String" xmi:id="_vPncUOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="roomNumber" name="roomNumber" talendType="id_String" xmi:id="_vPncUewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="scryPrefs" name="scryPrefs" talendType="id_String" xmi:id="_vPncUuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="searchGuide" name="searchGuide" talendType="id_String" xmi:id="_vPncU-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="secretary" name="secretary" talendType="id_String" xmi:id="_vPncVOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="seeAlso" name="seeAlso" talendType="id_String" xmi:id="_vPncVewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="seshaPrefs" name="seshaPrefs" talendType="id_String" xmi:id="_vPncVuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shadowAccount" name="shadowAccount" talendType="id_String" xmi:id="_vPncV-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shadowExpire" name="shadowExpire" talendType="id_String" xmi:id="_vPncWOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shadowFlag" name="shadowFlag" talendType="id_String" xmi:id="_vPncWewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shadowInactive" name="shadowInactive" talendType="id_String" xmi:id="_vPncWuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shadowLastChange" name="shadowLastChange" talendType="id_String" xmi:id="_vPncW-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shadowMax" name="shadowMax" talendType="id_String" xmi:id="_vPncXOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shadowMin" name="shadowMin" talendType="id_String" xmi:id="_vPncXewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="shadowWarning" name="shadowWarning" talendType="id_String" xmi:id="_vPncXuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="sharedgroup" name="sharedgroup" talendType="id_String" xmi:id="_vPncX-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="simpleSecurityObject" name="simpleSecurityObject" talendType="id_String" xmi:id="_vPncYOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="sn" length="14" name="sn" talendType="id_String" xmi:id="_vPncYewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="st" name="st" talendType="id_String" xmi:id="_vPncYuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="street" name="street" talendType="id_String" xmi:id="_vPncY-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannAffectation" name="supannAffectation" talendType="id_String" xmi:id="_vPncZOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannAliasLogin" name="supannAliasLogin" talendType="id_String" xmi:id="_vPncZewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannCivilite" name="supannCivilite" talendType="id_String" xmi:id="_vPncZuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannCodeINE" name="supannCodeINE" talendType="id_String" xmi:id="_vPncZ-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEmpId" name="supannEmpId" talendType="id_String" xmi:id="_vPncaOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEmploye" name="supannEmploye" talendType="id_String" xmi:id="_vPncaewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannEtuId" name="supannEtuId" talendType="id_String" xmi:id="_vPncauwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannGroupe" name="supannGroupe" talendType="id_String" xmi:id="_vPnca-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannGroupeAdminDN" name="supannGroupeAdminDN" talendType="id_String" xmi:id="_vPncbOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannGroupeDateFin" name="supannGroupeDateFin" talendType="id_String" xmi:id="_vPncbewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannGroupeLecteurDN" name="supannGroupeLecteurDN" talendType="id_String" xmi:id="_vPncbuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannListeRouge" length="4" name="supannListeRouge" talendType="id_String" xmi:id="_vPncb-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannOrganisme" length="13" name="supannOrganisme" talendType="id_String" xmi:id="_vPnccOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannParrainDN" name="supannParrainDN" talendType="id_String" xmi:id="_vPnccewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannPerson" name="supannPerson" talendType="id_String" xmi:id="_vPnccuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="supannRole" name="supannRole" talendType="id_String" xmi:id="_vPncc-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="swooshPrefs" name="swooshPrefs" talendType="id_String" xmi:id="_vPncdOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="telephoneNumber" length="5" name="telephoneNumber" talendType="id_String" xmi:id="_vPncdewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="teletexTerminalIdentifier" name="teletexTerminalIdentifier" talendType="id_String" xmi:id="_vPncduwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="telexNumber" name="telexNumber" talendType="id_String" xmi:id="_vPncd-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="title" name="title" talendType="id_String" xmi:id="_vPnceOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="top" name="top" talendType="id_String" xmi:id="_vPnceewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="treanPrefs" name="treanPrefs" talendType="id_String" xmi:id="_vPnceuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="turbaPrefs" length="274" name="turbaPrefs" talendType="id_String" xmi:id="_vPnce-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="uid" length="19" name="uid" talendType="id_String" xmi:id="_vPncfOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="uidNumber" length="5" name="uidNumber" talendType="id_String" xmi:id="_vPncfewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="ulaformPrefs" name="ulaformPrefs" talendType="id_String" xmi:id="_vPncfuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="userCertificate" name="userCertificate" talendType="id_String" xmi:id="_vPncf-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="userPKCS12" name="userPKCS12" talendType="id_String" xmi:id="_vPncgOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="userPassword" name="userPassword" talendType="id_String" xmi:id="_vPncgewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="userSMIMECertificate" name="userSMIMECertificate" talendType="id_String" xmi:id="_vPncguwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vacationActive" name="vacationActive" talendType="id_String" xmi:id="_vPncg-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vacationEnd" name="vacationEnd" talendType="id_String" xmi:id="_vPnchOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vacationForward" name="vacationForward" talendType="id_String" xmi:id="_vPnchewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vacationInfo" name="vacationInfo" talendType="id_String" xmi:id="_vPnchuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vacationStart" name="vacationStart" talendType="id_String" xmi:id="_vPnch-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="volosPrefs" name="volosPrefs" talendType="id_String" xmi:id="_vPnciOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vpnActif" name="vpnActif" talendType="id_String" xmi:id="_vPnciewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="whupsPrefs" name="whupsPrefs" talendType="id_String" xmi:id="_vPnciuwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="wickedPrefs" name="wickedPrefs" talendType="id_String" xmi:id="_vPnci-wjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="x121Address" name="x121Address" talendType="id_String" xmi:id="_vPncjOwjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="x500UniqueIdentifier" name="x500UniqueIdentifier" talendType="id_String" xmi:id="_vPncjewjEeWY0ZqGhB774g" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a3763329-b3f9-41ce-ad32-552857caa699"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>z9GFENNzzwSqPsb2d8wwsM19zNfxJBJPrE66trEycC+/VZIlpEEooJBij49B5HFXvzvQDfroOfLO&#13;
+GdVcLbUSrw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8e3684d3-bd15-4304-aafa-9bfecbb339b8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yuYuj1Z+pp0w0ku2TC7XHQ14mlRsso/S7LpXNDzDWZl6Y0qO0qBGHzPV27kPKePrp4eKZyqEPC+k&#13;
+xCXPl7VvcQ==</DigestValue></Reference></SignedInfo><SignatureValue>lj3OYldhTwNPg6uQePGv4uBoy6cwazQhUexSCmXKaoWZKd9UuCcE/vFpvxRiBDX7OrJbT3oEfDz2&#13;
+MT8N9rlVq4VfnxIWmC2DkY/+7ztCPDk2s6CfxjCHWnqzpFfxRZTa8IawuSkgfLqJ3tBF4XDBeRBh&#13;
+Yyu16DLvbBFOMFdcGdTWANGznKuuNzqo0IH19Rvw/lcxW63Nsi1k0Gg3Fo2iLQKXzlDk9HCyHh0N&#13;
+GdvRGJrtNtY0BZKteL3WSdd5+shL+KrmX46yi51h26gYbnw9p5mMNTR2nt3pr6gUS+NuFdICYGsW&#13;
+8nw6UKA8mctxXFAIhMjY5M2E5of7SKwpfqBmww==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8e3684d3-bd15-4304-aafa-9bfecbb339b8" Target="#_a3763329-b3f9-41ce-ad32-552857caa699"><Timestamp>2022-02-17 10:19:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

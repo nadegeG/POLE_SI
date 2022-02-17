@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_6OQg8I_aEeyUWr5Vyoj4tg" name="mail_bcc" prompt="mail_bcc?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6OQg8Y_aEeyUWr5Vyoj4tg" name="mail_cc" prompt="mail_cc?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6OQg8o_aEeyUWr5Vyoj4tg" name="mail_message" prompt="mail_message?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6OQg84_aEeyUWr5Vyoj4tg" name="struct_heberge" prompt="struct_heberge?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6OQg9I_aEeyUWr5Vyoj4tg" name="struct_process_simplifie" prompt="struct_process_simplifie?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_cock_AdditionalParams" prompt="BDD_cock_AdditionalParams?" promptNeeded="false" repositoryContextId="_4xupsAlkEee9f6Qz1UOWKA" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_cock_Login" prompt="BDD_cock_Login?" promptNeeded="false" repositoryContextId="_4xupsAlkEee9f6Qz1UOWKA" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_cock_Password" prompt="BDD_cock_Password?" promptNeeded="false" repositoryContextId="_4xupsAlkEee9f6Qz1UOWKA" type="id_Password" value=""/>
+    <contextParameter comment="" name="BDD_cock_Port" prompt="BDD_cock_Port?" promptNeeded="false" repositoryContextId="_4xupsAlkEee9f6Qz1UOWKA" type="id_String" value="1521"/>
+    <contextParameter comment="" name="BDD_cock_Schema" prompt="BDD_cock_Schema?" promptNeeded="false" repositoryContextId="_4xupsAlkEee9f6Qz1UOWKA" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_cock_SchemaGrh" prompt="BDD_cock_SchemaGrh?" promptNeeded="false" repositoryContextId="_4xupsAlkEee9f6Qz1UOWKA" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_cock_Server" prompt="BDD_cock_Server?" promptNeeded="false" repositoryContextId="_4xupsAlkEee9f6Qz1UOWKA" type="id_String" value=""/>
+    <contextParameter comment="" name="BDD_cock_Sid" prompt="BDD_cock_Sid?" promptNeeded="false" repositoryContextId="_4xupsAlkEee9f6Qz1UOWKA" type="id_String" value=""/>
+    <contextParameter comment="" name="fichier_env" prompt="fichier_env?" promptNeeded="false" repositoryContextId="_Yxe7AIlAEeWsyoDdnwopvg" type="id_String" value="C:/TOS_personne/contextes/param.properties"/>
+    <contextParameter comment="" name="numeros_individus" prompt="numeros_individus?" promptNeeded="false" repositoryContextId="_Yxe7AIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="FIC_in" prompt="FIC_in?" promptNeeded="false" repositoryContextId="_VUTpgIlAEeWsyoDdnwopvg" type="id_String" value="context.FIC_in"/>
+    <contextParameter comment="" name="FIC_log" prompt="FIC_log?" promptNeeded="false" repositoryContextId="_VUTpgIlAEeWsyoDdnwopvg" type="id_String" value="context.FIC_log"/>
+    <contextParameter comment="" name="FIC_out" prompt="FIC_out?" promptNeeded="false" repositoryContextId="_VUTpgIlAEeWsyoDdnwopvg" type="id_String" value="context.FIC_out"/>
+    <contextParameter comment="" name="FIC_racine" prompt="FIC_racine?" promptNeeded="false" repositoryContextId="_VUTpgIlAEeWsyoDdnwopvg" type="id_String" value="C:/TOS_personne"/>
+    <contextParameter comment="" name="mail_a" prompt="mail_a?" promptNeeded="false" repositoryContextId="_avhVAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="mail_de" prompt="mail_de?" promptNeeded="false" repositoryContextId="_avhVAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="mail_port" prompt="mail_port?" promptNeeded="false" repositoryContextId="_avhVAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="mail_smtp" prompt="mail_smtp?" promptNeeded="false" repositoryContextId="_avhVAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="mail_sujet" prompt="mail_sujet?" promptNeeded="false" repositoryContextId="_avhVAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_admin_tel_mail" prompt="adresse_admin_tel_mail?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_agent_avec_carriere" prompt="adresse_agent_avec_carriere?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_agent_avec_contrat" prompt="adresse_agent_avec_contrat?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_heberge" prompt="adresse_heberge?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_perso_tel_mail" prompt="adresse_perso_tel_mail?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_princ_agent_avec_carriere" prompt="adresse_princ_agent_avec_carriere?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_princ_agent_avec_contrat" prompt="adresse_princ_agent_avec_contrat?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_princ_heberge" prompt="adresse_princ_heberge?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_princ_process_simplifie" prompt="adresse_princ_process_simplifie?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_princ_vacataire" prompt="adresse_princ_vacataire?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_process_simplifie" prompt="adresse_process_simplifie?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="adresse_vacataire" prompt="adresse_vacataire?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="code_insee" prompt="code_insee?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="import_agent_avec_carriere" prompt="import_agent_avec_carriere?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="import_agent_avec_contrat" prompt="import_agent_avec_contrat?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="import_heberge" prompt="import_heberge?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="import_process_simplifie" prompt="import_process_simplifie?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="import_vacataire" prompt="import_vacataire?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="roles_agent_avec_carriere" prompt="roles_agent_avec_carriere?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="roles_agent_avec_contrat" prompt="roles_agent_avec_contrat?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="roles_heberge" prompt="roles_heberge?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="roles_process_simplifie" prompt="roles_process_simplifie?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="roles_vacataire" prompt="roles_vacataire?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+    <contextParameter comment="" name="send_mail" prompt="send_mail?" promptNeeded="false" repositoryContextId="_d1lHAIlAEeWsyoDdnwopvg" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="448"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="true"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="context.fichier_env"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;==&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:9V+k3acFOj9Koxs/4V+hReKkr0TPgBaJHNyt7mTZ"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="true"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="context.FIC_racine + &quot;/&quot; + context.FIC_log + &quot;/&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="projectName+&quot;_STAT_&quot; + TalendDate.getDate(&quot;CCYY-MM-DD&quot;)+&quot;.log&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="projectName+&quot;_LOG_&quot; + TalendDate.getDate(&quot;CCYY-MM-DD&quot;)+&quot;.log&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="projectName+&quot;_FLOW_&quot; + TalendDate.getDate(&quot;CCYY-MM-DD&quot;)+&quot;.log&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AfCsc/fcnPj25GqsdeABkRnvFOpEpHvRIeY5m32f"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value=""/>
+    <routinesParameter id="_RMROMIkhEeWsyoDdnwopvg" name="TalendString"/>
+    <routinesParameter id="_RMZxEIkhEeWsyoDdnwopvg" name="TalendDate"/>
+    <routinesParameter id="_RMaYIIkhEeWsyoDdnwopvg" name="Relational"/>
+    <routinesParameter id="_RMbmQIkhEeWsyoDdnwopvg" name="Numeric"/>
+    <routinesParameter id="_RMcNUIkhEeWsyoDdnwopvg" name="DataOperation"/>
+    <routinesParameter id="_RMdbcIkhEeWsyoDdnwopvg" name="StringHandling"/>
+    <routinesParameter id="_RMeCgIkhEeWsyoDdnwopvg" name="Mathematical"/>
+    <routinesParameter id="_RMfQoIkhEeWsyoDdnwopvg" name="TalendDataGenerator"/>
+  </parameters>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;-- code erreur : --&gt; &quot;+(globalMap.get(&quot;code_erreur&quot;)));&#10;System.out.println(&quot;===== Fin &quot; + jobName + &quot; =====&quot;);&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;===== Début &quot; + jobName + &quot; =====&quot;);&#10;globalMap.put(&quot;code_erreur&quot;, &quot;0&quot;);&#10;globalMap.put(&quot;nb_rejets&quot;,0);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;----- ERROR ----- La connection Oracle COCKTAIL n'est pas valide&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mdrqkAlkEee9f6Qz1UOWKA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.BDD_cock_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="context.BDD_cock_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.BDD_cock_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.BDD_cock_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.BDD_cock_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wznzWH8/EVfpgpknveyWhZiaOmKpKKd0E5rSsgR/c1wCuQDFd5MC2T/FPnWQT7iKftYIDz0="/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;SELECT  DISTINCT&#13;&#10;       IND.NO_INDIVIDU,&#13;&#10;       IND.NOM_USUEL,&#13;&#10;       IND.NOM_PATRONYMIQUE,&#13;&#10;       IND.PRENOM,&#13;&#10;       IND.PRENOM2,&#13;&#10;       IND.D_NAISSANCE,&#13;&#10;       IND.C_CIVILITE,&#13;&#10;       IND.IND_NO_INSEE,&#13;&#10;       IND.IND_CLE_INSEE&#13;&#10;    FROM &quot;+context.BDD_cock_Schema+&quot;.INDIVIDU_ULR         IND,&#13;&#10;     &quot;+context.BDD_cock_SchemaGrh+&quot;.CHANGEMENT_POSITION   CHA_POS,&#13;&#10;     &quot;+context.BDD_cock_SchemaGrh+&quot;.ELEMENT_CARRIERE      ELE_CAR,&#13;&#10;     &quot;+context.BDD_cock_Schema+&quot;.STRUCTURE_ULR            STR,&#13;&#10;     &quot;+context.BDD_cock_SchemaGrh+&quot;.AFFECTATION           AFF&#13;&#10;WHERE SYSDATE BETWEEN AFF.D_Deb_affectation&#13;&#10;              AND NVL(AFF.D_Fin_affectation,SYSDATE)+1&#13;&#10;  AND AFF.Tem_Valide='O'&#13;&#10;  AND AFF.Tem_Principale='O'&#13;&#10;  AND ELE_CAR.No_dossier_pers = AFF.No_dossier_pers&#13;&#10;  AND SYSDATE BETWEEN ELE_CAR.D_Effet_element&#13;&#10;              AND NVL(ELE_CAR.D_Fin_element, SYSDATE)+1&#13;&#10;  AND ELE_CAR.Tem_provisoire = 'N'&#13;&#10;  AND ELE_CAR.Tem_Valide ='O'&#13;&#10;  AND ELE_CAR.D_ANNULATION IS NULL&#13;&#10;  AND CHA_POS.No_dossier_pers = AFF.No_dossier_pers&#13;&#10;  AND SYSDATE BETWEEN CHA_POS.D_Deb_position&#13;&#10;              AND NVL(CHA_POS.D_Fin_position, SYSDATE)+1&#13;&#10;  AND CHA_POS.tem_valide = 'O'&#13;&#10;  AND CHA_POS.temoin_position_prev = 'N'&#13;&#10;  AND STR.C_Structure = Aff.C_Structure&#13;&#10;  AND IND.No_individu = AFF.No_dossier_pers&#13;&#10;&quot; + ((context.numeros_individus != null &amp;&amp; ! context.numeros_individus.equals(&quot;&quot;)) ? &quot;AND IND.NO_INDIVIDU IN (&quot;+ context.numeros_individus +&quot;)&quot; : &quot;&quot;)"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.BDD_cock_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_USUEL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_PATRONYMIQUE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRENOMS_ETAT_CIVIL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D_NAISSANCE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C_CIVILITE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_INSEE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CLE_INSEE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="BDD_cock"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_2">
+      <column comment="" defaultValue="" key="false" length="8" name="NO_INDIVIDU" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_USUEL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_PATRONYMIQUE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="PRENOMS_ETAT_CIVIL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="D_NAISSANCE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="C_CIVILITE" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="NO_INSEE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="CLE_INSEE" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_aTXEkOuEEeW8Vc27H8XD4Q-tMap_6-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="agent_carriere_out" name="agent_carriere_out">
+      <column comment="" defaultValue="" key="false" length="8" name="NO_INDIVIDU" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" name="TEM_PHY_MOR_PER" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="COD_PAY_NAT_PER" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ROLES" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="COD_ORI" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_USUEL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_PATRONYMIQUE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="PRENOMS_ETAT_CIVIL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="D_NAISSANCE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="C_CIVILITE" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="TEM_DEMAND_EMPLOI" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="NUM_SEC_SOC_PER" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="C_PAYS_NAISSANCE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="C_DEPT_NAISSANCE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="C_COMMUNE_NAISSANCE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="LIB_COM_NAI_ETR_PER" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="C_SITUATION_FAMILLE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_0" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_1" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_2" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_3" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_4" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_5" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ROLE_0" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ROLE_1" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ROLE_2" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ROLE_3" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ROLE_4" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="agent_carriere" name="agent_carriere_log">
+      <column comment="" key="false" name="PERS_TYPE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="NO_INDIVIDU" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_USUEL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_PATRONYMIQUE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="PRENOMS_ETAT_CIVIL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="D_NAISSANCE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="C_CIVILITE" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="NO_INSEE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="CLE_INSEE" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateExpressionFilter="true" expressionFilter="context.import_agent_avec_carriere.equals(&quot;1&quot;)" name="agent_carriere_out" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="agent_carriere.NO_INDIVIDU " name="NO_INDIVIDU" type="id_BigDecimal"/>
+        <mapperTableEntries expression="&quot;P&quot;" name="TEM_PHY_MOR_PER" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;&quot;" name="COD_PAY_NAT_PER" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="context.roles_agent_avec_carriere" name="ROLES" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="COD_ORI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.NOM_USUEL " name="NOM_USUEL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.NOM_PATRONYMIQUE " name="NOM_PATRONYMIQUE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.PRENOM " name="PRENOM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.PRENOMS_ETAT_CIVIL " name="PRENOMS_ETAT_CIVIL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.D_NAISSANCE " name="D_NAISSANCE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="(agent_carriere.C_CIVILITE.equals(&quot;M.&quot;))? &quot;1&quot;: (agent_carriere.C_CIVILITE.equals(&quot;MME&quot;))? &quot;2&quot;: &quot;3&quot;" name="C_CIVILITE" type="id_String"/>
+        <mapperTableEntries expression="&quot;0&quot;" name="TEM_DEMAND_EMPLOI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(context.code_insee.equals(&quot;1&quot;))? (agent_carriere.NO_INSEE != null)? agent_carriere.NO_INSEE + ((agent_carriere.CLE_INSEE == null)? &quot;&quot; : ( (agent_carriere.CLE_INSEE.compareTo(new BigDecimal(10)) == -1 )? &quot;0&quot; + agent_carriere.CLE_INSEE : agent_carriere.CLE_INSEE) ) : &quot;&quot; : &quot;&quot; " name="NUM_SEC_SOC_PER" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="C_PAYS_NAISSANCE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="C_DEPT_NAISSANCE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="C_COMMUNE_NAISSANCE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIB_COM_NAI_ETR_PER" nullable="true" type="id_String"/>
+        <mapperTableEntries name="C_SITUATION_FAMILLE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="POUR_ENTREPRISE_0" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POUR_ENTREPRISE_1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POUR_ENTREPRISE_2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POUR_ENTREPRISE_3" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="POUR_ENTREPRISE_4" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POUR_ENTREPRISE_5" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POUR_ROLE_0" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POUR_ROLE_1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POUR_ROLE_2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POUR_ROLE_3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="POUR_ROLE_4" nullable="true" type="id_String"/>
+      </outputTables>
+      <outputTables name="agent_carriere_log" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="&quot;AGENT_CARRIERE&quot;" name="PERS_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.NO_INDIVIDU " name="NO_INDIVIDU" type="id_BigDecimal"/>
+        <mapperTableEntries expression="agent_carriere.NOM_USUEL " name="NOM_USUEL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.NOM_PATRONYMIQUE " name="NOM_PATRONYMIQUE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.PRENOM " name="PRENOM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.PRENOMS_ETAT_CIVIL " name="PRENOMS_ETAT_CIVIL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.D_NAISSANCE " name="D_NAISSANCE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="agent_carriere.C_CIVILITE " name="C_CIVILITE" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.NO_INSEE " name="NO_INSEE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="agent_carriere.CLE_INSEE " name="CLE_INSEE" nullable="true" type="id_BigDecimal"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="agent_carriere" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="NO_INDIVIDU" type="id_BigDecimal"/>
+        <mapperTableEntries name="NOM_USUEL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NOM_PATRONYMIQUE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PRENOM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PRENOMS_ETAT_CIVIL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="D_NAISSANCE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="C_CIVILITE" type="id_String"/>
+        <mapperTableEntries name="NO_INSEE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CLE_INSEE" nullable="true" type="id_BigDecimal"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.FIC_racine + &quot;/&quot; + context.FIC_in +&quot;/&quot; +&quot;fichier_personnes_agent_carriere&quot;+&quot;_&quot;+TalendDate.getDate(&quot;CCYY-MM-DD&quot;)+&quot;.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="agent_carriere" name="tFileOutputDelimited_2">
+      <column comment="" key="false" name="PERS_TYPE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="NO_INDIVIDU" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_USUEL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_PATRONYMIQUE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="PRENOMS_ETAT_CIVIL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="D_NAISSANCE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="C_CIVILITE" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="NO_INSEE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="CLE_INSEE" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_4"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.FIC_racine + &quot;/&quot;+ context.FIC_out + &quot;/&quot; + &quot;fichier_import_personnes.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="fichier_personne"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="agent_carriere_out" name="tFileOutputDelimited_4">
+      <column comment="" defaultValue="" key="false" length="8" name="NO_INDIVIDU" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" name="TEM_PHY_MOR_PER" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="COD_PAY_NAT_PER" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ROLES" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="COD_ORI" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_USUEL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="NOM_PATRONYMIQUE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="PRENOMS_ETAT_CIVIL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="D_NAISSANCE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="C_CIVILITE" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="TEM_DEMAND_EMPLOI" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="NUM_SEC_SOC_PER" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="C_PAYS_NAISSANCE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="C_DEPT_NAISSANCE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="C_COMMUNE_NAISSANCE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="LIB_COM_NAI_ETR_PER" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="C_SITUATION_FAMILLE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_0" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_1" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_2" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_3" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_4" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ENTREPRISE_5" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ROLE_0" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ROLE_1" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ROLE_2" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ROLE_3" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="POUR_ROLE_4" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleClose_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleConnection_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mdrqkAlkEee9f6Qz1UOWKA"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
+    <elementParameter field="FILE" name="TNS_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.BDD_cock_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="context.BDD_cock_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.BDD_cock_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.BDD_cock_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.BDD_cock_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fT9njoEMpq8a/mP4szPzy20vEdjaSfQBSgf+pK6jccjiInfLHGPfAzxS24lHbrpEd8JD6+s="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.BDD_cock_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="BDD_cock"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mdrqkAlkEee9f6Qz1UOWKA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.BDD_cock_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="context.BDD_cock_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.BDD_cock_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.BDD_cock_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.BDD_cock_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+zxJZzgT2Pi74EnUgh8teKFo2nHT+IFLwF4Nre4DAoiDnS56bzLqP2QqdNk56ays56kvZkE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;SELECT  distinct &#13;&#10;       IND.NO_INDIVIDU,&#13;&#10;       &#13;&#10;      PERS.NO_VOIE,&#13;&#10;      PERS.NOM_VOIE,&#13;&#10;      PERS.LOCALITE,&#13;&#10;      SUBSTR(PERS.ADR_ADRESSE1,1,50),&#13;&#10;      SUBSTR(PERS.ADR_ADRESSE2,1,50),   &#13;&#10;      PERS.VILLE,&#13;&#10;      PERS.CODE_POSTAL,    &#13;&#10;      PERS.C_PAYS,&#13;&#10;      PERS.CP_ETRANGER,&#13;&#10;      PERS_TEL1.NO_TELEPHONE,&#13;&#10;      PERS_VOIRIE.L_VOIE,&#13;&#10;      PERS.BIS_TER,      &#13;&#10;      &#13;&#10;      PERS_REP.E_MAIL,&#13;&#10;      CPT.CPT_EMAIL || '@' || CPT.CPT_DOMAINE,&#13;&#10;      PERS_TEL2.NO_TELEPHONE     &#13;&#10;      &#13;&#10;    FROM &quot;+context.BDD_cock_Schema+&quot;.INDIVIDU_ULR        IND,&#13;&#10;     &quot;+context.BDD_cock_SchemaGrh+&quot;.CHANGEMENT_POSITION  CHA_POS,&#13;&#10;     &quot;+context.BDD_cock_SchemaGrh+&quot;.ELEMENT_CARRIERE     ELE_CAR,&#13;&#10;     &quot;+context.BDD_cock_Schema+&quot;.STRUCTURE_ULR           STR,&#13;&#10;     &quot;+context.BDD_cock_SchemaGrh+&quot;.AFFECTATION          AFF,&#13;&#10;     &quot;+context.BDD_cock_Schema+&quot;.ADRESSE                 PERS,&#13;&#10;     &quot;+context.BDD_cock_Schema+&quot;.PERSONNE_TELEPHONE      PERS_TEL1,&#13;&#10;     &quot;+context.BDD_cock_Schema+&quot;.PERSONNE_TELEPHONE      PERS_TEL2,&#13;&#10;     &quot;+context.BDD_cock_Schema+&quot;.REPART_PERSONNE_ADRESSE PERS_REP, &#13;&#10;     &quot;+context.BDD_cock_Schema+&quot;.VOIRIE                  PERS_VOIRIE,&#13;&#10;     &quot;+context.BDD_cock_Schema+&quot;.COMPTE                  CPT&#13;&#10;     &#13;&#10;WHERE SYSDATE BETWEEN AFF.D_Deb_affectation&#13;&#10;              AND NVL(AFF.D_Fin_affectation,SYSDATE)+1&#13;&#10;  AND AFF.Tem_Valide='O'&#13;&#10;  AND AFF.Tem_Principale='O'&#13;&#10;  AND ELE_CAR.No_dossier_pers = AFF.No_dossier_pers&#13;&#10;  AND SYSDATE BETWEEN ELE_CAR.D_Effet_element&#13;&#10;              AND NVL(ELE_CAR.D_Fin_element, SYSDATE)+1&#13;&#10;  AND ELE_CAR.Tem_provisoire = 'N'&#13;&#10;  AND ELE_CAR.Tem_Valide ='O'&#13;&#10;  AND ELE_CAR.D_ANNULATION IS NULL&#13;&#10;  AND CHA_POS.No_dossier_pers = AFF.No_dossier_pers&#13;&#10;  AND SYSDATE BETWEEN CHA_POS.D_Deb_position&#13;&#10;              AND NVL(CHA_POS.D_Fin_position, SYSDATE)+1&#13;&#10;  AND CHA_POS.tem_valide = 'O'&#13;&#10;  AND CHA_POS.temoin_position_prev = 'N'&#13;&#10;  AND STR.C_Structure = Aff.C_Structure&#13;&#10;  AND IND.No_individu = AFF.No_dossier_pers&#13;&#10;  &#13;&#10;  AND PERS_REP.PERS_ID = IND.PERS_ID&#13;&#10;&#13;&#10;  AND PERS_REP.RPA_PRINCIPAL = 'O'&#13;&#10;  AND PERS_REP.RPA_VALIDE = 'O'&#13;&#10;  AND PERS_REP.TADR_CODE = 'PERSO'&#13;&#10;  AND PERS_REP.ADR_ORDRE = PERS.ADR_ORDRE&#13;&#10;  AND PERS_VOIRIE.C_VOIE(+) = PERS.C_VOIE&#13;&#10;  &#13;&#10;  AND PERS_TEL1.PERS_ID (+) = IND.PERS_ID &#13;&#10;  AND PERS_TEL1.TYPE_TEL (+) = 'PRV'&#13;&#10;  AND PERS_TEL1.TEL_PRINCIPAL (+) = 'O'&#13;&#10;  AND PERS_TEL1.LISTE_ROUGE (+) = 'N'&#13;&#10;  AND PERS_TEL1.TYPE_NO (+) = 'TEL' &#13;&#10;  &#13;&#10;  AND PERS_TEL2.PERS_ID (+) = IND.PERS_ID &#13;&#10;  AND PERS_TEL2.TYPE_TEL (+) = 'PRV'&#13;&#10;  AND PERS_TEL2.TEL_PRINCIPAL (+) = 'O'&#13;&#10;  AND PERS_TEL2.LISTE_ROUGE (+) = 'N'&#13;&#10;  AND PERS_TEL2.TYPE_NO (+) = 'MOB'&#13;&#10;  AND IND.PERS_ID = CPT.PERS_ID (+)     &#13;&#10;  AND CPT.CPT_VALIDE(+) = 'O'&#13;&#10;  AND CPT.CPT_PRINCIPAL(+) = 'O'&#13;&#10;  AND CPT.CPT_LISTE_ROUGE(+) = 'N'&#13;&#10;&quot; + ((context.numeros_individus != null &amp;&amp; ! context.numeros_individus.equals(&quot;&quot;)) ? &quot;AND IND.NO_INDIVIDU IN (&quot;+ context.numeros_individus +&quot;)&quot; : &quot;&quot;)"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.BDD_cock_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_NO_VOIE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_NOM_VOIE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_LOCALITE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_ADRESSE1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_ADRESSE2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_VILLE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_CODE_POSTAL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_C_PAYS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_CP_ETRANGER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_TEL_FIX"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_L_VOIE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_L_BTQ_TG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_MAIL_PERSO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_MAIL_PRO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERS_TEL_MOB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="BDD_cock"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_1">
+      <column comment="" defaultValue="" key="false" length="8" name="NO_INDIVIDU" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="PERS_NO_VOIE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="22" name="PERS_NOM_VOIE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="PERS_LOCALITE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="PERS_ADRESSE1" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="PERS_ADRESSE2" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="PERS_VILLE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="PERS_CODE_POSTAL" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PERS_C_PAYS" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PERS_CP_ETRANGER" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="PERS_TEL_FIX" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PERS_L_VOIE" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PERS_L_BTQ_TG" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="PERS_MAIL_PERSO" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="PERS_MAIL_PRO" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PERS_TEL_MOB" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_7"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_aTXEkOuEEeW8Vc27H8XD4Q-tMap_7-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="agent_carriere_out" name="adresse_perso">
+      <column comment="" defaultValue="" key="false" length="8" name="NO_INDIVIDU" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" name="ADR_N_ET_RUE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ADR_COMPLEMENT_1" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ADR_COMPLEMENT_2" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CODE_POSTAL" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CODE_PAYS" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CODE_COMMUNE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="LIB_COMMUNE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ADR_ETRANGERE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="TYPE_ADR" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ADR_PRINC" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="EMAIL" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="FAX" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="TEL" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="TEL_FIX" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateExpressionFilter="true" expressionFilter="(context.adresse_agent_avec_carriere.equals(&quot;T&quot;) || context.adresse_agent_avec_carriere.equals(&quot;P&quot;)) &amp;&amp; context.import_agent_avec_carriere.equals(&quot;1&quot;) &amp;&amp; ( ( row3.PERS_CODE_POSTAL != null &amp;&amp; !row3.PERS_CODE_POSTAL.trim().equals(&quot;&quot;) ) || ( row3.PERS_CP_ETRANGER != null &amp;&amp; !row3.PERS_CP_ETRANGER.trim().equals(&quot;&quot;) ) )" name="adresse_perso" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.NO_INDIVIDU" name="NO_INDIVIDU" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.PERS_ADRESSE1 " name="ADR_N_ET_RUE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PERS_ADRESSE2 " name="ADR_COMPLEMENT_1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="ADR_COMPLEMENT_2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PERS_CODE_POSTAL " name="CODE_POSTAL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PERS_C_PAYS " name="CODE_PAYS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="CODE_COMMUNE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(row3.PERS_CP_ETRANGER == null || row3.PERS_CP_ETRANGER.trim().equals(&quot;&quot;) ) ? row3.PERS_VILLE : &quot;&quot;" name="LIB_COMMUNE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(row3.PERS_CP_ETRANGER != null &amp;&amp; ! row3.PERS_CP_ETRANGER.trim().equals(&quot;&quot;) ) ? row3.PERS_CP_ETRANGER + ' ' + row3.PERS_VILLE : &quot;&quot;" name="ADR_ETRANGERE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;1&quot;" name="TYPE_ADR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(context.adresse_princ_agent_avec_carriere.equals(&quot;P&quot;)) ? &quot;1&quot; : &quot;0&quot;" name="ADR_PRINC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(row3.PERS_MAIL_PRO != null&#13;&#10; &amp;&amp;!row3.PERS_MAIL_PRO.equals(&quot;@&quot;)) ? ((context.adresse_perso_tel_mail.equals(&quot;1&quot;))? row3.PERS_MAIL_PRO.replace(';',',') : &quot;&quot;) : &quot;&quot; " name="EMAIL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="FAX" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(context.adresse_perso_tel_mail.equals(&quot;1&quot;))? row3.PERS_TEL_MOB  : &quot;&quot; " name="TEL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(context.adresse_perso_tel_mail.equals(&quot;1&quot;))? row3.PERS_TEL_FIX  : &quot;&quot; " name="TEL_FIX" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="NO_INDIVIDU" type="id_BigDecimal"/>
+        <mapperTableEntries name="PERS_NO_VOIE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_NOM_VOIE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_LOCALITE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_ADRESSE1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_ADRESSE2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_VILLE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_CODE_POSTAL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_C_PAYS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_CP_ETRANGER" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_TEL_FIX" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_L_VOIE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_L_BTQ_TG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_MAIL_PERSO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_MAIL_PRO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERS_TEL_MOB" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_5"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\TOS_V562\TOS_DI-Win32-20150508_1414-V5.6.2\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.FIC_racine + &quot;/&quot;+ context.FIC_out + &quot;/&quot; + &quot;fichier_import_adresses.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="fichier_adresse"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="agent_carriere_out" name="tFileOutputDelimited_5">
+      <column comment="" defaultValue="" key="false" length="8" name="NO_INDIVIDU" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" name="ADR_N_ET_RUE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ADR_COMPLEMENT_1" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ADR_COMPLEMENT_2" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CODE_POSTAL" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CODE_PAYS" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CODE_COMMUNE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="LIB_COMMUNE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ADR_ETRANGERE" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="TYPE_ADR" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ADR_PRINC" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="EMAIL" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="FAX" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="TEL" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="TEL_FIX" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tOracleClose_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tOracleConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="agent_carriere" lineStyle="0" metaname="tOracleInput_2" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_2" target="tMap_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_USUEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_PATRONYMIQUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRENOMS_ETAT_CIVIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="D_NAISSANCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_CIVILITE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NO_INSEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CLE_INSEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="agent_carriere"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tOracleInput_2" offsetLabelX="14" offsetLabelY="-50" source="tOracleInput_2" target="tOracleInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="FLOW" label="agent_carriere_out" lineStyle="0" metaname="agent_carriere_out" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_6" target="tFileOutputDelimited_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_USUEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_PATRONYMIQUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRENOMS_ETAT_CIVIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="D_NAISSANCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_CIVILITE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUM_SEC_SOC_PER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CLE_INSEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_PAY_NAT_PER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_PHY_MOR_PER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ROLES"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COD_ORI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEM_DEMAND_EMPLOI"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POUR_ENTREPRISE_0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_PAYS_NAISSANCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_COMMUNE_NAISSANCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_SITUATION_FAMILLE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POUR_ROLE_4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POUR_ROLE_2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POUR_ROLE_3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POUR_ROLE_0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POUR_ROLE_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIB_COM_NAI_ETR_PER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_DEPT_NAISSANCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POUR_ENTREPRISE_5"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POUR_ENTREPRISE_2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POUR_ENTREPRISE_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POUR_ENTREPRISE_4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POUR_ENTREPRISE_3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="agent_carriere_out"/>
+  </connection>
+  <connection connectorName="FLOW" label="agent_carriere_log" lineStyle="0" metaname="agent_carriere_log" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_6" target="tFileOutputDelimited_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_TYPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_USUEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_PATRONYMIQUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRENOMS_ETAT_CIVIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="D_NAISSANCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_CIVILITE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NO_INSEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CLE_INSEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="test"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="agent_carriere_log"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tOracleClose_2" offsetLabelX="0" offsetLabelY="0" source="tOracleClose_2" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tOracleConnection_2" offsetLabelX="0" offsetLabelY="0" source="tOracleConnection_2" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tMap_7">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRINC_NO_VOIE_A"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRINC_NOM_VOIE_A"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRINC_LOCALITE_A"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRINC_VILLE_A"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRINC_CODE_POSTAL_A"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRINC_C_PAYS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRINC_CP_ETRANGER_ADMIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRINC_C_IMPLANTATION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRINC_L_VOIE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRINC_L_BTQ_TG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NO_VOIE_A"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM_VOIE_A"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOCALITE_A"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VILLE_A"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CODE_POSTAL_A"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_PAYS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CP_ETRANGER_ADMIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C_IMPLANTATION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L_VOIE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L_BTQ_TG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_NO_VOIE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_NOM_VOIE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_LOCALITE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_VILLE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_CODE_POSTAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_C_PAYS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_CP_ETRANGER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_L_VOIE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_L_BTQ_TG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_MAIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_TEL_MOB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_MAIL_PRO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_MAIL_PERSO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_ADRESSE2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADRESSE1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERS_ADRESSE1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="adresse_perso" lineStyle="0" metaname="adresse_perso" offsetLabelX="-3" offsetLabelY="11" source="tMap_7" target="tFileOutputDelimited_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="NO_INDIVIDU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADR_N_ET_RUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADR_COMPLEMENT_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADR_COMPLEMENT_2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CODE_POSTAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CODE_PAYS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CODE_COMMUNE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LIB_COMMUNE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADR_ETRANGERE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYPE_ADR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADR_PRINC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EMAIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FAX"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEL_FIX"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="adresse_perso"/>
+  </connection>
+  <note opaque="false" posX="64" posY="-448" sizeHeight="129" sizeWidth="801" text="Objectif : Extraction des agents avec carrières&#13;&#10;&#13;&#10;Autheur : FB&#13;&#10;Date : 16/02/2017&#13;&#10;Maj : ">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+  </note>
+  <note opaque="false" posX="672" posY="-224" sizeHeight="64" sizeWidth="289" text="Fermeture de la connexion DB COCKTAIL">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="152;168;191"/>
+  </note>
+  <note opaque="true" posX="672" posY="-32" sizeHeight="64" sizeWidth="289" text="Ouverture de la connexion DB COCKTAIL">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="152;168;191"/>
+  </note>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleClose_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dc40f1f7-2951-461a-8d37-d35890aeff37"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>x22Pl9rxdy+qWRGGVpFkyQATYKb6tQtB5uzrehGpQlcUcMoJomvg9ZyZNWqAoxFop0IPZbX3u8nh&#13;
+I9MKUKN4/Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_334e9b88-736e-48de-94e9-e6c8ae051142"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qIwCMrBvg1DvRSuiLaxdiDmV61fuCf1RBn9ZR4dEmZysNaU9MQmEGnm5g0LtNcSuV3+OBl3kredF&#13;
+JCF/ABQUvg==</DigestValue></Reference></SignedInfo><SignatureValue>BeOfzKlaNMNKDSz1OJis3wc+4ptzfq2t+Jdhxsd4ev2nAha8+znDwdHp0Wt0gBbDiiONZjkq4x8k&#13;
+8UOSQjnidvCGsNrqnnQe0/sXYSzpTgbAFFccCOcyxUhEC5rwVaJi+mQ6PFyIWPqa5kvFZmHqzK//&#13;
+jmqKTPck+uAqFG8ezZbokH+DDupnPJ90lOp6bbnizL9bngWKC6i7QYo+YqqyICuSdQZCIogB+x99&#13;
+yEdVzVRR4Tl3rW21OJX8mCndsaIcINuf2xkAHvWXQleIJr9w9WyugRa16nbGBhC5ISVQAmnRksyB&#13;
+MH43kUaBmOycT2j1jxjvEQXtIDq4RZbwBeHEWw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_334e9b88-736e-48de-94e9-e6c8ae051142" Target="#_dc40f1f7-2951-461a-8d37-d35890aeff37"><Timestamp>2022-02-17 10:18:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

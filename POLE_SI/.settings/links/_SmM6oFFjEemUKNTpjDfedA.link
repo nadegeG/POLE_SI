@@ -1,0 +1,29 @@
+{
+  "itemId" : "_SmM6oFFjEemUKNTpjDfedA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_qtqtgKF-Eemh3cf7jJnMNA",
+    "parameterList" : [ {
+      "id" : "_qt0eh6F-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_AdditionalParams"
+    }, {
+      "id" : "_qt0ehaF-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Login"
+    }, {
+      "id" : "_qt0egaF-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Port"
+    }, {
+      "id" : "_qt0ehKF-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Schema"
+    }, {
+      "id" : "_qt0eg6F-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Server"
+    }, {
+      "id" : "_qt0egqF-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Sid"
+    }, {
+      "id" : "_qt0ehqF-Eemh3cf7jJnMNA",
+      "name" : "DB_REFETB_MESSAGERIE_Password"
+    } ]
+  } ]
+}
